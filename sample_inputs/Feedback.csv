@@ -1,0 +1,785 @@
+CandidateName,AppliedRole,InterviewStage,Interviewer,InterviewDate,CommunicationScore,TechnicalScore,FeedbackText,Recommended,PanelistFatigueFlag
+Candidate 1,Software Engineer,Technical Interview,Panelist 3,2025-09-24,5.0,7.0,Needs improvement in time complexity.,Maybe,No
+Candidate 1,Software Engineer,Managerial Interview,Panelist 15,2025-09-26,9.0,3.0,Struggled with edge cases in coding round.,No,No
+Candidate 2,Software Engineer,Technical Interview,Panelist 18,2025-10-10,7.0,10.0,Needs improvement in time complexity.,Maybe,No
+Candidate 2,Software Engineer,Managerial Interview,Panelist 10,2025-10-17,10.0,7.0,"Great cultural fit, asked thoughtful questions.",No,No
+Candidate 2,Software Engineer,Offer,HR Team,2025-10-26,,,Declined due to compensation mismatch.,N/A,No
+Candidate 3,Software Engineer,Technical Interview,Panelist 25,2025-11-08,5.0,5.0,Struggled with edge cases in coding round.,No,No
+Candidate 3,Software Engineer,Managerial Interview,Panelist 23,2025-11-13,4.0,4.0,Struggled with edge cases in coding round.,Yes,No
+Candidate 3,Software Engineer,Offer,HR Team,2025-11-22,,,Declined due to cultural misfit.,N/A,No
+Candidate 4,Software Engineer,Technical Interview,Panelist 22,2025-09-21,9.0,10.0,Struggled with edge cases in coding round.,Maybe,No
+Candidate 4,Software Engineer,Managerial Interview,Panelist 22,2025-09-22,9.0,7.0,"Great cultural fit, asked thoughtful questions.",Yes,No
+Candidate 4,Software Engineer,Offer,HR Team,2025-09-26,,,Declined due to offer declined - better opportunity.,N/A,No
+Candidate 5,Software Engineer,Technical Interview,Panelist 1,2025-11-16,6.0,6.0,"Great cultural fit, asked thoughtful questions.",Yes,No
+Candidate 5,Software Engineer,Managerial Interview,Panelist 3,2025-11-17,6.0,7.0,Needs improvement in communication.,Maybe,No
+Candidate 5,Software Engineer,Offer,HR Team,2025-11-22,,,Declined due to offer declined - better opportunity.,N/A,No
+Candidate 7,Software Engineer,Technical Interview,Panelist 22,2025-09-18,6.0,4.0,Excellent domain knowledge in ML pipelines.,No,No
+Candidate 7,Software Engineer,Managerial Interview,Panelist 7,2025-09-22,7.0,9.0,Struggled with edge cases in coding round.,No,No
+Candidate 8,Software Engineer,Technical Interview,Panelist 5,2025-10-27,7.0,9.0,Struggled with edge cases in coding round.,Maybe,No
+Candidate 8,Software Engineer,Managerial Interview,Panelist 1,2025-11-01,10.0,7.0,Struggled with edge cases in coding round.,No,No
+Candidate 9,Software Engineer,Technical Interview,Panelist 11,2025-11-09,10.0,10.0,Needs improvement in time complexity.,Yes,No
+Candidate 10,Software Engineer,Technical Interview,Panelist 3,2025-10-11,5.0,9.0,"Great cultural fit, asked thoughtful questions.",Yes,No
+Candidate 10,Software Engineer,Managerial Interview,Panelist 13,2025-10-14,9.0,10.0,"Strong problem-solving, explained system design well.",Yes,No
+Candidate 11,Software Engineer,Technical Interview,Panelist 17,2025-09-30,8.0,10.0,"Strong problem-solving, explained system design well.",Yes,No
+Candidate 11,Software Engineer,Managerial Interview,Panelist 18,2025-10-06,10.0,10.0,"Great cultural fit, asked thoughtful questions.",Yes,No
+Candidate 12,Software Engineer,Technical Interview,Panelist 18,2025-09-16,9.0,7.0,Needs improvement in communication.,Maybe,No
+Candidate 12,Software Engineer,Managerial Interview,Panelist 5,2025-09-21,9.0,10.0,"Great cultural fit, asked thoughtful questions.",Yes,No
+Candidate 12,Software Engineer,Offer,HR Team,2025-09-28,,,Declined due to offer declined - better opportunity.,N/A,No
+Candidate 13,Software Engineer,Technical Interview,Panelist 24,2025-11-01,9.0,10.0,Struggled with edge cases in coding round.,Yes,No
+Candidate 14,Software Engineer,Technical Interview,Panelist 9,2025-10-11,7.0,10.0,"Great cultural fit, asked thoughtful questions.",Yes,No
+Candidate 14,Software Engineer,Managerial Interview,Panelist 19,2025-10-13,10.0,8.0,Struggled with edge cases in coding round.,No,No
+Candidate 15,Software Engineer,Technical Interview,Panelist 12,2025-11-14,9.0,4.0,"Great cultural fit, asked thoughtful questions.",Maybe,No
+Candidate 15,Software Engineer,Managerial Interview,Panelist 17,2025-11-17,10.0,8.0,"Great cultural fit, asked thoughtful questions.",Maybe,No
+Candidate 16,Software Engineer,Technical Interview,Panelist 15,2025-09-12,8.0,10.0,Needs improvement in time complexity.,Maybe,No
+Candidate 16,Software Engineer,Managerial Interview,Panelist 20,2025-09-18,8.0,10.0,"Great cultural fit, asked thoughtful questions.",Yes,No
+Candidate 17,Software Engineer,Technical Interview,Panelist 25,2025-11-02,8.0,10.0,Excellent domain knowledge in ML pipelines.,No,No
+Candidate 17,Software Engineer,Managerial Interview,Panelist 4,2025-11-09,7.0,6.0,Excellent domain knowledge in ML pipelines.,Maybe,No
+Candidate 18,Software Engineer,Technical Interview,Panelist 25,2025-09-27,8.0,5.0,Struggled with edge cases in coding round.,Yes,No
+Candidate 19,Software Engineer,Technical Interview,Panelist 14,2025-10-25,10.0,10.0,"Strong problem-solving, explained system design well.",Maybe,No
+Candidate 20,Software Engineer,Technical Interview,Panelist 9,2025-11-02,9.0,10.0,Struggled with edge cases in coding round.,Maybe,No
+Candidate 20,Software Engineer,Managerial Interview,Panelist 20,2025-11-04,5.0,9.0,"Strong problem-solving, explained API design well.",Yes,No
+Candidate 22,Software Engineer,Technical Interview,Panelist 5,2025-09-10,4.0,5.0,"Great cultural fit, asked thoughtful questions.",No,No
+Candidate 22,Software Engineer,Managerial Interview,Panelist 23,2025-09-16,7.0,7.0,Excellent domain knowledge in ML pipelines.,Yes,No
+Candidate 23,Software Engineer,Technical Interview,Panelist 3,2025-09-20,4.0,4.0,"Strong problem-solving, explained system design well.",No,No
+Candidate 23,Software Engineer,Managerial Interview,Panelist 15,2025-09-27,6.0,5.0,"Great cultural fit, asked thoughtful questions.",Maybe,No
+Candidate 24,Software Engineer,Technical Interview,Panelist 1,2025-10-13,3.0,5.0,"Great cultural fit, asked thoughtful questions.",No,No
+Candidate 24,Software Engineer,Managerial Interview,Panelist 9,2025-10-19,3.0,4.0,Needs improvement in communication.,Maybe,No
+Candidate 25,Software Engineer,Technical Interview,Panelist 18,2025-10-12,8.0,4.0,"Great cultural fit, asked thoughtful questions.",Yes,No
+Candidate 26,Software Engineer,Technical Interview,Panelist 10,2025-10-06,10.0,9.0,"Great cultural fit, asked thoughtful questions.",Yes,No
+Candidate 26,Software Engineer,Managerial Interview,Panelist 9,2025-10-08,10.0,9.0,Needs improvement in time complexity.,Maybe,No
+Candidate 27,Software Engineer,Technical Interview,Panelist 5,2025-09-18,10.0,8.0,"Strong problem-solving, explained DP well.",Maybe,No
+Candidate 27,Software Engineer,Managerial Interview,Panelist 20,2025-09-25,3.0,7.0,"Great cultural fit, asked thoughtful questions.",Maybe,No
+Candidate 27,Software Engineer,Offer,HR Team,2025-10-01,,,Declined due to offer declined - better opportunity.,N/A,No
+Candidate 28,Software Engineer,Technical Interview,Panelist 20,2025-09-18,8.0,9.0,"Great cultural fit, asked thoughtful questions.",Maybe,No
+Candidate 29,Software Engineer,Technical Interview,Panelist 24,2025-09-26,8.0,9.0,Struggled with edge cases in coding round.,Maybe,No
+Candidate 29,Software Engineer,Managerial Interview,Panelist 17,2025-09-29,3.0,5.0,Struggled with edge cases in coding round.,Maybe,No
+Candidate 30,Software Engineer,Technical Interview,Panelist 19,2025-09-13,3.0,7.0,"Great cultural fit, asked thoughtful questions.",No,No
+Candidate 30,Software Engineer,Managerial Interview,Panelist 6,2025-09-20,4.0,9.0,Struggled with edge cases in coding round.,Maybe,No
+Candidate 32,Software Engineer,Technical Interview,Panelist 9,2025-10-01,5.0,8.0,Struggled with edge cases in coding round.,Yes,No
+Candidate 32,Software Engineer,Managerial Interview,Panelist 8,2025-10-08,9.0,7.0,Struggled with edge cases in coding round.,Yes,No
+Candidate 33,Software Engineer,Technical Interview,Panelist 17,2025-11-11,7.0,9.0,Struggled with edge cases in coding round.,No,No
+Candidate 33,Software Engineer,Managerial Interview,Panelist 1,2025-11-18,8.0,9.0,Struggled with edge cases in coding round.,Yes,No
+Candidate 33,Software Engineer,Offer,HR Team,2025-11-25,,,Declined due to offer declined - better opportunity.,N/A,No
+Candidate 34,Software Engineer,Technical Interview,Panelist 13,2025-10-10,6.0,10.0,Struggled with edge cases in coding round.,Yes,No
+Candidate 34,Software Engineer,Managerial Interview,Panelist 4,2025-10-13,10.0,7.0,"Strong problem-solving, explained API design well.",Maybe,No
+Candidate 35,Software Engineer,Technical Interview,Panelist 2,2025-11-19,6.0,8.0,Needs improvement in code clarity.,Maybe,No
+Candidate 35,Software Engineer,Managerial Interview,Panelist 21,2025-11-26,9.0,9.0,"Great cultural fit, asked thoughtful questions.",Yes,No
+Candidate 36,Software Engineer,Technical Interview,Panelist 5,2025-10-01,6.0,8.0,"Strong problem-solving, explained system design well.",No,No
+Candidate 36,Software Engineer,Managerial Interview,Panelist 3,2025-10-03,4.0,6.0,Struggled with edge cases in coding round.,Maybe,No
+Candidate 37,Software Engineer,Technical Interview,Panelist 25,2025-10-18,3.0,3.0,Struggled with edge cases in coding round.,No,No
+Candidate 38,Software Engineer,Technical Interview,Panelist 21,2025-10-10,5.0,4.0,Excellent domain knowledge in ML pipelines.,No,No
+Candidate 39,Software Engineer,Technical Interview,Panelist 16,2025-11-17,10.0,10.0,Struggled with edge cases in coding round.,Yes,No
+Candidate 39,Software Engineer,Managerial Interview,Panelist 22,2025-11-24,9.0,9.0,"Strong problem-solving, explained API design well.",No,No
+Candidate 40,Software Engineer,Technical Interview,Panelist 3,2025-10-11,3.0,3.0,Struggled with edge cases in coding round.,Yes,No
+Candidate 40,Software Engineer,Managerial Interview,Panelist 16,2025-10-14,5.0,5.0,Struggled with edge cases in coding round.,No,No
+Candidate 41,Software Engineer,Technical Interview,Panelist 4,2025-10-13,7.0,10.0,"Strong problem-solving, explained API design well.",No,No
+Candidate 41,Software Engineer,Managerial Interview,Panelist 15,2025-10-20,9.0,10.0,"Strong problem-solving, explained API design well.",Yes,No
+Candidate 42,Software Engineer,Technical Interview,Panelist 5,2025-10-07,4.0,6.0,"Strong problem-solving, explained DP well.",Yes,No
+Candidate 42,Software Engineer,Managerial Interview,Panelist 19,2025-10-09,7.0,8.0,Struggled with edge cases in coding round.,Maybe,No
+Candidate 45,Software Engineer,Technical Interview,Panelist 21,2025-11-06,6.0,6.0,Excellent domain knowledge in ML pipelines.,No,No
+Candidate 45,Software Engineer,Managerial Interview,Panelist 23,2025-11-07,7.0,10.0,Needs improvement in time complexity.,No,No
+Candidate 46,Software Engineer,Technical Interview,Panelist 14,2025-10-08,10.0,10.0,"Strong problem-solving, explained DP well.",Maybe,No
+Candidate 46,Software Engineer,Managerial Interview,Panelist 4,2025-10-14,6.0,10.0,"Strong problem-solving, explained system design well.",No,No
+Candidate 47,Software Engineer,Technical Interview,Panelist 20,2025-10-18,6.0,6.0,"Great cultural fit, asked thoughtful questions.",Yes,No
+Candidate 47,Software Engineer,Managerial Interview,Panelist 11,2025-10-21,5.0,7.0,Struggled with edge cases in coding round.,Yes,No
+Candidate 48,Software Engineer,Technical Interview,Panelist 6,2025-10-25,10.0,9.0,Struggled with edge cases in coding round.,Maybe,No
+Candidate 48,Software Engineer,Managerial Interview,Panelist 9,2025-10-29,10.0,10.0,"Strong problem-solving, explained system design well.",No,No
+Candidate 50,Software Engineer,Technical Interview,Panelist 3,2025-09-25,7.0,10.0,Struggled with edge cases in coding round.,Yes,No
+Candidate 50,Software Engineer,Managerial Interview,Panelist 13,2025-09-30,9.0,7.0,"Strong problem-solving, explained DP well.",No,No
+Candidate 51,Software Engineer,Technical Interview,Panelist 17,2025-09-15,5.0,3.0,"Great cultural fit, asked thoughtful questions.",Maybe,No
+Candidate 51,Software Engineer,Managerial Interview,Panelist 8,2025-09-17,3.0,6.0,Needs improvement in time complexity.,Maybe,No
+Candidate 53,Software Engineer,Technical Interview,Panelist 3,2025-09-17,7.0,6.0,Excellent domain knowledge in ML pipelines.,Maybe,No
+Candidate 53,Software Engineer,Managerial Interview,Panelist 19,2025-09-24,6.0,7.0,Needs improvement in time complexity.,Yes,No
+Candidate 54,Software Engineer,Technical Interview,Panelist 13,2025-11-04,4.0,6.0,"Great cultural fit, asked thoughtful questions.",Yes,No
+Candidate 54,Software Engineer,Managerial Interview,Panelist 10,2025-11-08,5.0,9.0,"Great cultural fit, asked thoughtful questions.",Yes,No
+Candidate 55,Software Engineer,Technical Interview,Panelist 24,2025-09-24,10.0,10.0,Struggled with edge cases in coding round.,Maybe,No
+Candidate 55,Software Engineer,Managerial Interview,Panelist 7,2025-09-26,9.0,8.0,Needs improvement in communication.,Yes,No
+Candidate 55,Software Engineer,Offer,HR Team,2025-10-03,,,Declined due to compensation mismatch.,N/A,No
+Candidate 56,Software Engineer,Technical Interview,Panelist 24,2025-10-27,8.0,10.0,Needs improvement in time complexity.,No,No
+Candidate 56,Software Engineer,Managerial Interview,Panelist 15,2025-11-03,10.0,10.0,"Great cultural fit, asked thoughtful questions.",Maybe,No
+Candidate 60,Software Engineer,Technical Interview,Panelist 16,2025-09-28,8.0,9.0,"Great cultural fit, asked thoughtful questions.",Yes,No
+Candidate 60,Software Engineer,Managerial Interview,Panelist 20,2025-10-04,8.0,8.0,"Great cultural fit, asked thoughtful questions.",Yes,No
+Candidate 61,Software Engineer,Technical Interview,Panelist 6,2025-10-06,9.0,8.0,Excellent domain knowledge in ML pipelines.,Maybe,No
+Candidate 61,Software Engineer,Managerial Interview,Panelist 1,2025-10-11,8.0,7.0,"Great cultural fit, asked thoughtful questions.",No,No
+Candidate 62,Software Engineer,Technical Interview,Panelist 15,2025-10-01,10.0,8.0,"Strong problem-solving, explained DP well.",Maybe,No
+Candidate 62,Software Engineer,Managerial Interview,Panelist 7,2025-10-04,9.0,8.0,"Great cultural fit, asked thoughtful questions.",Maybe,No
+Candidate 63,Software Engineer,Technical Interview,Panelist 16,2025-11-05,10.0,4.0,Struggled with edge cases in coding round.,Yes,No
+Candidate 63,Software Engineer,Managerial Interview,Panelist 18,2025-11-07,9.0,6.0,"Great cultural fit, asked thoughtful questions.",No,No
+Candidate 63,Software Engineer,Offer,HR Team,2025-11-10,,,Declined due to delays in process.,N/A,No
+Candidate 64,Software Engineer,Technical Interview,Panelist 17,2025-10-10,8.0,5.0,Excellent domain knowledge in ML pipelines.,Maybe,No
+Candidate 65,Software Engineer,Technical Interview,Panelist 5,2025-09-13,7.0,3.0,Needs improvement in code clarity.,Yes,No
+Candidate 66,Software Engineer,Technical Interview,Panelist 7,2025-10-10,9.0,9.0,Struggled with edge cases in coding round.,Yes,No
+Candidate 66,Software Engineer,Managerial Interview,Panelist 22,2025-10-13,6.0,7.0,"Great cultural fit, asked thoughtful questions.",Yes,No
+Candidate 68,Software Engineer,Technical Interview,Panelist 3,2025-10-31,10.0,10.0,Struggled with edge cases in coding round.,Maybe,No
+Candidate 69,Software Engineer,Technical Interview,Panelist 8,2025-09-17,4.0,3.0,"Great cultural fit, asked thoughtful questions.",Yes,No
+Candidate 69,Software Engineer,Managerial Interview,Panelist 21,2025-09-19,6.0,3.0,Needs improvement in time complexity.,Maybe,No
+Candidate 72,Software Engineer,Technical Interview,Panelist 2,2025-10-21,5.0,5.0,"Great cultural fit, asked thoughtful questions.",Maybe,No
+Candidate 72,Software Engineer,Managerial Interview,Panelist 24,2025-10-24,6.0,4.0,"Great cultural fit, asked thoughtful questions.",Maybe,No
+Candidate 73,Software Engineer,Technical Interview,Panelist 17,2025-10-01,8.0,5.0,"Strong problem-solving, explained system design well.",No,No
+Candidate 73,Software Engineer,Managerial Interview,Panelist 19,2025-10-03,10.0,9.0,Struggled with edge cases in coding round.,No,No
+Candidate 75,Software Engineer,Technical Interview,Panelist 25,2025-09-22,5.0,9.0,"Strong problem-solving, explained system design well.",Yes,No
+Candidate 75,Software Engineer,Managerial Interview,Panelist 16,2025-09-29,10.0,7.0,"Great cultural fit, asked thoughtful questions.",Maybe,No
+Candidate 76,Software Engineer,Technical Interview,Panelist 14,2025-11-10,3.0,5.0,"Strong problem-solving, explained API design well.",Maybe,No
+Candidate 76,Software Engineer,Managerial Interview,Panelist 25,2025-11-17,5.0,6.0,Struggled with edge cases in coding round.,Yes,No
+Candidate 77,Software Engineer,Technical Interview,Panelist 24,2025-11-01,9.0,7.0,Excellent domain knowledge in ML pipelines.,No,No
+Candidate 77,Software Engineer,Managerial Interview,Panelist 11,2025-11-05,4.0,9.0,Excellent domain knowledge in ML pipelines.,No,No
+Candidate 78,Software Engineer,Technical Interview,Panelist 23,2025-10-18,4.0,6.0,"Great cultural fit, asked thoughtful questions.",No,No
+Candidate 78,Software Engineer,Managerial Interview,Panelist 13,2025-10-22,8.0,3.0,"Strong problem-solving, explained DP well.",No,No
+Candidate 79,Software Engineer,Technical Interview,Panelist 8,2025-10-09,10.0,10.0,Needs improvement in time complexity.,Yes,No
+Candidate 79,Software Engineer,Managerial Interview,Panelist 4,2025-10-13,10.0,9.0,Struggled with edge cases in coding round.,Maybe,No
+Candidate 80,Software Engineer,Technical Interview,Panelist 6,2025-10-08,6.0,5.0,Needs improvement in code clarity.,Maybe,No
+Candidate 80,Software Engineer,Managerial Interview,Panelist 1,2025-10-09,5.0,8.0,Struggled with edge cases in coding round.,Maybe,No
+Candidate 80,Software Engineer,Offer,HR Team,2025-10-13,,,Declined due to delays in process.,N/A,No
+Candidate 81,Software Engineer,Technical Interview,Panelist 21,2025-09-12,3.0,8.0,"Strong problem-solving, explained API design well.",No,No
+Candidate 82,Software Engineer,Technical Interview,Panelist 19,2025-10-09,7.0,7.0,Needs improvement in code clarity.,Yes,No
+Candidate 82,Software Engineer,Managerial Interview,Panelist 13,2025-10-11,5.0,3.0,"Strong problem-solving, explained API design well.",Maybe,No
+Candidate 83,Software Engineer,Technical Interview,Panelist 20,2025-11-14,6.0,5.0,"Great cultural fit, asked thoughtful questions.",Yes,No
+Candidate 84,Software Engineer,Technical Interview,Panelist 16,2025-09-29,8.0,7.0,Needs improvement in code clarity.,Maybe,No
+Candidate 84,Software Engineer,Managerial Interview,Panelist 15,2025-10-04,5.0,4.0,"Great cultural fit, asked thoughtful questions.",Yes,No
+Candidate 84,Software Engineer,Offer,HR Team,2025-10-10,,,Declined due to compensation mismatch.,N/A,No
+Candidate 85,Software Engineer,Technical Interview,Panelist 15,2025-09-28,10.0,10.0,Excellent domain knowledge in ML pipelines.,Yes,No
+Candidate 85,Software Engineer,Managerial Interview,Panelist 18,2025-09-30,6.0,8.0,"Strong problem-solving, explained DP well.",No,No
+Candidate 86,Software Engineer,Technical Interview,Panelist 25,2025-10-01,10.0,6.0,"Strong problem-solving, explained DP well.",Yes,No
+Candidate 86,Software Engineer,Managerial Interview,Panelist 23,2025-10-07,8.0,6.0,Struggled with edge cases in coding round.,Yes,No
+Candidate 87,Software Engineer,Technical Interview,Panelist 2,2025-10-21,3.0,3.0,Struggled with edge cases in coding round.,Maybe,No
+Candidate 87,Software Engineer,Managerial Interview,Panelist 22,2025-10-27,3.0,3.0,Struggled with edge cases in coding round.,Yes,No
+Candidate 90,Software Engineer,Technical Interview,Panelist 19,2025-10-13,7.0,5.0,"Great cultural fit, asked thoughtful questions.",No,No
+Candidate 91,Software Engineer,Technical Interview,Panelist 21,2025-10-05,8.0,8.0,Struggled with edge cases in coding round.,Yes,No
+Candidate 91,Software Engineer,Managerial Interview,Panelist 11,2025-10-12,10.0,10.0,Excellent domain knowledge in ML pipelines.,Yes,No
+Candidate 92,Software Engineer,Technical Interview,Panelist 21,2025-10-17,7.0,5.0,Struggled with edge cases in coding round.,No,No
+Candidate 92,Software Engineer,Managerial Interview,Panelist 5,2025-10-19,5.0,3.0,"Strong problem-solving, explained API design well.",Maybe,No
+Candidate 94,Software Engineer,Technical Interview,Panelist 18,2025-11-09,7.0,6.0,Struggled with edge cases in coding round.,Yes,No
+Candidate 95,Software Engineer,Technical Interview,Panelist 23,2025-10-21,4.0,6.0,"Strong problem-solving, explained DP well.",Yes,No
+Candidate 95,Software Engineer,Managerial Interview,Panelist 2,2025-10-25,8.0,3.0,Struggled with edge cases in coding round.,Maybe,No
+Candidate 97,Software Engineer,Technical Interview,Panelist 10,2025-09-11,10.0,9.0,Excellent domain knowledge in ML pipelines.,No,No
+Candidate 97,Software Engineer,Managerial Interview,Panelist 23,2025-09-18,9.0,8.0,"Strong problem-solving, explained system design well.",No,No
+Candidate 98,Software Engineer,Technical Interview,Panelist 14,2025-10-20,5.0,7.0,Excellent domain knowledge in ML pipelines.,No,No
+Candidate 98,Software Engineer,Managerial Interview,Panelist 9,2025-10-21,6.0,7.0,Struggled with edge cases in coding round.,No,No
+Candidate 99,Software Engineer,Technical Interview,Panelist 12,2025-09-18,9.0,7.0,"Strong problem-solving, explained system design well.",No,No
+Candidate 99,Software Engineer,Managerial Interview,Panelist 18,2025-09-24,9.0,10.0,Needs improvement in time complexity.,Maybe,No
+Candidate 100,Software Engineer,Technical Interview,Panelist 7,2025-11-08,5.0,7.0,"Great cultural fit, asked thoughtful questions.",Maybe,No
+Candidate 100,Software Engineer,Managerial Interview,Panelist 11,2025-11-12,3.0,8.0,Needs improvement in time complexity.,No,No
+Candidate 100,Software Engineer,Offer,HR Team,2025-11-18,,,Declined due to delays in process.,N/A,No
+Candidate 101,Software Engineer,Technical Interview,Panelist 25,2025-10-29,10.0,4.0,Needs improvement in time complexity.,No,No
+Candidate 101,Software Engineer,Managerial Interview,Panelist 14,2025-10-30,7.0,8.0,"Great cultural fit, asked thoughtful questions.",Maybe,No
+Candidate 102,Software Engineer,Technical Interview,Panelist 21,2025-11-01,6.0,5.0,"Great cultural fit, asked thoughtful questions.",Yes,No
+Candidate 103,Software Engineer,Technical Interview,Panelist 8,2025-09-13,9.0,8.0,Excellent domain knowledge in ML pipelines.,Yes,No
+Candidate 104,Software Engineer,Technical Interview,Panelist 7,2025-09-20,8.0,9.0,Struggled with edge cases in coding round.,No,No
+Candidate 105,Software Engineer,Technical Interview,Panelist 14,2025-10-02,6.0,10.0,Needs improvement in time complexity.,Yes,No
+Candidate 105,Software Engineer,Managerial Interview,Panelist 24,2025-10-03,8.0,7.0,Struggled with edge cases in coding round.,Yes,No
+Candidate 106,Software Engineer,Technical Interview,Panelist 11,2025-10-26,3.0,4.0,"Great cultural fit, asked thoughtful questions.",No,No
+Candidate 106,Software Engineer,Managerial Interview,Panelist 22,2025-11-02,5.0,4.0,"Strong problem-solving, explained API design well.",Maybe,No
+Candidate 107,Software Engineer,Technical Interview,Panelist 23,2025-10-29,7.0,10.0,Needs improvement in time complexity.,No,No
+Candidate 108,Software Engineer,Technical Interview,Panelist 21,2025-10-23,3.0,4.0,Struggled with edge cases in coding round.,No,No
+Candidate 108,Software Engineer,Managerial Interview,Panelist 25,2025-10-30,4.0,5.0,"Great cultural fit, asked thoughtful questions.",Yes,No
+Candidate 110,Software Engineer,Technical Interview,Panelist 25,2025-09-13,5.0,4.0,"Great cultural fit, asked thoughtful questions.",Maybe,No
+Candidate 110,Software Engineer,Managerial Interview,Panelist 5,2025-09-18,6.0,3.0,"Great cultural fit, asked thoughtful questions.",Maybe,No
+Candidate 111,Software Engineer,Technical Interview,Panelist 8,2025-11-01,10.0,10.0,Struggled with edge cases in coding round.,No,No
+Candidate 111,Software Engineer,Managerial Interview,Panelist 14,2025-11-07,10.0,8.0,Excellent domain knowledge in ML pipelines.,Maybe,No
+Candidate 112,Software Engineer,Technical Interview,Panelist 16,2025-10-22,7.0,10.0,Excellent domain knowledge in ML pipelines.,Yes,No
+Candidate 112,Software Engineer,Managerial Interview,Panelist 22,2025-10-25,7.0,6.0,"Strong problem-solving, explained API design well.",Yes,No
+Candidate 113,Software Engineer,Technical Interview,Panelist 12,2025-09-30,10.0,7.0,"Strong problem-solving, explained API design well.",No,No
+Candidate 113,Software Engineer,Managerial Interview,Panelist 8,2025-10-07,9.0,7.0,Needs improvement in communication.,No,No
+Candidate 114,Software Engineer,Technical Interview,Panelist 4,2025-10-28,8.0,10.0,Needs improvement in code clarity.,Maybe,No
+Candidate 116,Software Engineer,Technical Interview,Panelist 8,2025-10-28,5.0,7.0,"Strong problem-solving, explained API design well.",Maybe,No
+Candidate 118,Software Engineer,Technical Interview,Panelist 16,2025-09-28,10.0,9.0,"Strong problem-solving, explained DP well.",Yes,No
+Candidate 119,Software Engineer,Technical Interview,Panelist 3,2025-11-02,10.0,8.0,Excellent domain knowledge in ML pipelines.,No,No
+Candidate 119,Software Engineer,Managerial Interview,Panelist 21,2025-11-09,10.0,8.0,Needs improvement in code clarity.,Yes,No
+Candidate 120,Software Engineer,Technical Interview,Panelist 24,2025-09-09,6.0,8.0,"Strong problem-solving, explained API design well.",Yes,No
+Candidate 120,Software Engineer,Managerial Interview,Panelist 3,2025-09-14,5.0,10.0,Struggled with edge cases in coding round.,No,No
+Candidate 122,Software Engineer,Technical Interview,Panelist 24,2025-11-02,9.0,8.0,"Great cultural fit, asked thoughtful questions.",No,No
+Candidate 122,Software Engineer,Managerial Interview,Panelist 17,2025-11-03,9.0,9.0,"Strong problem-solving, explained DP well.",No,No
+Candidate 123,Software Engineer,Technical Interview,Panelist 25,2025-10-19,10.0,9.0,"Strong problem-solving, explained DP well.",No,No
+Candidate 123,Software Engineer,Managerial Interview,Panelist 23,2025-10-25,10.0,10.0,Struggled with edge cases in coding round.,Maybe,No
+Candidate 126,Software Engineer,Technical Interview,Panelist 11,2025-10-11,6.0,8.0,Excellent domain knowledge in ML pipelines.,Yes,No
+Candidate 126,Software Engineer,Managerial Interview,Panelist 11,2025-10-15,6.0,9.0,"Great cultural fit, asked thoughtful questions.",No,No
+Candidate 128,Software Engineer,Technical Interview,Panelist 4,2025-09-13,10.0,8.0,Needs improvement in communication.,Yes,No
+Candidate 128,Software Engineer,Managerial Interview,Panelist 21,2025-09-19,10.0,9.0,"Strong problem-solving, explained API design well.",Yes,No
+Candidate 128,Software Engineer,Offer,HR Team,2025-10-02,,,Declined due to delays in process.,N/A,No
+Candidate 129,Software Engineer,Technical Interview,Panelist 7,2025-10-30,7.0,8.0,"Strong problem-solving, explained system design well.",Maybe,No
+Candidate 129,Software Engineer,Managerial Interview,Panelist 16,2025-11-02,6.0,5.0,"Great cultural fit, asked thoughtful questions.",No,No
+Candidate 130,Software Engineer,Technical Interview,Panelist 9,2025-10-23,9.0,9.0,"Great cultural fit, asked thoughtful questions.",Yes,No
+Candidate 130,Software Engineer,Managerial Interview,Panelist 25,2025-10-26,7.0,7.0,Needs improvement in communication.,Maybe,No
+Candidate 131,Software Engineer,Technical Interview,Panelist 1,2025-10-05,7.0,4.0,Needs improvement in time complexity.,Maybe,No
+Candidate 131,Software Engineer,Managerial Interview,Panelist 16,2025-10-12,3.0,3.0,"Strong problem-solving, explained DP well.",Yes,No
+Candidate 132,Software Engineer,Technical Interview,Panelist 2,2025-10-01,9.0,7.0,Excellent domain knowledge in ML pipelines.,No,No
+Candidate 132,Software Engineer,Managerial Interview,Panelist 13,2025-10-07,5.0,5.0,Needs improvement in communication.,Maybe,No
+Candidate 133,Software Engineer,Technical Interview,Panelist 19,2025-10-02,10.0,3.0,Needs improvement in communication.,Maybe,No
+Candidate 133,Software Engineer,Managerial Interview,Panelist 8,2025-10-07,10.0,6.0,"Great cultural fit, asked thoughtful questions.",Maybe,No
+Candidate 133,Software Engineer,Offer,HR Team,2025-10-11,,,Declined due to delays in process.,N/A,No
+Candidate 134,Software Engineer,Technical Interview,Panelist 2,2025-10-08,6.0,10.0,Struggled with edge cases in coding round.,No,No
+Candidate 134,Software Engineer,Managerial Interview,Panelist 16,2025-10-15,9.0,6.0,Needs improvement in communication.,No,No
+Candidate 135,Software Engineer,Technical Interview,Panelist 6,2025-09-22,8.0,5.0,"Great cultural fit, asked thoughtful questions.",Yes,No
+Candidate 135,Software Engineer,Managerial Interview,Panelist 24,2025-09-27,6.0,9.0,"Great cultural fit, asked thoughtful questions.",Yes,No
+Candidate 137,Software Engineer,Technical Interview,Panelist 12,2025-10-26,9.0,10.0,"Great cultural fit, asked thoughtful questions.",No,No
+Candidate 137,Software Engineer,Managerial Interview,Panelist 19,2025-10-29,7.0,10.0,"Strong problem-solving, explained API design well.",Maybe,No
+Candidate 138,Software Engineer,Technical Interview,Panelist 13,2025-11-14,10.0,6.0,Excellent domain knowledge in ML pipelines.,Maybe,No
+Candidate 138,Software Engineer,Managerial Interview,Panelist 25,2025-11-15,3.0,9.0,Needs improvement in communication.,Yes,No
+Candidate 139,Software Engineer,Technical Interview,Panelist 18,2025-10-15,9.0,9.0,Excellent domain knowledge in ML pipelines.,Maybe,No
+Candidate 139,Software Engineer,Managerial Interview,Panelist 5,2025-10-19,10.0,10.0,Excellent domain knowledge in ML pipelines.,Yes,No
+Candidate 140,Software Engineer,Technical Interview,Panelist 13,2025-09-11,10.0,7.0,Struggled with edge cases in coding round.,No,No
+Candidate 141,Software Engineer,Technical Interview,Panelist 11,2025-09-23,6.0,9.0,Needs improvement in communication.,No,No
+Candidate 141,Software Engineer,Managerial Interview,Panelist 16,2025-09-29,10.0,10.0,Needs improvement in time complexity.,Yes,No
+Candidate 142,Software Engineer,Technical Interview,Panelist 15,2025-09-18,3.0,3.0,"Strong problem-solving, explained DP well.",Yes,No
+Candidate 142,Software Engineer,Managerial Interview,Panelist 16,2025-09-20,3.0,3.0,"Strong problem-solving, explained DP well.",No,No
+Candidate 143,Software Engineer,Technical Interview,Panelist 16,2025-10-13,3.0,7.0,Needs improvement in communication.,No,No
+Candidate 143,Software Engineer,Managerial Interview,Panelist 23,2025-10-19,3.0,3.0,Struggled with edge cases in coding round.,No,No
+Candidate 144,Software Engineer,Technical Interview,Panelist 9,2025-10-19,8.0,10.0,Needs improvement in code clarity.,Yes,No
+Candidate 144,Software Engineer,Managerial Interview,Panelist 20,2025-10-20,6.0,9.0,"Strong problem-solving, explained DP well.",Maybe,No
+Candidate 145,Software Engineer,Technical Interview,Panelist 22,2025-11-16,7.0,6.0,Needs improvement in code clarity.,Maybe,No
+Candidate 145,Software Engineer,Managerial Interview,Panelist 6,2025-11-23,4.0,9.0,Needs improvement in communication.,No,No
+Candidate 147,Software Engineer,Technical Interview,Panelist 19,2025-10-15,6.0,10.0,Needs improvement in code clarity.,Yes,No
+Candidate 147,Software Engineer,Managerial Interview,Panelist 11,2025-10-17,4.0,8.0,Needs improvement in communication.,Maybe,No
+Candidate 149,Software Engineer,Technical Interview,Panelist 10,2025-11-16,7.0,10.0,Needs improvement in code clarity.,Yes,No
+Candidate 149,Software Engineer,Managerial Interview,Panelist 15,2025-11-19,10.0,9.0,Needs improvement in code clarity.,No,No
+Candidate 151,Software Engineer,Technical Interview,Panelist 22,2025-10-25,3.0,9.0,"Strong problem-solving, explained DP well.",No,No
+Candidate 152,Software Engineer,Technical Interview,Panelist 9,2025-10-05,7.0,7.0,Excellent domain knowledge in ML pipelines.,Maybe,No
+Candidate 152,Software Engineer,Managerial Interview,Panelist 4,2025-10-12,7.0,10.0,Needs improvement in time complexity.,No,No
+Candidate 152,Software Engineer,Offer,HR Team,2025-10-19,,,Declined due to delays in process.,N/A,No
+Candidate 153,Software Engineer,Technical Interview,Panelist 24,2025-09-18,7.0,7.0,Struggled with edge cases in coding round.,No,No
+Candidate 154,Software Engineer,Technical Interview,Panelist 1,2025-10-24,4.0,3.0,"Great cultural fit, asked thoughtful questions.",No,No
+Candidate 154,Software Engineer,Managerial Interview,Panelist 3,2025-10-30,3.0,4.0,Struggled with edge cases in coding round.,No,No
+Candidate 155,Software Engineer,Technical Interview,Panelist 13,2025-09-26,9.0,10.0,Needs improvement in time complexity.,No,No
+Candidate 156,Software Engineer,Technical Interview,Panelist 19,2025-09-21,7.0,5.0,Excellent domain knowledge in ML pipelines.,Maybe,No
+Candidate 156,Software Engineer,Managerial Interview,Panelist 22,2025-09-25,6.0,5.0,Struggled with edge cases in coding round.,Yes,No
+Candidate 157,Software Engineer,Technical Interview,Panelist 13,2025-11-11,9.0,8.0,Excellent domain knowledge in ML pipelines.,No,No
+Candidate 157,Software Engineer,Managerial Interview,Panelist 4,2025-11-14,10.0,10.0,Struggled with edge cases in coding round.,No,No
+Candidate 158,Software Engineer,Technical Interview,Panelist 18,2025-11-02,6.0,3.0,"Great cultural fit, asked thoughtful questions.",Maybe,No
+Candidate 159,Software Engineer,Technical Interview,Panelist 23,2025-10-11,8.0,4.0,Needs improvement in time complexity.,Yes,No
+Candidate 159,Software Engineer,Managerial Interview,Panelist 15,2025-10-13,3.0,5.0,Struggled with edge cases in coding round.,Yes,No
+Candidate 160,Software Engineer,Technical Interview,Panelist 17,2025-11-12,6.0,3.0,Needs improvement in time complexity.,Maybe,No
+Candidate 162,Software Engineer,Technical Interview,Panelist 7,2025-10-18,7.0,9.0,"Great cultural fit, asked thoughtful questions.",Maybe,No
+Candidate 162,Software Engineer,Managerial Interview,Panelist 17,2025-10-20,4.0,6.0,"Great cultural fit, asked thoughtful questions.",Maybe,No
+Candidate 163,Software Engineer,Technical Interview,Panelist 22,2025-09-25,9.0,9.0,Needs improvement in code clarity.,Maybe,No
+Candidate 163,Software Engineer,Managerial Interview,Panelist 20,2025-09-26,10.0,10.0,Excellent domain knowledge in ML pipelines.,No,No
+Candidate 163,Software Engineer,Offer,HR Team,2025-10-04,,,Declined due to cultural misfit.,N/A,No
+Candidate 164,Software Engineer,Technical Interview,Panelist 15,2025-11-19,9.0,3.0,"Great cultural fit, asked thoughtful questions.",Maybe,No
+Candidate 164,Software Engineer,Managerial Interview,Panelist 24,2025-11-26,9.0,7.0,"Strong problem-solving, explained DP well.",Yes,No
+Candidate 165,Software Engineer,Technical Interview,Panelist 22,2025-09-30,9.0,8.0,"Strong problem-solving, explained API design well.",Maybe,No
+Candidate 165,Software Engineer,Managerial Interview,Panelist 17,2025-10-02,10.0,10.0,Excellent domain knowledge in ML pipelines.,No,No
+Candidate 166,Software Engineer,Technical Interview,Panelist 8,2025-11-10,10.0,6.0,"Strong problem-solving, explained API design well.",Maybe,No
+Candidate 166,Software Engineer,Managerial Interview,Panelist 4,2025-11-17,6.0,9.0,Excellent domain knowledge in ML pipelines.,No,No
+Candidate 167,Software Engineer,Technical Interview,Panelist 22,2025-11-17,10.0,8.0,Struggled with edge cases in coding round.,Maybe,No
+Candidate 169,Software Engineer,Technical Interview,Panelist 13,2025-10-05,5.0,6.0,Excellent domain knowledge in ML pipelines.,Yes,No
+Candidate 169,Software Engineer,Managerial Interview,Panelist 3,2025-10-11,5.0,6.0,"Great cultural fit, asked thoughtful questions.",Maybe,No
+Candidate 170,Software Engineer,Technical Interview,Panelist 10,2025-09-27,6.0,4.0,"Great cultural fit, asked thoughtful questions.",Yes,No
+Candidate 170,Software Engineer,Managerial Interview,Panelist 2,2025-09-28,10.0,8.0,"Strong problem-solving, explained API design well.",No,No
+Candidate 170,Software Engineer,Offer,HR Team,2025-10-10,,,Declined due to offer declined - better opportunity.,N/A,No
+Candidate 171,Software Engineer,Technical Interview,Panelist 15,2025-10-05,10.0,7.0,"Great cultural fit, asked thoughtful questions.",Yes,No
+Candidate 171,Software Engineer,Managerial Interview,Panelist 12,2025-10-08,7.0,9.0,Excellent domain knowledge in ML pipelines.,Yes,No
+Candidate 172,Software Engineer,Technical Interview,Panelist 21,2025-10-20,5.0,10.0,"Great cultural fit, asked thoughtful questions.",No,No
+Candidate 172,Software Engineer,Managerial Interview,Panelist 16,2025-10-23,7.0,8.0,"Great cultural fit, asked thoughtful questions.",Yes,No
+Candidate 173,Software Engineer,Technical Interview,Panelist 9,2025-09-16,7.0,3.0,Needs improvement in time complexity.,No,No
+Candidate 173,Software Engineer,Managerial Interview,Panelist 24,2025-09-21,8.0,10.0,"Strong problem-solving, explained API design well.",No,No
+Candidate 174,Software Engineer,Technical Interview,Panelist 24,2025-11-12,5.0,3.0,Struggled with edge cases in coding round.,Yes,No
+Candidate 174,Software Engineer,Managerial Interview,Panelist 22,2025-11-13,7.0,10.0,Struggled with edge cases in coding round.,No,No
+Candidate 175,Software Engineer,Technical Interview,Panelist 12,2025-10-15,6.0,5.0,"Great cultural fit, asked thoughtful questions.",No,No
+Candidate 175,Software Engineer,Managerial Interview,Panelist 12,2025-10-19,7.0,10.0,"Strong problem-solving, explained system design well.",Maybe,No
+Candidate 176,Software Engineer,Technical Interview,Panelist 16,2025-09-23,5.0,6.0,Needs improvement in communication.,Yes,No
+Candidate 176,Software Engineer,Managerial Interview,Panelist 21,2025-09-25,3.0,4.0,Needs improvement in communication.,No,No
+Candidate 176,Software Engineer,Offer,HR Team,2025-09-30,,,Declined due to delays in process.,N/A,No
+Candidate 177,Software Engineer,Technical Interview,Panelist 6,2025-11-13,3.0,3.0,"Great cultural fit, asked thoughtful questions.",No,No
+Candidate 178,Software Engineer,Technical Interview,Panelist 4,2025-09-24,10.0,10.0,Excellent domain knowledge in ML pipelines.,Maybe,No
+Candidate 179,Software Engineer,Technical Interview,Panelist 16,2025-11-03,5.0,9.0,Excellent domain knowledge in ML pipelines.,Yes,No
+Candidate 179,Software Engineer,Managerial Interview,Panelist 8,2025-11-10,7.0,9.0,Struggled with edge cases in coding round.,No,No
+Candidate 180,Software Engineer,Technical Interview,Panelist 14,2025-11-03,4.0,5.0,Needs improvement in code clarity.,No,No
+Candidate 180,Software Engineer,Managerial Interview,Panelist 12,2025-11-05,4.0,5.0,"Great cultural fit, asked thoughtful questions.",Maybe,No
+Candidate 181,Software Engineer,Technical Interview,Panelist 22,2025-10-04,5.0,3.0,"Strong problem-solving, explained API design well.",Yes,No
+Candidate 181,Software Engineer,Managerial Interview,Panelist 3,2025-10-05,3.0,3.0,Struggled with edge cases in coding round.,No,No
+Candidate 182,Software Engineer,Technical Interview,Panelist 20,2025-09-16,6.0,9.0,"Strong problem-solving, explained API design well.",No,No
+Candidate 184,Software Engineer,Technical Interview,Panelist 19,2025-10-21,6.0,5.0,Excellent domain knowledge in ML pipelines.,Yes,No
+Candidate 184,Software Engineer,Managerial Interview,Panelist 17,2025-10-22,9.0,4.0,Struggled with edge cases in coding round.,No,No
+Candidate 185,Software Engineer,Technical Interview,Panelist 12,2025-10-29,5.0,5.0,"Great cultural fit, asked thoughtful questions.",Yes,No
+Candidate 185,Software Engineer,Managerial Interview,Panelist 3,2025-11-01,5.0,4.0,Needs improvement in code clarity.,Maybe,No
+Candidate 186,Software Engineer,Technical Interview,Panelist 4,2025-10-05,9.0,5.0,Excellent domain knowledge in ML pipelines.,Yes,No
+Candidate 186,Software Engineer,Managerial Interview,Panelist 16,2025-10-06,5.0,7.0,Struggled with edge cases in coding round.,Yes,No
+Candidate 187,Software Engineer,Technical Interview,Panelist 15,2025-10-22,9.0,9.0,Struggled with edge cases in coding round.,Maybe,No
+Candidate 187,Software Engineer,Managerial Interview,Panelist 9,2025-10-29,10.0,10.0,Excellent domain knowledge in ML pipelines.,No,No
+Candidate 187,Software Engineer,Offer,HR Team,2025-11-03,,,Declined due to delays in process.,N/A,No
+Candidate 188,Software Engineer,Technical Interview,Panelist 18,2025-09-26,8.0,10.0,Needs improvement in time complexity.,No,No
+Candidate 188,Software Engineer,Managerial Interview,Panelist 5,2025-09-30,10.0,9.0,"Great cultural fit, asked thoughtful questions.",No,No
+Candidate 189,Software Engineer,Technical Interview,Panelist 14,2025-10-19,9.0,10.0,Excellent domain knowledge in ML pipelines.,Maybe,No
+Candidate 189,Software Engineer,Managerial Interview,Panelist 10,2025-10-26,10.0,8.0,Struggled with edge cases in coding round.,Yes,No
+Candidate 189,Software Engineer,Offer,HR Team,2025-11-07,,,Declined due to delays in process.,N/A,No
+Candidate 190,Software Engineer,Technical Interview,Panelist 20,2025-09-16,9.0,8.0,Excellent domain knowledge in ML pipelines.,Maybe,No
+Candidate 190,Software Engineer,Managerial Interview,Panelist 1,2025-09-18,10.0,10.0,"Strong problem-solving, explained system design well.",Yes,No
+Candidate 191,Software Engineer,Technical Interview,Panelist 8,2025-09-15,10.0,10.0,Needs improvement in communication.,Maybe,No
+Candidate 192,Software Engineer,Technical Interview,Panelist 18,2025-11-09,10.0,10.0,Excellent domain knowledge in ML pipelines.,No,No
+Candidate 192,Software Engineer,Managerial Interview,Panelist 12,2025-11-12,8.0,10.0,"Great cultural fit, asked thoughtful questions.",No,No
+Candidate 193,Software Engineer,Technical Interview,Panelist 8,2025-11-08,6.0,7.0,Excellent domain knowledge in ML pipelines.,No,No
+Candidate 193,Software Engineer,Managerial Interview,Panelist 21,2025-11-14,4.0,5.0,Struggled with edge cases in coding round.,Maybe,No
+Candidate 197,Software Engineer,Technical Interview,Panelist 5,2025-11-17,10.0,10.0,Struggled with edge cases in coding round.,Yes,No
+Candidate 197,Software Engineer,Managerial Interview,Panelist 13,2025-11-24,10.0,9.0,Struggled with edge cases in coding round.,No,No
+Candidate 198,Software Engineer,Technical Interview,Panelist 18,2025-10-29,4.0,5.0,Needs improvement in code clarity.,No,No
+Candidate 198,Software Engineer,Managerial Interview,Panelist 4,2025-10-31,6.0,8.0,"Great cultural fit, asked thoughtful questions.",Maybe,No
+Candidate 199,Software Engineer,Technical Interview,Panelist 2,2025-09-30,7.0,9.0,"Strong problem-solving, explained API design well.",Yes,No
+Candidate 199,Software Engineer,Managerial Interview,Panelist 21,2025-10-05,7.0,6.0,Needs improvement in time complexity.,Yes,No
+Candidate 200,Software Engineer,Technical Interview,Panelist 9,2025-11-15,8.0,4.0,"Strong problem-solving, explained API design well.",Maybe,No
+Candidate 200,Software Engineer,Managerial Interview,Panelist 18,2025-11-18,6.0,6.0,Struggled with edge cases in coding round.,Maybe,No
+Candidate 201,Software Engineer,Technical Interview,Panelist 10,2025-11-19,7.0,5.0,Excellent domain knowledge in ML pipelines.,Maybe,No
+Candidate 201,Software Engineer,Managerial Interview,Panelist 6,2025-11-21,9.0,7.0,"Strong problem-solving, explained system design well.",Yes,No
+Candidate 202,Software Engineer,Technical Interview,Panelist 15,2025-09-17,9.0,8.0,Struggled with edge cases in coding round.,No,No
+Candidate 203,Software Engineer,Technical Interview,Panelist 7,2025-09-15,3.0,7.0,Needs improvement in time complexity.,Maybe,No
+Candidate 203,Software Engineer,Managerial Interview,Panelist 25,2025-09-16,9.0,5.0,Struggled with edge cases in coding round.,Yes,No
+Candidate 204,Software Engineer,Technical Interview,Panelist 12,2025-09-27,3.0,7.0,Excellent domain knowledge in ML pipelines.,Yes,No
+Candidate 205,Software Engineer,Technical Interview,Panelist 10,2025-09-11,8.0,9.0,"Great cultural fit, asked thoughtful questions.",Maybe,No
+Candidate 205,Software Engineer,Managerial Interview,Panelist 5,2025-09-16,7.0,9.0,"Great cultural fit, asked thoughtful questions.",No,No
+Candidate 206,Software Engineer,Technical Interview,Panelist 19,2025-09-18,8.0,7.0,"Strong problem-solving, explained API design well.",Maybe,No
+Candidate 206,Software Engineer,Managerial Interview,Panelist 2,2025-09-25,9.0,7.0,"Strong problem-solving, explained system design well.",Yes,No
+Candidate 207,Software Engineer,Technical Interview,Panelist 25,2025-11-14,5.0,3.0,"Great cultural fit, asked thoughtful questions.",No,No
+Candidate 207,Software Engineer,Managerial Interview,Panelist 19,2025-11-18,4.0,5.0,Struggled with edge cases in coding round.,Maybe,No
+Candidate 209,Software Engineer,Technical Interview,Panelist 12,2025-10-24,10.0,5.0,Needs improvement in time complexity.,No,No
+Candidate 209,Software Engineer,Managerial Interview,Panelist 22,2025-10-26,5.0,7.0,"Strong problem-solving, explained DP well.",Yes,No
+Candidate 210,Software Engineer,Technical Interview,Panelist 25,2025-11-08,9.0,10.0,"Strong problem-solving, explained API design well.",No,No
+Candidate 210,Software Engineer,Managerial Interview,Panelist 9,2025-11-09,10.0,10.0,"Great cultural fit, asked thoughtful questions.",Yes,No
+Candidate 210,Software Engineer,Offer,HR Team,2025-11-17,,,Declined due to delays in process.,N/A,No
+Candidate 211,Software Engineer,Technical Interview,Panelist 20,2025-11-02,9.0,4.0,Excellent domain knowledge in ML pipelines.,Maybe,No
+Candidate 211,Software Engineer,Managerial Interview,Panelist 10,2025-11-07,5.0,4.0,"Great cultural fit, asked thoughtful questions.",Maybe,No
+Candidate 211,Software Engineer,Offer,HR Team,2025-11-12,,,Declined due to delays in process.,N/A,No
+Candidate 212,Software Engineer,Technical Interview,Panelist 17,2025-10-14,10.0,9.0,Needs improvement in time complexity.,No,No
+Candidate 212,Software Engineer,Managerial Interview,Panelist 20,2025-10-17,8.0,10.0,Needs improvement in time complexity.,Maybe,No
+Candidate 212,Software Engineer,Offer,HR Team,2025-10-29,,,Declined due to cultural misfit.,N/A,No
+Candidate 213,Software Engineer,Technical Interview,Panelist 14,2025-09-22,8.0,4.0,"Great cultural fit, asked thoughtful questions.",Yes,No
+Candidate 214,Software Engineer,Technical Interview,Panelist 5,2025-10-05,7.0,9.0,"Great cultural fit, asked thoughtful questions.",Yes,No
+Candidate 214,Software Engineer,Managerial Interview,Panelist 6,2025-10-07,10.0,10.0,Struggled with edge cases in coding round.,Yes,No
+Candidate 214,Software Engineer,Offer,HR Team,2025-10-18,,,Declined due to cultural misfit.,N/A,No
+Candidate 215,Software Engineer,Technical Interview,Panelist 19,2025-09-18,8.0,7.0,Excellent domain knowledge in ML pipelines.,Yes,No
+Candidate 215,Software Engineer,Managerial Interview,Panelist 8,2025-09-19,8.0,8.0,Excellent domain knowledge in ML pipelines.,No,No
+Candidate 216,Software Engineer,Technical Interview,Panelist 21,2025-09-27,6.0,10.0,Excellent domain knowledge in ML pipelines.,Maybe,No
+Candidate 216,Software Engineer,Managerial Interview,Panelist 15,2025-09-30,10.0,10.0,Struggled with edge cases in coding round.,Yes,No
+Candidate 217,Software Engineer,Technical Interview,Panelist 19,2025-11-13,10.0,10.0,Needs improvement in communication.,Maybe,No
+Candidate 217,Software Engineer,Managerial Interview,Panelist 25,2025-11-19,7.0,10.0,Needs improvement in communication.,Yes,No
+Candidate 217,Software Engineer,Offer,HR Team,2025-11-25,,,Declined due to cultural misfit.,N/A,No
+Candidate 218,Software Engineer,Technical Interview,Panelist 9,2025-11-10,4.0,4.0,Needs improvement in communication.,Yes,No
+Candidate 218,Software Engineer,Managerial Interview,Panelist 2,2025-11-12,4.0,3.0,"Strong problem-solving, explained system design well.",Yes,No
+Candidate 220,Software Engineer,Technical Interview,Panelist 4,2025-10-28,8.0,7.0,Excellent domain knowledge in ML pipelines.,Yes,No
+Candidate 220,Software Engineer,Managerial Interview,Panelist 19,2025-10-29,8.0,6.0,Excellent domain knowledge in ML pipelines.,Maybe,No
+Candidate 221,Software Engineer,Technical Interview,Panelist 4,2025-11-06,3.0,6.0,Needs improvement in time complexity.,Maybe,No
+Candidate 221,Software Engineer,Managerial Interview,Panelist 12,2025-11-09,4.0,3.0,Needs improvement in time complexity.,Maybe,No
+Candidate 222,Software Engineer,Technical Interview,Panelist 11,2025-10-29,10.0,7.0,Needs improvement in communication.,No,No
+Candidate 222,Software Engineer,Managerial Interview,Panelist 18,2025-11-05,10.0,7.0,"Strong problem-solving, explained system design well.",Maybe,No
+Candidate 223,Software Engineer,Technical Interview,Panelist 6,2025-09-13,10.0,6.0,"Great cultural fit, asked thoughtful questions.",Maybe,No
+Candidate 223,Software Engineer,Managerial Interview,Panelist 8,2025-09-17,7.0,7.0,Excellent domain knowledge in ML pipelines.,No,No
+Candidate 224,Software Engineer,Technical Interview,Panelist 5,2025-09-29,10.0,9.0,Needs improvement in time complexity.,Yes,No
+Candidate 224,Software Engineer,Managerial Interview,Panelist 17,2025-10-05,10.0,10.0,Excellent domain knowledge in ML pipelines.,Yes,No
+Candidate 225,Software Engineer,Technical Interview,Panelist 4,2025-10-15,10.0,10.0,Needs improvement in communication.,Maybe,No
+Candidate 225,Software Engineer,Managerial Interview,Panelist 23,2025-10-17,9.0,10.0,"Great cultural fit, asked thoughtful questions.",Maybe,No
+Candidate 226,Software Engineer,Technical Interview,Panelist 23,2025-09-23,5.0,8.0,Excellent domain knowledge in ML pipelines.,Yes,No
+Candidate 226,Software Engineer,Managerial Interview,Panelist 19,2025-09-27,10.0,10.0,"Strong problem-solving, explained API design well.",No,No
+Candidate 228,Software Engineer,Technical Interview,Panelist 13,2025-11-03,10.0,5.0,"Strong problem-solving, explained system design well.",No,No
+Candidate 228,Software Engineer,Managerial Interview,Panelist 8,2025-11-07,7.0,7.0,"Strong problem-solving, explained system design well.",No,No
+Candidate 229,Software Engineer,Technical Interview,Panelist 10,2025-11-07,5.0,7.0,Excellent domain knowledge in ML pipelines.,No,No
+Candidate 229,Software Engineer,Managerial Interview,Panelist 3,2025-11-08,6.0,6.0,"Strong problem-solving, explained API design well.",Yes,No
+Candidate 230,Software Engineer,Technical Interview,Panelist 19,2025-10-16,10.0,10.0,"Great cultural fit, asked thoughtful questions.",Yes,No
+Candidate 230,Software Engineer,Managerial Interview,Panelist 1,2025-10-17,8.0,6.0,"Great cultural fit, asked thoughtful questions.",Yes,No
+Candidate 233,Software Engineer,Technical Interview,Panelist 20,2025-09-26,9.0,10.0,Struggled with edge cases in coding round.,No,No
+Candidate 233,Software Engineer,Managerial Interview,Panelist 19,2025-09-27,10.0,6.0,"Great cultural fit, asked thoughtful questions.",No,No
+Candidate 234,Software Engineer,Technical Interview,Panelist 17,2025-09-22,10.0,9.0,Struggled with edge cases in coding round.,Maybe,No
+Candidate 234,Software Engineer,Managerial Interview,Panelist 22,2025-09-23,4.0,4.0,"Strong problem-solving, explained system design well.",No,No
+Candidate 235,Software Engineer,Technical Interview,Panelist 24,2025-10-24,4.0,4.0,Struggled with edge cases in coding round.,Maybe,No
+Candidate 236,Software Engineer,Technical Interview,Panelist 20,2025-10-10,9.0,10.0,"Strong problem-solving, explained DP well.",Maybe,No
+Candidate 236,Software Engineer,Managerial Interview,Panelist 22,2025-10-12,6.0,10.0,Needs improvement in time complexity.,No,No
+Candidate 238,Software Engineer,Technical Interview,Panelist 18,2025-09-26,4.0,7.0,"Great cultural fit, asked thoughtful questions.",Yes,No
+Candidate 238,Software Engineer,Managerial Interview,Panelist 15,2025-09-29,3.0,5.0,"Strong problem-solving, explained API design well.",Yes,No
+Candidate 239,Software Engineer,Technical Interview,Panelist 17,2025-10-25,8.0,8.0,Excellent domain knowledge in ML pipelines.,Yes,No
+Candidate 239,Software Engineer,Managerial Interview,Panelist 14,2025-10-26,10.0,10.0,Needs improvement in code clarity.,Maybe,No
+Candidate 240,Software Engineer,Technical Interview,Panelist 6,2025-09-25,9.0,5.0,Struggled with edge cases in coding round.,Maybe,No
+Candidate 240,Software Engineer,Managerial Interview,Panelist 25,2025-09-28,3.0,9.0,Needs improvement in code clarity.,Yes,No
+Candidate 241,Software Engineer,Technical Interview,Panelist 4,2025-09-29,10.0,10.0,"Strong problem-solving, explained DP well.",No,No
+Candidate 242,Software Engineer,Technical Interview,Panelist 13,2025-11-09,9.0,10.0,"Strong problem-solving, explained system design well.",Maybe,No
+Candidate 242,Software Engineer,Managerial Interview,Panelist 14,2025-11-13,7.0,10.0,Needs improvement in time complexity.,Yes,No
+Candidate 243,Software Engineer,Technical Interview,Panelist 10,2025-09-22,10.0,9.0,Needs improvement in code clarity.,No,No
+Candidate 243,Software Engineer,Managerial Interview,Panelist 23,2025-09-28,9.0,9.0,Needs improvement in code clarity.,Yes,No
+Candidate 244,Software Engineer,Technical Interview,Panelist 15,2025-10-30,8.0,7.0,"Great cultural fit, asked thoughtful questions.",Maybe,No
+Candidate 247,Software Engineer,Technical Interview,Panelist 7,2025-09-14,3.0,3.0,Struggled with edge cases in coding round.,No,No
+Candidate 247,Software Engineer,Managerial Interview,Panelist 5,2025-09-19,5.0,3.0,Excellent domain knowledge in ML pipelines.,Yes,No
+Candidate 248,Software Engineer,Technical Interview,Panelist 21,2025-10-30,7.0,7.0,"Strong problem-solving, explained DP well.",Yes,No
+Candidate 248,Software Engineer,Managerial Interview,Panelist 21,2025-11-05,8.0,9.0,Needs improvement in code clarity.,Yes,No
+Candidate 249,Software Engineer,Technical Interview,Panelist 4,2025-09-17,3.0,10.0,Excellent domain knowledge in ML pipelines.,Maybe,No
+Candidate 249,Software Engineer,Managerial Interview,Panelist 7,2025-09-23,5.0,6.0,Struggled with edge cases in coding round.,No,No
+Candidate 250,Software Engineer,Technical Interview,Panelist 17,2025-09-15,10.0,10.0,Excellent domain knowledge in ML pipelines.,Maybe,No
+Candidate 250,Software Engineer,Managerial Interview,Panelist 11,2025-09-21,10.0,10.0,Needs improvement in communication.,Maybe,No
+Candidate 250,Software Engineer,Offer,HR Team,2025-09-24,,,Declined due to offer declined - better opportunity.,N/A,No
+Candidate 251,Data Scientist,Technical Interview,Panelist 19,2025-11-07,9.0,8.0,Struggled with edge cases in coding round.,Yes,Yes
+Candidate 252,Data Scientist,Technical Interview,Panelist 7,2025-09-28,4.0,5.0,Struggled with edge cases in coding round.,Maybe,No
+Candidate 255,Data Scientist,Technical Interview,Panelist 16,2025-10-27,6.0,6.0,Excellent domain knowledge in ML pipelines.,Yes,No
+Candidate 255,Data Scientist,Managerial Interview,Panelist 23,2025-10-29,5.0,3.0,Struggled with edge cases in coding round.,Maybe,No
+Candidate 256,Data Scientist,Technical Interview,Panelist 2,2025-11-21,5.0,9.0,"Strong problem-solving, explained system design well.",No,No
+Candidate 256,Data Scientist,Managerial Interview,Panelist 12,2025-11-24,10.0,10.0,Needs improvement in time complexity.,Yes,No
+Candidate 257,Data Scientist,Technical Interview,Panelist 17,2025-11-10,9.0,6.0,Excellent domain knowledge in ML pipelines.,No,No
+Candidate 257,Data Scientist,Managerial Interview,Panelist 23,2025-11-16,3.0,6.0,Struggled with edge cases in coding round.,Yes,No
+Candidate 260,Data Scientist,Technical Interview,Panelist 17,2025-11-05,8.0,5.0,Needs improvement in time complexity.,No,No
+Candidate 260,Data Scientist,Managerial Interview,Panelist 12,2025-11-09,10.0,6.0,"Great cultural fit, asked thoughtful questions.",No,No
+Candidate 261,Data Scientist,Technical Interview,Panelist 6,2025-09-26,8.0,8.0,"Great cultural fit, asked thoughtful questions.",Yes,No
+Candidate 261,Data Scientist,Managerial Interview,Panelist 18,2025-09-28,10.0,6.0,Needs improvement in code clarity.,No,No
+Candidate 262,Data Scientist,Technical Interview,Panelist 22,2025-10-21,10.0,10.0,"Strong problem-solving, explained system design well.",Maybe,No
+Candidate 265,Data Scientist,Technical Interview,Panelist 12,2025-11-12,6.0,4.0,"Great cultural fit, asked thoughtful questions.",No,No
+Candidate 266,Data Scientist,Technical Interview,Panelist 19,2025-11-07,9.0,9.0,Excellent domain knowledge in ML pipelines.,No,Yes
+Candidate 266,Data Scientist,Managerial Interview,Panelist 13,2025-11-14,10.0,10.0,Needs improvement in code clarity.,Maybe,No
+Candidate 267,Data Scientist,Technical Interview,Panelist 21,2025-11-08,6.0,4.0,Needs improvement in code clarity.,No,No
+Candidate 267,Data Scientist,Managerial Interview,Panelist 4,2025-11-09,8.0,8.0,"Great cultural fit, asked thoughtful questions.",Maybe,No
+Candidate 267,Data Scientist,Offer,HR Team,2025-11-18,,,Declined due to delays in process.,N/A,No
+Candidate 269,Data Scientist,Technical Interview,Panelist 3,2025-10-26,10.0,6.0,Excellent domain knowledge in ML pipelines.,Yes,No
+Candidate 269,Data Scientist,Managerial Interview,Panelist 22,2025-11-02,9.0,10.0,"Great cultural fit, asked thoughtful questions.",Yes,Yes
+Candidate 270,Data Scientist,Technical Interview,Panelist 20,2025-09-28,6.0,3.0,Excellent domain knowledge in ML pipelines.,Maybe,No
+Candidate 271,Data Scientist,Technical Interview,Panelist 17,2025-11-08,4.0,9.0,"Strong problem-solving, explained API design well.",Maybe,No
+Candidate 272,Data Scientist,Technical Interview,Panelist 3,2025-10-12,7.0,5.0,Needs improvement in communication.,Yes,No
+Candidate 272,Data Scientist,Managerial Interview,Panelist 2,2025-10-17,3.0,6.0,"Great cultural fit, asked thoughtful questions.",Maybe,No
+Candidate 273,Data Scientist,Technical Interview,Panelist 12,2025-10-24,5.0,7.0,Needs improvement in time complexity.,Maybe,No
+Candidate 274,Data Scientist,Technical Interview,Panelist 7,2025-10-03,10.0,7.0,Excellent domain knowledge in ML pipelines.,Yes,No
+Candidate 274,Data Scientist,Managerial Interview,Panelist 12,2025-10-05,10.0,8.0,Struggled with edge cases in coding round.,Yes,No
+Candidate 275,Data Scientist,Technical Interview,Panelist 18,2025-10-25,10.0,5.0,"Strong problem-solving, explained system design well.",No,No
+Candidate 275,Data Scientist,Managerial Interview,Panelist 22,2025-10-26,10.0,9.0,"Strong problem-solving, explained system design well.",Yes,Yes
+Candidate 276,Data Scientist,Technical Interview,Panelist 9,2025-10-01,7.0,3.0,Struggled with edge cases in coding round.,No,No
+Candidate 276,Data Scientist,Managerial Interview,Panelist 16,2025-10-05,5.0,6.0,"Strong problem-solving, explained system design well.",No,No
+Candidate 277,Data Scientist,Technical Interview,Panelist 16,2025-10-04,6.0,5.0,Struggled with edge cases in coding round.,Maybe,Yes
+Candidate 277,Data Scientist,Managerial Interview,Panelist 18,2025-10-11,3.0,3.0,"Strong problem-solving, explained DP well.",No,No
+Candidate 278,Data Scientist,Technical Interview,Panelist 16,2025-11-12,6.0,6.0,Struggled with edge cases in coding round.,Maybe,Yes
+Candidate 278,Data Scientist,Managerial Interview,Panelist 9,2025-11-16,3.0,8.0,"Great cultural fit, asked thoughtful questions.",No,No
+Candidate 279,Data Scientist,Technical Interview,Panelist 14,2025-09-11,7.0,3.0,"Great cultural fit, asked thoughtful questions.",Maybe,No
+Candidate 279,Data Scientist,Managerial Interview,Panelist 10,2025-09-18,7.0,6.0,"Strong problem-solving, explained API design well.",No,No
+Candidate 281,Data Scientist,Technical Interview,Panelist 3,2025-10-25,3.0,4.0,"Strong problem-solving, explained system design well.",No,No
+Candidate 281,Data Scientist,Managerial Interview,Panelist 20,2025-10-27,3.0,3.0,Excellent domain knowledge in ML pipelines.,No,No
+Candidate 282,Data Scientist,Technical Interview,Panelist 15,2025-10-16,7.0,6.0,Excellent domain knowledge in ML pipelines.,Yes,No
+Candidate 282,Data Scientist,Managerial Interview,Panelist 24,2025-10-23,10.0,8.0,Excellent domain knowledge in ML pipelines.,No,No
+Candidate 283,Data Scientist,Technical Interview,Panelist 22,2025-09-15,8.0,5.0,Needs improvement in communication.,Yes,Yes
+Candidate 283,Data Scientist,Managerial Interview,Panelist 16,2025-09-19,5.0,4.0,Needs improvement in communication.,Yes,Yes
+Candidate 284,Data Scientist,Technical Interview,Panelist 20,2025-09-10,5.0,6.0,"Strong problem-solving, explained system design well.",No,No
+Candidate 284,Data Scientist,Managerial Interview,Panelist 8,2025-09-12,8.0,8.0,Excellent domain knowledge in ML pipelines.,Maybe,No
+Candidate 285,Data Scientist,Technical Interview,Panelist 19,2025-10-30,5.0,10.0,"Great cultural fit, asked thoughtful questions.",Maybe,Yes
+Candidate 285,Data Scientist,Managerial Interview,Panelist 5,2025-11-02,8.0,6.0,Excellent domain knowledge in ML pipelines.,Yes,No
+Candidate 286,Data Scientist,Technical Interview,Panelist 1,2025-10-26,10.0,8.0,"Strong problem-solving, explained system design well.",Yes,No
+Candidate 286,Data Scientist,Managerial Interview,Panelist 15,2025-10-28,7.0,6.0,"Strong problem-solving, explained API design well.",No,No
+Candidate 287,Data Scientist,Technical Interview,Panelist 23,2025-11-14,7.0,10.0,Struggled with edge cases in coding round.,Maybe,No
+Candidate 287,Data Scientist,Managerial Interview,Panelist 10,2025-11-20,10.0,9.0,Excellent domain knowledge in ML pipelines.,Maybe,No
+Candidate 288,Data Scientist,Technical Interview,Panelist 10,2025-11-10,10.0,10.0,Struggled with edge cases in coding round.,Maybe,No
+Candidate 288,Data Scientist,Managerial Interview,Panelist 21,2025-11-15,8.0,9.0,Needs improvement in code clarity.,No,No
+Candidate 289,Data Scientist,Technical Interview,Panelist 23,2025-11-13,9.0,10.0,Struggled with edge cases in coding round.,No,No
+Candidate 289,Data Scientist,Managerial Interview,Panelist 7,2025-11-18,10.0,10.0,Struggled with edge cases in coding round.,Yes,No
+Candidate 289,Data Scientist,Offer,HR Team,2025-11-25,,,Declined due to delays in process.,N/A,No
+Candidate 290,Data Scientist,Technical Interview,Panelist 23,2025-09-16,5.0,8.0,"Strong problem-solving, explained API design well.",Yes,No
+Candidate 291,Data Scientist,Technical Interview,Panelist 5,2025-09-13,9.0,10.0,"Great cultural fit, asked thoughtful questions.",Yes,No
+Candidate 291,Data Scientist,Managerial Interview,Panelist 5,2025-09-17,9.0,10.0,"Great cultural fit, asked thoughtful questions.",Yes,No
+Candidate 292,Data Scientist,Technical Interview,Panelist 11,2025-10-09,9.0,7.0,Struggled with edge cases in coding round.,Yes,No
+Candidate 293,Data Scientist,Technical Interview,Panelist 18,2025-11-05,9.0,4.0,"Strong problem-solving, explained API design well.",No,No
+Candidate 293,Data Scientist,Managerial Interview,Panelist 6,2025-11-07,7.0,6.0,Excellent domain knowledge in ML pipelines.,Yes,No
+Candidate 294,Data Scientist,Technical Interview,Panelist 11,2025-10-20,6.0,6.0,Struggled with edge cases in coding round.,No,No
+Candidate 294,Data Scientist,Managerial Interview,Panelist 1,2025-10-26,5.0,6.0,"Great cultural fit, asked thoughtful questions.",Maybe,No
+Candidate 294,Data Scientist,Offer,HR Team,2025-11-03,,,Declined due to delays in process.,N/A,No
+Candidate 295,Data Scientist,Technical Interview,Panelist 1,2025-10-22,7.0,10.0,Needs improvement in code clarity.,Yes,No
+Candidate 295,Data Scientist,Managerial Interview,Panelist 10,2025-10-28,8.0,10.0,"Strong problem-solving, explained system design well.",No,No
+Candidate 296,Data Scientist,Technical Interview,Panelist 8,2025-10-01,6.0,5.0,Excellent domain knowledge in ML pipelines.,Yes,No
+Candidate 296,Data Scientist,Managerial Interview,Panelist 16,2025-10-08,6.0,10.0,Needs improvement in code clarity.,Maybe,Yes
+Candidate 299,Data Scientist,Technical Interview,Panelist 24,2025-11-05,6.0,9.0,Struggled with edge cases in coding round.,Maybe,No
+Candidate 299,Data Scientist,Managerial Interview,Panelist 6,2025-11-06,7.0,6.0,Excellent domain knowledge in ML pipelines.,Maybe,No
+Candidate 300,Data Scientist,Technical Interview,Panelist 1,2025-10-01,8.0,10.0,Struggled with edge cases in coding round.,Maybe,No
+Candidate 300,Data Scientist,Managerial Interview,Panelist 10,2025-10-02,8.0,7.0,"Strong problem-solving, explained system design well.",Yes,No
+Candidate 303,Data Scientist,Technical Interview,Panelist 9,2025-11-04,6.0,9.0,Struggled with edge cases in coding round.,Maybe,No
+Candidate 303,Data Scientist,Managerial Interview,Panelist 14,2025-11-10,6.0,9.0,"Great cultural fit, asked thoughtful questions.",No,No
+Candidate 304,Data Scientist,Technical Interview,Panelist 12,2025-10-18,10.0,6.0,Needs improvement in time complexity.,No,No
+Candidate 305,Data Scientist,Technical Interview,Panelist 1,2025-09-18,10.0,6.0,Needs improvement in communication.,Maybe,No
+Candidate 306,Data Scientist,Technical Interview,Panelist 18,2025-09-26,8.0,9.0,Excellent domain knowledge in ML pipelines.,Maybe,Yes
+Candidate 308,Data Scientist,Technical Interview,Panelist 24,2025-10-04,7.0,5.0,Needs improvement in code clarity.,Yes,No
+Candidate 308,Data Scientist,Managerial Interview,Panelist 25,2025-10-08,6.0,4.0,"Great cultural fit, asked thoughtful questions.",Maybe,No
+Candidate 309,Data Scientist,Technical Interview,Panelist 12,2025-11-04,6.0,9.0,Excellent domain knowledge in ML pipelines.,Yes,No
+Candidate 309,Data Scientist,Managerial Interview,Panelist 6,2025-11-11,6.0,5.0,Needs improvement in time complexity.,Maybe,No
+Candidate 311,Data Scientist,Technical Interview,Panelist 21,2025-10-09,4.0,5.0,"Strong problem-solving, explained system design well.",Maybe,Yes
+Candidate 311,Data Scientist,Managerial Interview,Panelist 5,2025-10-15,7.0,3.0,Excellent domain knowledge in ML pipelines.,Maybe,No
+Candidate 313,Data Scientist,Technical Interview,Panelist 11,2025-09-15,7.0,10.0,Excellent domain knowledge in ML pipelines.,Maybe,No
+Candidate 313,Data Scientist,Managerial Interview,Panelist 23,2025-09-21,8.0,7.0,Needs improvement in time complexity.,Yes,No
+Candidate 314,Data Scientist,Technical Interview,Panelist 17,2025-09-22,7.0,10.0,Excellent domain knowledge in ML pipelines.,No,Yes
+Candidate 314,Data Scientist,Managerial Interview,Panelist 16,2025-09-28,9.0,7.0,Excellent domain knowledge in ML pipelines.,Yes,Yes
+Candidate 315,Data Scientist,Technical Interview,Panelist 10,2025-10-30,5.0,10.0,"Great cultural fit, asked thoughtful questions.",No,No
+Candidate 316,Data Scientist,Technical Interview,Panelist 1,2025-09-14,8.0,8.0,Struggled with edge cases in coding round.,Maybe,No
+Candidate 316,Data Scientist,Managerial Interview,Panelist 13,2025-09-17,4.0,7.0,Needs improvement in communication.,Maybe,No
+Candidate 317,Data Scientist,Technical Interview,Panelist 6,2025-10-25,6.0,3.0,Excellent domain knowledge in ML pipelines.,Maybe,No
+Candidate 317,Data Scientist,Managerial Interview,Panelist 20,2025-10-27,3.0,3.0,Needs improvement in time complexity.,No,No
+Candidate 318,Data Scientist,Technical Interview,Panelist 3,2025-09-14,7.0,3.0,"Strong problem-solving, explained system design well.",No,No
+Candidate 319,Data Scientist,Technical Interview,Panelist 9,2025-10-22,9.0,9.0,Needs improvement in time complexity.,Yes,No
+Candidate 319,Data Scientist,Managerial Interview,Panelist 23,2025-10-23,8.0,10.0,Struggled with edge cases in coding round.,No,Yes
+Candidate 320,Data Scientist,Technical Interview,Panelist 16,2025-11-06,10.0,10.0,Excellent domain knowledge in ML pipelines.,Maybe,Yes
+Candidate 320,Data Scientist,Managerial Interview,Panelist 21,2025-11-11,10.0,8.0,"Strong problem-solving, explained system design well.",Maybe,Yes
+Candidate 321,Data Scientist,Technical Interview,Panelist 9,2025-10-14,10.0,10.0,Needs improvement in time complexity.,Maybe,No
+Candidate 321,Data Scientist,Managerial Interview,Panelist 24,2025-10-16,8.0,9.0,"Strong problem-solving, explained DP well.",Yes,No
+Candidate 322,Data Scientist,Technical Interview,Panelist 11,2025-11-05,10.0,10.0,Excellent domain knowledge in ML pipelines.,No,No
+Candidate 323,Data Scientist,Technical Interview,Panelist 13,2025-09-20,7.0,10.0,"Strong problem-solving, explained DP well.",Yes,No
+Candidate 323,Data Scientist,Managerial Interview,Panelist 1,2025-09-24,8.0,10.0,"Great cultural fit, asked thoughtful questions.",Yes,No
+Candidate 323,Data Scientist,Offer,HR Team,2025-10-01,,,Declined due to compensation mismatch.,N/A,No
+Candidate 324,Data Scientist,Technical Interview,Panelist 17,2025-10-08,7.0,10.0,Excellent domain knowledge in ML pipelines.,Maybe,Yes
+Candidate 324,Data Scientist,Managerial Interview,Panelist 19,2025-10-09,10.0,10.0,Needs improvement in time complexity.,Maybe,Yes
+Candidate 325,Data Scientist,Technical Interview,Panelist 14,2025-09-11,3.0,4.0,"Great cultural fit, asked thoughtful questions.",Maybe,No
+Candidate 325,Data Scientist,Managerial Interview,Panelist 2,2025-09-13,8.0,4.0,"Strong problem-solving, explained system design well.",No,No
+Candidate 326,Data Scientist,Technical Interview,Panelist 21,2025-11-02,10.0,10.0,"Great cultural fit, asked thoughtful questions.",No,Yes
+Candidate 326,Data Scientist,Managerial Interview,Panelist 2,2025-11-05,10.0,6.0,Excellent domain knowledge in ML pipelines.,Maybe,No
+Candidate 328,Data Scientist,Technical Interview,Panelist 4,2025-11-04,5.0,5.0,Excellent domain knowledge in ML pipelines.,Yes,No
+Candidate 328,Data Scientist,Managerial Interview,Panelist 20,2025-11-08,6.0,6.0,Struggled with edge cases in coding round.,Maybe,No
+Candidate 328,Data Scientist,Offer,HR Team,2025-11-14,,,Declined due to offer declined - better opportunity.,N/A,No
+Candidate 329,Data Scientist,Technical Interview,Panelist 5,2025-10-27,4.0,5.0,"Great cultural fit, asked thoughtful questions.",Maybe,Yes
+Candidate 329,Data Scientist,Managerial Interview,Panelist 16,2025-10-29,7.0,5.0,Excellent domain knowledge in ML pipelines.,Maybe,Yes
+Candidate 330,Data Scientist,Technical Interview,Panelist 7,2025-11-03,7.0,6.0,"Great cultural fit, asked thoughtful questions.",Maybe,No
+Candidate 330,Data Scientist,Managerial Interview,Panelist 14,2025-11-06,8.0,9.0,Needs improvement in code clarity.,Yes,No
+Candidate 330,Data Scientist,Offer,HR Team,2025-11-16,,,Declined due to delays in process.,N/A,No
+Candidate 331,Data Scientist,Technical Interview,Panelist 7,2025-09-06,9.0,3.0,"Strong problem-solving, explained system design well.",Yes,No
+Candidate 331,Data Scientist,Managerial Interview,Panelist 24,2025-09-09,3.0,8.0,Needs improvement in communication.,Yes,No
+Candidate 332,Data Scientist,Technical Interview,Panelist 20,2025-10-09,10.0,7.0,Needs improvement in communication.,Yes,Yes
+Candidate 333,Data Scientist,Technical Interview,Panelist 5,2025-10-14,3.0,5.0,Excellent domain knowledge in ML pipelines.,Maybe,Yes
+Candidate 333,Data Scientist,Managerial Interview,Panelist 16,2025-10-15,6.0,6.0,Struggled with edge cases in coding round.,Maybe,Yes
+Candidate 335,Data Scientist,Technical Interview,Panelist 3,2025-10-17,6.0,8.0,"Great cultural fit, asked thoughtful questions.",Yes,Yes
+Candidate 335,Data Scientist,Managerial Interview,Panelist 11,2025-10-22,8.0,6.0,Struggled with edge cases in coding round.,No,No
+Candidate 336,Data Scientist,Technical Interview,Panelist 9,2025-09-18,8.0,7.0,"Strong problem-solving, explained DP well.",Maybe,Yes
+Candidate 337,Data Scientist,Technical Interview,Panelist 18,2025-10-14,6.0,10.0,"Great cultural fit, asked thoughtful questions.",No,Yes
+Candidate 337,Data Scientist,Managerial Interview,Panelist 21,2025-10-21,9.0,10.0,Needs improvement in code clarity.,Yes,Yes
+Candidate 338,Data Scientist,Technical Interview,Panelist 15,2025-09-22,10.0,9.0,Needs improvement in time complexity.,No,Yes
+Candidate 340,Data Scientist,Technical Interview,Panelist 7,2025-10-22,9.0,8.0,Struggled with edge cases in coding round.,Yes,No
+Candidate 340,Data Scientist,Managerial Interview,Panelist 10,2025-10-28,9.0,9.0,"Strong problem-solving, explained API design well.",Maybe,No
+Candidate 341,Data Scientist,Technical Interview,Panelist 13,2025-11-16,8.0,7.0,Struggled with edge cases in coding round.,Maybe,No
+Candidate 341,Data Scientist,Managerial Interview,Panelist 7,2025-11-23,7.0,7.0,Struggled with edge cases in coding round.,Yes,No
+Candidate 342,Data Scientist,Technical Interview,Panelist 16,2025-11-09,5.0,8.0,"Great cultural fit, asked thoughtful questions.",Maybe,Yes
+Candidate 342,Data Scientist,Managerial Interview,Panelist 23,2025-11-15,8.0,6.0,Needs improvement in code clarity.,Yes,Yes
+Candidate 343,Data Scientist,Technical Interview,Panelist 7,2025-10-18,10.0,10.0,"Great cultural fit, asked thoughtful questions.",Yes,No
+Candidate 343,Data Scientist,Managerial Interview,Panelist 11,2025-10-25,8.0,8.0,"Strong problem-solving, explained DP well.",No,No
+Candidate 344,Data Scientist,Technical Interview,Panelist 15,2025-09-11,9.0,8.0,Struggled with edge cases in coding round.,Yes,Yes
+Candidate 344,Data Scientist,Managerial Interview,Panelist 6,2025-09-13,9.0,5.0,"Strong problem-solving, explained DP well.",Maybe,No
+Candidate 345,Data Scientist,Technical Interview,Panelist 21,2025-10-10,9.0,9.0,"Strong problem-solving, explained API design well.",No,Yes
+Candidate 345,Data Scientist,Managerial Interview,Panelist 1,2025-10-15,5.0,9.0,"Great cultural fit, asked thoughtful questions.",Yes,No
+Candidate 347,Data Scientist,Technical Interview,Panelist 4,2025-10-21,9.0,9.0,"Strong problem-solving, explained system design well.",No,Yes
+Candidate 349,Data Scientist,Technical Interview,Panelist 20,2025-09-22,7.0,8.0,Needs improvement in time complexity.,No,Yes
+Candidate 349,Data Scientist,Managerial Interview,Panelist 11,2025-09-28,10.0,10.0,"Strong problem-solving, explained DP well.",Maybe,No
+Candidate 350,Data Scientist,Technical Interview,Panelist 20,2025-09-08,7.0,7.0,Needs improvement in code clarity.,Yes,Yes
+Candidate 350,Data Scientist,Managerial Interview,Panelist 24,2025-09-10,3.0,3.0,Needs improvement in code clarity.,No,Yes
+Candidate 350,Data Scientist,Offer,HR Team,2025-09-17,,,Declined due to compensation mismatch.,N/A,No
+Candidate 351,Data Scientist,Technical Interview,Panelist 20,2025-09-11,7.0,7.0,"Strong problem-solving, explained DP well.",Yes,Yes
+Candidate 352,Data Scientist,Technical Interview,Panelist 17,2025-10-04,8.0,6.0,Needs improvement in communication.,Yes,Yes
+Candidate 352,Data Scientist,Managerial Interview,Panelist 10,2025-10-07,3.0,3.0,Struggled with edge cases in coding round.,Yes,No
+Candidate 353,Data Scientist,Technical Interview,Panelist 18,2025-09-09,6.0,10.0,Struggled with edge cases in coding round.,No,Yes
+Candidate 353,Data Scientist,Managerial Interview,Panelist 16,2025-09-14,10.0,10.0,Needs improvement in communication.,Yes,Yes
+Candidate 353,Data Scientist,Offer,HR Team,2025-09-24,,,Declined due to delays in process.,N/A,No
+Candidate 354,Data Scientist,Technical Interview,Panelist 13,2025-10-15,10.0,9.0,"Great cultural fit, asked thoughtful questions.",Maybe,No
+Candidate 354,Data Scientist,Managerial Interview,Panelist 23,2025-10-18,10.0,10.0,Needs improvement in time complexity.,Yes,Yes
+Candidate 356,Data Scientist,Technical Interview,Panelist 10,2025-09-21,4.0,7.0,"Great cultural fit, asked thoughtful questions.",Maybe,Yes
+Candidate 356,Data Scientist,Managerial Interview,Panelist 3,2025-09-27,9.0,8.0,"Great cultural fit, asked thoughtful questions.",Maybe,Yes
+Candidate 357,Data Scientist,Technical Interview,Panelist 7,2025-10-28,5.0,4.0,Excellent domain knowledge in ML pipelines.,Yes,No
+Candidate 358,Data Scientist,Technical Interview,Panelist 3,2025-10-27,6.0,8.0,Excellent domain knowledge in ML pipelines.,Yes,Yes
+Candidate 358,Data Scientist,Managerial Interview,Panelist 1,2025-10-28,10.0,8.0,Excellent domain knowledge in ML pipelines.,Yes,No
+Candidate 359,Data Scientist,Technical Interview,Panelist 13,2025-10-23,7.0,9.0,"Strong problem-solving, explained system design well.",Yes,Yes
+Candidate 359,Data Scientist,Managerial Interview,Panelist 5,2025-10-29,10.0,10.0,Needs improvement in code clarity.,No,Yes
+Candidate 360,Data Scientist,Technical Interview,Panelist 16,2025-10-28,7.0,10.0,Struggled with edge cases in coding round.,No,Yes
+Candidate 360,Data Scientist,Managerial Interview,Panelist 24,2025-10-29,7.0,10.0,Excellent domain knowledge in ML pipelines.,Maybe,Yes
+Candidate 360,Data Scientist,Offer,HR Team,2025-11-02,,,Declined due to cultural misfit.,N/A,No
+Candidate 361,Data Scientist,Technical Interview,Panelist 14,2025-11-17,8.0,9.0,"Great cultural fit, asked thoughtful questions.",Yes,No
+Candidate 361,Data Scientist,Managerial Interview,Panelist 4,2025-11-23,9.0,6.0,Struggled with edge cases in coding round.,Yes,Yes
+Candidate 362,Data Scientist,Technical Interview,Panelist 4,2025-10-29,5.0,7.0,Excellent domain knowledge in ML pipelines.,Yes,Yes
+Candidate 363,Data Scientist,Technical Interview,Panelist 25,2025-09-06,8.0,7.0,Excellent domain knowledge in ML pipelines.,Maybe,No
+Candidate 363,Data Scientist,Managerial Interview,Panelist 15,2025-09-11,10.0,8.0,Struggled with edge cases in coding round.,Maybe,Yes
+Candidate 363,Data Scientist,Offer,HR Team,2025-09-20,,,Declined due to delays in process.,N/A,No
+Candidate 364,Data Scientist,Technical Interview,Panelist 10,2025-09-25,9.0,8.0,Needs improvement in communication.,Maybe,Yes
+Candidate 364,Data Scientist,Managerial Interview,Panelist 2,2025-10-01,10.0,8.0,Struggled with edge cases in coding round.,No,No
+Candidate 365,Data Scientist,Technical Interview,Panelist 18,2025-10-30,3.0,6.0,"Great cultural fit, asked thoughtful questions.",No,Yes
+Candidate 365,Data Scientist,Managerial Interview,Panelist 23,2025-11-03,7.0,3.0,Needs improvement in communication.,Maybe,Yes
+Candidate 366,Data Scientist,Technical Interview,Panelist 21,2025-09-15,8.0,10.0,Struggled with edge cases in coding round.,Yes,Yes
+Candidate 366,Data Scientist,Managerial Interview,Panelist 10,2025-09-19,8.0,5.0,Struggled with edge cases in coding round.,Maybe,Yes
+Candidate 367,Data Scientist,Technical Interview,Panelist 16,2025-09-26,10.0,9.0,Struggled with edge cases in coding round.,No,Yes
+Candidate 367,Data Scientist,Managerial Interview,Panelist 19,2025-09-29,10.0,10.0,Needs improvement in time complexity.,No,Yes
+Candidate 368,Data Scientist,Technical Interview,Panelist 25,2025-11-08,8.0,3.0,Excellent domain knowledge in ML pipelines.,Maybe,Yes
+Candidate 368,Data Scientist,Managerial Interview,Panelist 11,2025-11-15,9.0,8.0,Needs improvement in time complexity.,Yes,No
+Candidate 370,Data Scientist,Technical Interview,Panelist 18,2025-09-28,6.0,9.0,Needs improvement in communication.,Yes,Yes
+Candidate 370,Data Scientist,Managerial Interview,Panelist 7,2025-10-05,10.0,8.0,"Great cultural fit, asked thoughtful questions.",No,Yes
+Candidate 370,Data Scientist,Offer,HR Team,2025-10-12,,,Declined due to cultural misfit.,N/A,No
+Candidate 371,Data Scientist,Technical Interview,Panelist 7,2025-10-01,8.0,9.0,Excellent domain knowledge in ML pipelines.,Yes,Yes
+Candidate 371,Data Scientist,Managerial Interview,Panelist 14,2025-10-08,7.0,6.0,"Great cultural fit, asked thoughtful questions.",Yes,No
+Candidate 371,Data Scientist,Offer,HR Team,2025-10-15,,,Declined due to delays in process.,N/A,No
+Candidate 373,Data Scientist,Technical Interview,Panelist 4,2025-11-12,5.0,7.0,"Great cultural fit, asked thoughtful questions.",Maybe,Yes
+Candidate 373,Data Scientist,Managerial Interview,Panelist 20,2025-11-17,6.0,8.0,"Great cultural fit, asked thoughtful questions.",Yes,Yes
+Candidate 374,Data Scientist,Technical Interview,Panelist 14,2025-10-30,5.0,8.0,"Strong problem-solving, explained DP well.",No,No
+Candidate 374,Data Scientist,Managerial Interview,Panelist 21,2025-10-31,10.0,10.0,Excellent domain knowledge in ML pipelines.,Yes,Yes
+Candidate 375,Data Scientist,Technical Interview,Panelist 23,2025-11-14,4.0,3.0,Excellent domain knowledge in ML pipelines.,Maybe,Yes
+Candidate 375,Data Scientist,Managerial Interview,Panelist 22,2025-11-16,5.0,7.0,"Strong problem-solving, explained DP well.",No,Yes
+Candidate 375,Data Scientist,Offer,HR Team,2025-11-20,,,Declined due to delays in process.,N/A,No
+Candidate 376,Data Scientist,Technical Interview,Panelist 13,2025-09-24,5.0,7.0,"Strong problem-solving, explained API design well.",No,Yes
+Candidate 376,Data Scientist,Managerial Interview,Panelist 12,2025-09-25,7.0,5.0,"Strong problem-solving, explained system design well.",Yes,Yes
+Candidate 377,Data Scientist,Technical Interview,Panelist 12,2025-11-08,7.0,7.0,Struggled with edge cases in coding round.,Maybe,Yes
+Candidate 379,Data Scientist,Technical Interview,Panelist 22,2025-10-03,9.0,9.0,Struggled with edge cases in coding round.,Yes,Yes
+Candidate 380,Data Scientist,Technical Interview,Panelist 20,2025-10-21,5.0,3.0,Struggled with edge cases in coding round.,Yes,Yes
+Candidate 380,Data Scientist,Managerial Interview,Panelist 24,2025-10-23,3.0,5.0,Needs improvement in code clarity.,Maybe,Yes
+Candidate 381,Data Scientist,Technical Interview,Panelist 14,2025-09-23,10.0,9.0,Struggled with edge cases in coding round.,Maybe,No
+Candidate 381,Data Scientist,Managerial Interview,Panelist 8,2025-09-25,8.0,7.0,"Strong problem-solving, explained API design well.",No,No
+Candidate 382,Data Scientist,Technical Interview,Panelist 12,2025-10-21,8.0,9.0,Excellent domain knowledge in ML pipelines.,Yes,Yes
+Candidate 382,Data Scientist,Managerial Interview,Panelist 24,2025-10-24,9.0,6.0,"Great cultural fit, asked thoughtful questions.",Yes,Yes
+Candidate 383,Data Scientist,Technical Interview,Panelist 10,2025-09-29,10.0,9.0,Needs improvement in time complexity.,Yes,Yes
+Candidate 383,Data Scientist,Managerial Interview,Panelist 9,2025-10-05,4.0,10.0,"Great cultural fit, asked thoughtful questions.",No,Yes
+Candidate 384,Data Scientist,Technical Interview,Panelist 5,2025-11-06,3.0,9.0,Needs improvement in time complexity.,Maybe,Yes
+Candidate 384,Data Scientist,Managerial Interview,Panelist 17,2025-11-11,6.0,4.0,Excellent domain knowledge in ML pipelines.,No,Yes
+Candidate 386,Data Scientist,Technical Interview,Panelist 2,2025-10-11,5.0,5.0,"Strong problem-solving, explained DP well.",Yes,No
+Candidate 386,Data Scientist,Managerial Interview,Panelist 11,2025-10-14,9.0,8.0,Needs improvement in code clarity.,No,Yes
+Candidate 387,Data Scientist,Technical Interview,Panelist 13,2025-11-21,10.0,10.0,Excellent domain knowledge in ML pipelines.,Maybe,Yes
+Candidate 387,Data Scientist,Managerial Interview,Panelist 9,2025-11-24,8.0,10.0,Struggled with edge cases in coding round.,Yes,Yes
+Candidate 388,Data Scientist,Technical Interview,Panelist 6,2025-10-02,10.0,7.0,Needs improvement in time complexity.,Yes,No
+Candidate 388,Data Scientist,Managerial Interview,Panelist 21,2025-10-06,10.0,9.0,"Strong problem-solving, explained API design well.",Maybe,Yes
+Candidate 388,Data Scientist,Offer,HR Team,2025-10-13,,,Declined due to offer declined - better opportunity.,N/A,No
+Candidate 390,Data Scientist,Technical Interview,Panelist 11,2025-09-19,8.0,10.0,"Great cultural fit, asked thoughtful questions.",Maybe,Yes
+Candidate 391,Data Scientist,Technical Interview,Panelist 21,2025-10-28,8.0,5.0,"Strong problem-solving, explained API design well.",No,Yes
+Candidate 392,Data Scientist,Technical Interview,Panelist 14,2025-09-13,7.0,9.0,Needs improvement in code clarity.,Maybe,Yes
+Candidate 392,Data Scientist,Managerial Interview,Panelist 12,2025-09-16,10.0,8.0,"Great cultural fit, asked thoughtful questions.",No,Yes
+Candidate 393,Data Scientist,Technical Interview,Panelist 11,2025-11-06,10.0,9.0,"Great cultural fit, asked thoughtful questions.",No,Yes
+Candidate 393,Data Scientist,Managerial Interview,Panelist 20,2025-11-10,8.0,8.0,Struggled with edge cases in coding round.,No,Yes
+Candidate 394,Data Scientist,Technical Interview,Panelist 18,2025-10-03,7.0,8.0,"Great cultural fit, asked thoughtful questions.",No,Yes
+Candidate 394,Data Scientist,Managerial Interview,Panelist 5,2025-10-10,7.0,9.0,Needs improvement in code clarity.,Yes,Yes
+Candidate 395,Data Scientist,Technical Interview,Panelist 6,2025-11-05,6.0,8.0,"Strong problem-solving, explained DP well.",Yes,No
+Candidate 395,Data Scientist,Managerial Interview,Panelist 25,2025-11-07,7.0,8.0,"Great cultural fit, asked thoughtful questions.",No,Yes
+Candidate 396,Data Scientist,Technical Interview,Panelist 15,2025-09-13,6.0,8.0,"Great cultural fit, asked thoughtful questions.",Maybe,Yes
+Candidate 396,Data Scientist,Managerial Interview,Panelist 3,2025-09-16,4.0,9.0,Needs improvement in time complexity.,No,Yes
+Candidate 396,Data Scientist,Offer,HR Team,2025-09-23,,,Declined due to cultural misfit.,N/A,No
+Candidate 397,Data Scientist,Technical Interview,Panelist 3,2025-10-26,7.0,6.0,Needs improvement in communication.,No,Yes
+Candidate 399,Data Scientist,Technical Interview,Panelist 25,2025-10-16,9.0,7.0,"Strong problem-solving, explained DP well.",No,Yes
+Candidate 399,Data Scientist,Managerial Interview,Panelist 17,2025-10-17,9.0,9.0,Struggled with edge cases in coding round.,Maybe,Yes
+Candidate 401,Data Scientist,Technical Interview,Panelist 11,2025-10-04,5.0,7.0,Excellent domain knowledge in ML pipelines.,No,Yes
+Candidate 401,Data Scientist,Managerial Interview,Panelist 13,2025-10-10,8.0,8.0,Needs improvement in communication.,Maybe,Yes
+Candidate 402,Data Scientist,Technical Interview,Panelist 12,2025-09-19,10.0,10.0,Struggled with edge cases in coding round.,No,Yes
+Candidate 402,Data Scientist,Managerial Interview,Panelist 4,2025-09-21,10.0,9.0,Struggled with edge cases in coding round.,No,Yes
+Candidate 402,Data Scientist,Offer,HR Team,2025-09-28,,,Declined due to delays in process.,N/A,No
+Candidate 403,Data Scientist,Technical Interview,Panelist 1,2025-09-17,5.0,5.0,Excellent domain knowledge in ML pipelines.,No,No
+Candidate 405,Data Scientist,Technical Interview,Panelist 4,2025-10-22,5.0,7.0,Needs improvement in code clarity.,Maybe,Yes
+Candidate 405,Data Scientist,Managerial Interview,Panelist 25,2025-10-27,7.0,3.0,Struggled with edge cases in coding round.,Yes,Yes
+Candidate 406,Data Scientist,Technical Interview,Panelist 22,2025-10-14,10.0,9.0,Struggled with edge cases in coding round.,No,Yes
+Candidate 406,Data Scientist,Managerial Interview,Panelist 12,2025-10-16,10.0,9.0,Needs improvement in time complexity.,Maybe,Yes
+Candidate 407,Data Scientist,Technical Interview,Panelist 1,2025-09-28,3.0,7.0,"Great cultural fit, asked thoughtful questions.",Yes,Yes
+Candidate 407,Data Scientist,Managerial Interview,Panelist 17,2025-10-01,8.0,5.0,Struggled with edge cases in coding round.,Maybe,Yes
+Candidate 408,Data Scientist,Technical Interview,Panelist 19,2025-11-17,3.0,3.0,"Great cultural fit, asked thoughtful questions.",No,Yes
+Candidate 408,Data Scientist,Managerial Interview,Panelist 16,2025-11-23,3.0,3.0,"Great cultural fit, asked thoughtful questions.",Maybe,Yes
+Candidate 411,Data Scientist,Technical Interview,Panelist 12,2025-10-03,3.0,9.0,Struggled with edge cases in coding round.,Yes,Yes
+Candidate 411,Data Scientist,Managerial Interview,Panelist 10,2025-10-08,4.0,4.0,Needs improvement in code clarity.,Yes,Yes
+Candidate 411,Data Scientist,Offer,HR Team,2025-10-16,,,Declined due to delays in process.,N/A,No
+Candidate 412,Data Scientist,Technical Interview,Panelist 19,2025-10-29,5.0,10.0,Needs improvement in time complexity.,No,Yes
+Candidate 412,Data Scientist,Managerial Interview,Panelist 8,2025-11-02,10.0,10.0,Excellent domain knowledge in ML pipelines.,No,No
+Candidate 414,Data Scientist,Technical Interview,Panelist 24,2025-10-20,8.0,4.0,"Strong problem-solving, explained system design well.",No,Yes
+Candidate 415,Data Scientist,Technical Interview,Panelist 7,2025-09-21,10.0,8.0,"Strong problem-solving, explained DP well.",No,Yes
+Candidate 417,Data Scientist,Technical Interview,Panelist 4,2025-10-23,9.0,8.0,Excellent domain knowledge in ML pipelines.,Yes,Yes
+Candidate 417,Data Scientist,Managerial Interview,Panelist 1,2025-10-25,8.0,7.0,Needs improvement in time complexity.,No,Yes
+Candidate 418,Data Scientist,Technical Interview,Panelist 6,2025-11-07,10.0,10.0,Struggled with edge cases in coding round.,Yes,No
+Candidate 418,Data Scientist,Managerial Interview,Panelist 6,2025-11-10,10.0,5.0,Struggled with edge cases in coding round.,No,Yes
+Candidate 421,Data Scientist,Technical Interview,Panelist 23,2025-09-15,8.0,10.0,"Great cultural fit, asked thoughtful questions.",Yes,Yes
+Candidate 421,Data Scientist,Managerial Interview,Panelist 7,2025-09-20,10.0,9.0,Excellent domain knowledge in ML pipelines.,Maybe,Yes
+Candidate 422,Data Scientist,Technical Interview,Panelist 11,2025-11-12,5.0,6.0,"Strong problem-solving, explained DP well.",Maybe,Yes
+Candidate 422,Data Scientist,Managerial Interview,Panelist 15,2025-11-13,6.0,10.0,Excellent domain knowledge in ML pipelines.,Maybe,Yes
+Candidate 422,Data Scientist,Offer,HR Team,2025-11-18,,,Declined due to delays in process.,N/A,No
+Candidate 425,Data Scientist,Technical Interview,Panelist 1,2025-11-06,9.0,10.0,"Strong problem-solving, explained system design well.",Yes,Yes
+Candidate 427,Data Scientist,Technical Interview,Panelist 24,2025-11-19,3.0,4.0,"Strong problem-solving, explained system design well.",No,Yes
+Candidate 427,Data Scientist,Managerial Interview,Panelist 21,2025-11-25,5.0,4.0,Struggled with edge cases in coding round.,Yes,Yes
+Candidate 428,Data Scientist,Technical Interview,Panelist 17,2025-11-15,6.0,6.0,Struggled with edge cases in coding round.,Maybe,Yes
+Candidate 428,Data Scientist,Managerial Interview,Panelist 3,2025-11-17,5.0,6.0,"Strong problem-solving, explained system design well.",Yes,Yes
+Candidate 429,Data Scientist,Technical Interview,Panelist 12,2025-09-08,7.0,6.0,Excellent domain knowledge in ML pipelines.,No,Yes
+Candidate 429,Data Scientist,Managerial Interview,Panelist 2,2025-09-09,8.0,6.0,"Great cultural fit, asked thoughtful questions.",Yes,No
+Candidate 431,Data Scientist,Technical Interview,Panelist 7,2025-11-01,7.0,10.0,Excellent domain knowledge in ML pipelines.,No,Yes
+Candidate 432,Data Scientist,Technical Interview,Panelist 1,2025-10-05,8.0,8.0,"Great cultural fit, asked thoughtful questions.",Yes,Yes
+Candidate 432,Data Scientist,Managerial Interview,Panelist 20,2025-10-06,8.0,10.0,Needs improvement in code clarity.,No,Yes
+Candidate 433,Data Scientist,Technical Interview,Panelist 15,2025-10-21,6.0,9.0,Excellent domain knowledge in ML pipelines.,Maybe,Yes
+Candidate 433,Data Scientist,Managerial Interview,Panelist 16,2025-10-26,7.0,9.0,"Strong problem-solving, explained API design well.",Yes,Yes
+Candidate 434,Data Scientist,Technical Interview,Panelist 22,2025-10-07,5.0,8.0,"Great cultural fit, asked thoughtful questions.",Maybe,Yes
+Candidate 434,Data Scientist,Managerial Interview,Panelist 14,2025-10-12,10.0,9.0,Excellent domain knowledge in ML pipelines.,Maybe,Yes
+Candidate 435,Data Scientist,Technical Interview,Panelist 16,2025-09-25,9.0,9.0,"Strong problem-solving, explained DP well.",Yes,Yes
+Candidate 435,Data Scientist,Managerial Interview,Panelist 16,2025-09-26,10.0,9.0,"Strong problem-solving, explained API design well.",No,Yes
+Candidate 436,Data Scientist,Technical Interview,Panelist 16,2025-09-25,10.0,8.0,Struggled with edge cases in coding round.,No,Yes
+Candidate 436,Data Scientist,Managerial Interview,Panelist 10,2025-09-28,7.0,8.0,"Great cultural fit, asked thoughtful questions.",Maybe,Yes
+Candidate 437,Data Scientist,Technical Interview,Panelist 12,2025-11-07,7.0,6.0,Struggled with edge cases in coding round.,Yes,Yes
+Candidate 438,Data Scientist,Technical Interview,Panelist 10,2025-10-17,10.0,8.0,"Strong problem-solving, explained DP well.",No,Yes
+Candidate 438,Data Scientist,Managerial Interview,Panelist 2,2025-10-21,8.0,8.0,"Great cultural fit, asked thoughtful questions.",Maybe,No
+Candidate 438,Data Scientist,Offer,HR Team,2025-10-26,,,Declined due to compensation mismatch.,N/A,No
+Candidate 439,Data Scientist,Technical Interview,Panelist 24,2025-11-12,10.0,9.0,Needs improvement in time complexity.,Yes,Yes
+Candidate 440,Data Scientist,Technical Interview,Panelist 10,2025-10-10,3.0,10.0,"Great cultural fit, asked thoughtful questions.",Maybe,Yes
+Candidate 440,Data Scientist,Managerial Interview,Panelist 4,2025-10-15,4.0,8.0,Needs improvement in communication.,Yes,Yes
+Candidate 442,Data Scientist,Technical Interview,Panelist 21,2025-09-14,10.0,8.0,Needs improvement in code clarity.,No,Yes
+Candidate 442,Data Scientist,Managerial Interview,Panelist 6,2025-09-15,7.0,10.0,"Great cultural fit, asked thoughtful questions.",Maybe,Yes
+Candidate 443,Data Scientist,Technical Interview,Panelist 20,2025-10-20,10.0,7.0,Excellent domain knowledge in ML pipelines.,No,Yes
+Candidate 443,Data Scientist,Managerial Interview,Panelist 12,2025-10-25,7.0,6.0,"Strong problem-solving, explained DP well.",Maybe,Yes
+Candidate 444,Data Scientist,Technical Interview,Panelist 6,2025-10-20,7.0,6.0,"Strong problem-solving, explained system design well.",Maybe,Yes
+Candidate 445,Data Scientist,Technical Interview,Panelist 19,2025-09-16,4.0,5.0,"Great cultural fit, asked thoughtful questions.",Yes,Yes
+Candidate 446,Data Scientist,Technical Interview,Panelist 3,2025-09-19,4.0,9.0,Excellent domain knowledge in ML pipelines.,No,Yes
+Candidate 446,Data Scientist,Managerial Interview,Panelist 16,2025-09-26,4.0,6.0,"Strong problem-solving, explained API design well.",No,Yes
+Candidate 447,Data Scientist,Technical Interview,Panelist 12,2025-10-22,10.0,10.0,Excellent domain knowledge in ML pipelines.,Maybe,Yes
+Candidate 447,Data Scientist,Managerial Interview,Panelist 17,2025-10-27,9.0,6.0,"Strong problem-solving, explained API design well.",Maybe,Yes
+Candidate 450,Data Scientist,Technical Interview,Panelist 5,2025-09-19,5.0,6.0,Excellent domain knowledge in ML pipelines.,Yes,Yes
+Candidate 450,Data Scientist,Managerial Interview,Panelist 8,2025-09-22,6.0,5.0,Excellent domain knowledge in ML pipelines.,No,Yes
+Candidate 451,Data Scientist,Technical Interview,Panelist 8,2025-09-20,8.0,9.0,Excellent domain knowledge in ML pipelines.,Maybe,Yes
+Candidate 451,Data Scientist,Managerial Interview,Panelist 24,2025-09-27,10.0,9.0,Struggled with edge cases in coding round.,Yes,Yes
+Candidate 452,Data Scientist,Technical Interview,Panelist 12,2025-09-28,10.0,7.0,"Great cultural fit, asked thoughtful questions.",No,Yes
+Candidate 452,Data Scientist,Managerial Interview,Panelist 8,2025-10-04,8.0,9.0,Excellent domain knowledge in ML pipelines.,Yes,Yes
+Candidate 453,Data Scientist,Technical Interview,Panelist 15,2025-10-10,10.0,6.0,Struggled with edge cases in coding round.,Yes,Yes
+Candidate 453,Data Scientist,Managerial Interview,Panelist 3,2025-10-13,5.0,10.0,"Strong problem-solving, explained system design well.",No,Yes
+Candidate 454,Data Scientist,Technical Interview,Panelist 20,2025-10-28,10.0,8.0,Needs improvement in time complexity.,Yes,Yes
+Candidate 454,Data Scientist,Managerial Interview,Panelist 14,2025-11-01,10.0,5.0,Excellent domain knowledge in ML pipelines.,No,Yes
+Candidate 455,Data Scientist,Technical Interview,Panelist 9,2025-11-07,10.0,7.0,"Great cultural fit, asked thoughtful questions.",Maybe,Yes
+Candidate 455,Data Scientist,Managerial Interview,Panelist 9,2025-11-10,7.0,4.0,"Strong problem-solving, explained API design well.",No,Yes
+Candidate 456,Data Scientist,Technical Interview,Panelist 9,2025-10-19,9.0,5.0,Needs improvement in code clarity.,No,Yes
+Candidate 456,Data Scientist,Managerial Interview,Panelist 16,2025-10-26,9.0,9.0,"Strong problem-solving, explained DP well.",Yes,Yes
+Candidate 459,Data Scientist,Technical Interview,Panelist 1,2025-10-21,8.0,6.0,"Great cultural fit, asked thoughtful questions.",No,Yes
+Candidate 459,Data Scientist,Managerial Interview,Panelist 6,2025-10-22,10.0,7.0,"Strong problem-solving, explained DP well.",Yes,Yes
+Candidate 461,Data Scientist,Technical Interview,Panelist 24,2025-09-20,4.0,4.0,Excellent domain knowledge in ML pipelines.,No,Yes
+Candidate 461,Data Scientist,Managerial Interview,Panelist 9,2025-09-23,8.0,8.0,Needs improvement in code clarity.,No,Yes
+Candidate 462,Data Scientist,Technical Interview,Panelist 19,2025-09-17,10.0,4.0,Struggled with edge cases in coding round.,Maybe,Yes
+Candidate 463,Data Scientist,Technical Interview,Panelist 15,2025-10-30,10.0,10.0,Struggled with edge cases in coding round.,Maybe,Yes
+Candidate 463,Data Scientist,Managerial Interview,Panelist 14,2025-11-06,9.0,10.0,Excellent domain knowledge in ML pipelines.,Maybe,Yes
+Candidate 464,Data Scientist,Technical Interview,Panelist 15,2025-10-23,9.0,5.0,"Great cultural fit, asked thoughtful questions.",No,Yes
+Candidate 464,Data Scientist,Managerial Interview,Panelist 25,2025-10-29,4.0,5.0,Needs improvement in communication.,Yes,Yes
+Candidate 467,Data Scientist,Technical Interview,Panelist 6,2025-10-14,4.0,3.0,Needs improvement in communication.,Maybe,Yes
+Candidate 468,Data Scientist,Technical Interview,Panelist 1,2025-09-20,8.0,10.0,Struggled with edge cases in coding round.,Maybe,Yes
+Candidate 468,Data Scientist,Managerial Interview,Panelist 23,2025-09-21,8.0,6.0,Struggled with edge cases in coding round.,No,Yes
+Candidate 469,Data Scientist,Technical Interview,Panelist 17,2025-10-10,4.0,7.0,"Strong problem-solving, explained API design well.",No,Yes
+Candidate 469,Data Scientist,Managerial Interview,Panelist 11,2025-10-15,7.0,9.0,"Strong problem-solving, explained API design well.",Yes,Yes
+Candidate 470,Data Scientist,Technical Interview,Panelist 7,2025-10-14,10.0,9.0,Needs improvement in time complexity.,Maybe,Yes
+Candidate 470,Data Scientist,Managerial Interview,Panelist 20,2025-10-17,7.0,10.0,Struggled with edge cases in coding round.,Maybe,Yes
+Candidate 471,Data Scientist,Technical Interview,Panelist 25,2025-10-31,3.0,4.0,Struggled with edge cases in coding round.,Yes,Yes
+Candidate 471,Data Scientist,Managerial Interview,Panelist 4,2025-11-06,10.0,4.0,Struggled with edge cases in coding round.,Maybe,Yes
+Candidate 471,Data Scientist,Offer,HR Team,2025-11-16,,,Declined due to compensation mismatch.,N/A,No
+Candidate 472,Data Scientist,Technical Interview,Panelist 9,2025-10-12,7.0,8.0,"Great cultural fit, asked thoughtful questions.",No,Yes
+Candidate 472,Data Scientist,Managerial Interview,Panelist 18,2025-10-14,9.0,10.0,"Great cultural fit, asked thoughtful questions.",Yes,Yes
+Candidate 473,Data Scientist,Technical Interview,Panelist 7,2025-10-27,10.0,10.0,Needs improvement in time complexity.,No,Yes
+Candidate 473,Data Scientist,Managerial Interview,Panelist 14,2025-10-30,9.0,10.0,"Strong problem-solving, explained DP well.",Maybe,Yes
+Candidate 474,Data Scientist,Technical Interview,Panelist 9,2025-10-15,10.0,9.0,Struggled with edge cases in coding round.,Yes,Yes
+Candidate 474,Data Scientist,Managerial Interview,Panelist 5,2025-10-20,10.0,10.0,Excellent domain knowledge in ML pipelines.,No,Yes
+Candidate 475,Data Scientist,Technical Interview,Panelist 8,2025-10-08,6.0,3.0,"Great cultural fit, asked thoughtful questions.",Maybe,Yes
+Candidate 475,Data Scientist,Managerial Interview,Panelist 1,2025-10-13,9.0,4.0,Excellent domain knowledge in ML pipelines.,Yes,Yes
+Candidate 476,Data Scientist,Technical Interview,Panelist 19,2025-11-12,7.0,7.0,Struggled with edge cases in coding round.,No,Yes
+Candidate 476,Data Scientist,Managerial Interview,Panelist 11,2025-11-13,6.0,5.0,Needs improvement in code clarity.,Maybe,Yes
+Candidate 476,Data Scientist,Offer,HR Team,2025-11-20,,,Declined due to compensation mismatch.,N/A,No
+Candidate 477,Data Scientist,Technical Interview,Panelist 2,2025-09-05,4.0,8.0,Struggled with edge cases in coding round.,Yes,No
+Candidate 477,Data Scientist,Managerial Interview,Panelist 1,2025-09-09,4.0,5.0,"Great cultural fit, asked thoughtful questions.",Maybe,Yes
+Candidate 478,Data Scientist,Technical Interview,Panelist 5,2025-11-14,10.0,10.0,"Great cultural fit, asked thoughtful questions.",No,Yes
+Candidate 478,Data Scientist,Managerial Interview,Panelist 10,2025-11-15,8.0,7.0,Struggled with edge cases in coding round.,No,Yes
+Candidate 478,Data Scientist,Offer,HR Team,2025-11-25,,,Declined due to delays in process.,N/A,No
+Candidate 479,Data Scientist,Technical Interview,Panelist 18,2025-11-04,10.0,5.0,"Strong problem-solving, explained API design well.",Maybe,Yes
+Candidate 480,Data Scientist,Technical Interview,Panelist 20,2025-10-31,4.0,3.0,Needs improvement in communication.,Yes,Yes
+Candidate 480,Data Scientist,Managerial Interview,Panelist 5,2025-11-02,8.0,9.0,"Strong problem-solving, explained system design well.",Yes,Yes
+Candidate 481,Data Scientist,Technical Interview,Panelist 7,2025-11-10,6.0,10.0,Needs improvement in time complexity.,No,Yes
+Candidate 481,Data Scientist,Managerial Interview,Panelist 9,2025-11-17,4.0,4.0,"Great cultural fit, asked thoughtful questions.",Yes,Yes
+Candidate 482,Data Scientist,Technical Interview,Panelist 1,2025-10-22,3.0,3.0,Excellent domain knowledge in ML pipelines.,Yes,Yes
+Candidate 483,Data Scientist,Technical Interview,Panelist 20,2025-10-12,10.0,8.0,Excellent domain knowledge in ML pipelines.,Yes,Yes
+Candidate 484,Data Scientist,Technical Interview,Panelist 11,2025-09-19,7.0,6.0,Excellent domain knowledge in ML pipelines.,Maybe,Yes
+Candidate 484,Data Scientist,Managerial Interview,Panelist 11,2025-09-26,6.0,4.0,"Great cultural fit, asked thoughtful questions.",Maybe,Yes
+Candidate 485,Data Scientist,Technical Interview,Panelist 1,2025-11-08,6.0,5.0,Struggled with edge cases in coding round.,Maybe,Yes
+Candidate 486,Data Scientist,Technical Interview,Panelist 6,2025-09-22,9.0,8.0,"Strong problem-solving, explained system design well.",Maybe,Yes
+Candidate 486,Data Scientist,Managerial Interview,Panelist 21,2025-09-28,10.0,7.0,Needs improvement in time complexity.,No,Yes
+Candidate 487,Data Scientist,Technical Interview,Panelist 25,2025-10-12,7.0,6.0,Needs improvement in time complexity.,Yes,Yes
+Candidate 487,Data Scientist,Managerial Interview,Panelist 18,2025-10-14,6.0,3.0,"Great cultural fit, asked thoughtful questions.",Yes,Yes
+Candidate 489,Data Scientist,Technical Interview,Panelist 21,2025-10-18,5.0,3.0,Struggled with edge cases in coding round.,No,Yes
+Candidate 489,Data Scientist,Managerial Interview,Panelist 12,2025-10-20,8.0,4.0,Struggled with edge cases in coding round.,Maybe,Yes
+Candidate 490,Data Scientist,Technical Interview,Panelist 4,2025-11-08,6.0,10.0,Excellent domain knowledge in ML pipelines.,Yes,Yes
+Candidate 490,Data Scientist,Managerial Interview,Panelist 20,2025-11-11,10.0,8.0,Needs improvement in time complexity.,Yes,Yes
+Candidate 491,Data Scientist,Technical Interview,Panelist 14,2025-09-24,9.0,9.0,"Great cultural fit, asked thoughtful questions.",Yes,Yes
+Candidate 491,Data Scientist,Managerial Interview,Panelist 18,2025-09-28,9.0,7.0,Struggled with edge cases in coding round.,No,Yes
+Candidate 492,Data Scientist,Technical Interview,Panelist 1,2025-11-02,7.0,9.0,"Great cultural fit, asked thoughtful questions.",No,Yes
+Candidate 493,Data Scientist,Technical Interview,Panelist 10,2025-10-05,8.0,5.0,Struggled with edge cases in coding round.,Yes,Yes
+Candidate 493,Data Scientist,Managerial Interview,Panelist 4,2025-10-12,10.0,7.0,"Strong problem-solving, explained API design well.",Maybe,Yes
+Candidate 494,Data Scientist,Technical Interview,Panelist 24,2025-11-09,8.0,7.0,"Great cultural fit, asked thoughtful questions.",No,Yes
+Candidate 494,Data Scientist,Managerial Interview,Panelist 4,2025-11-12,10.0,4.0,"Strong problem-solving, explained API design well.",Yes,Yes
+Candidate 495,Data Scientist,Technical Interview,Panelist 14,2025-09-20,10.0,9.0,"Great cultural fit, asked thoughtful questions.",Yes,Yes
+Candidate 495,Data Scientist,Managerial Interview,Panelist 11,2025-09-24,10.0,9.0,"Strong problem-solving, explained DP well.",Maybe,Yes
+Candidate 496,Data Scientist,Technical Interview,Panelist 17,2025-10-23,9.0,9.0,"Strong problem-solving, explained system design well.",Yes,Yes
+Candidate 496,Data Scientist,Managerial Interview,Panelist 4,2025-10-30,5.0,10.0,"Great cultural fit, asked thoughtful questions.",No,Yes
+Candidate 496,Data Scientist,Offer,HR Team,2025-11-06,,,Declined due to cultural misfit.,N/A,No
+Candidate 497,Data Scientist,Technical Interview,Panelist 7,2025-11-15,3.0,3.0,Needs improvement in time complexity.,No,Yes
+Candidate 498,Data Scientist,Technical Interview,Panelist 15,2025-10-15,3.0,3.0,Needs improvement in communication.,Yes,Yes
+Candidate 498,Data Scientist,Managerial Interview,Panelist 20,2025-10-16,4.0,7.0,Struggled with edge cases in coding round.,Maybe,Yes
+Candidate 499,Data Scientist,Technical Interview,Panelist 19,2025-11-15,8.0,10.0,"Strong problem-solving, explained API design well.",Yes,Yes
+Candidate 499,Data Scientist,Managerial Interview,Panelist 10,2025-11-18,9.0,10.0,Needs improvement in communication.,Maybe,Yes
+Candidate 500,Data Scientist,Technical Interview,Panelist 13,2025-10-06,9.0,10.0,Needs improvement in code clarity.,Yes,Yes
+Candidate 500,Data Scientist,Managerial Interview,Panelist 18,2025-10-10,5.0,9.0,"Great cultural fit, asked thoughtful questions.",No,Yes

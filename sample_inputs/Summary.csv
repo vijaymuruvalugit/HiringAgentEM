@@ -1,0 +1,501 @@
+CandidateName,AppliedRole,InterviewStage,Status,Feedback,Interviewer,RejectionReason,InterviewDate,ApplicationDate,DaysInPipeline,Source,SalaryExpectation,ResumeScore
+Candidate 1,Software Engineer,Managerial Interview,Rejected,Struggled with edge cases in coding round.,Panelist 15,Poor skill match,2025-10-03,2025-09-18,15,LinkedIn,1304902,6
+Candidate 2,Software Engineer,Offer,Rejected,"Great cultural fit, asked thoughtful questions.",Panelist 10,Compensation mismatch,2025-10-26,2025-10-04,22,Referral,2642654,8
+Candidate 3,Software Engineer,Offer,Rejected,Struggled with edge cases in coding round.,Panelist 23,Cultural misfit,2025-11-22,2025-10-30,23,Other,1917807,5
+Candidate 4,Software Engineer,Offer,Rejected,"Great cultural fit, asked thoughtful questions.",Panelist 22,Offer declined - better opportunity,2025-09-26,2025-09-18,8,Referral,2119897,10
+Candidate 5,Software Engineer,Offer,Rejected,Needs improvement in communication.,Panelist 3,Offer declined - better opportunity,2025-11-22,2025-11-04,18,Other,1646319,8
+Candidate 6,Software Engineer,Screening,Rejected,,,Poor skill match,2025-10-19,2025-10-18,1,Referral,2873494,6
+Candidate 7,Software Engineer,Technical Interview,Rejected,Struggled with edge cases in coding round.,Panelist 7,Role withdrawn,2025-09-22,2025-09-08,14,Other,2165171,6
+Candidate 8,Software Engineer,Managerial Interview,Rejected,Struggled with edge cases in coding round.,Panelist 1,Cultural misfit,2025-11-02,2025-10-22,11,LinkedIn,1454227,8
+Candidate 9,Software Engineer,Online Assessment,Rejected,Needs improvement in time complexity.,Panelist 11,Insufficient experience,2025-11-09,2025-11-02,7,Referral,3108443,9
+Candidate 10,Software Engineer,Offer,Accepted,"Strong problem-solving, explained system design well.",Panelist 13,,2025-10-18,2025-10-01,17,LinkedIn,1485048,7
+Candidate 11,Software Engineer,Offer,Accepted,"Great cultural fit, asked thoughtful questions.",Panelist 18,,2025-10-18,2025-09-21,27,Referral,1488531,10
+Candidate 12,Software Engineer,Offer,Rejected,"Great cultural fit, asked thoughtful questions.",Panelist 5,Offer declined - better opportunity,2025-09-28,2025-09-06,22,Internal,2360480,10
+Candidate 13,Software Engineer,Online Assessment,Rejected,Struggled with edge cases in coding round.,Panelist 24,Cultural misfit,2025-11-01,2025-10-23,9,Naukri,1881581,10
+Candidate 14,Software Engineer,Managerial Interview,Rejected,Struggled with edge cases in coding round.,Panelist 19,No show/interview abandoned,2025-10-18,2025-09-30,18,Referral,2480063,8
+Candidate 15,Software Engineer,Offer,Accepted,"Great cultural fit, asked thoughtful questions.",Panelist 17,,2025-11-26,2025-11-06,20,Naukri,2268383,9
+Candidate 16,Software Engineer,Offer,Accepted,"Great cultural fit, asked thoughtful questions.",Panelist 20,,2025-09-26,2025-09-01,25,Internal,3498215,10
+Candidate 17,Software Engineer,Offer,Accepted,Excellent domain knowledge in ML pipelines.,Panelist 4,,2025-11-18,2025-10-20,29,Internal,2938291,10
+Candidate 18,Software Engineer,Online Assessment,Rejected,Struggled with edge cases in coding round.,Panelist 25,Code test failed,2025-09-27,2025-09-21,6,Other,3070297,7
+Candidate 19,Software Engineer,Online Assessment,Rejected,"Strong problem-solving, explained system design well.",Panelist 14,Code test failed,2025-10-25,2025-10-20,5,Referral,3465562,10
+Candidate 20,Software Engineer,Offer,Accepted,"Strong problem-solving, explained API design well.",Panelist 20,,2025-11-11,2025-10-24,18,Referral,2835722,10
+Candidate 21,Software Engineer,Screening,Rejected,,,Code test failed,2025-10-25,2025-10-24,1,Referral,2615579,10
+Candidate 22,Software Engineer,Offer,Accepted,Excellent domain knowledge in ML pipelines.,Panelist 23,,2025-09-21,2025-09-06,15,Naukri,1487806,5
+Candidate 23,Software Engineer,Offer,Accepted,"Great cultural fit, asked thoughtful questions.",Panelist 15,,2025-10-06,2025-09-16,20,Naukri,1627405,6
+Candidate 24,Software Engineer,Offer,Accepted,Needs improvement in communication.,Panelist 9,,2025-10-25,2025-10-06,19,Naukri,1563490,4
+Candidate 25,Software Engineer,Online Assessment,Rejected,"Great cultural fit, asked thoughtful questions.",Panelist 18,Poor skill match,2025-10-12,2025-10-02,10,LinkedIn,1590294,6
+Candidate 26,Software Engineer,Offer,Accepted,Needs improvement in time complexity.,Panelist 9,,2025-10-19,2025-09-25,24,Other,1976574,9
+Candidate 27,Software Engineer,Offer,Rejected,"Great cultural fit, asked thoughtful questions.",Panelist 20,Offer declined - better opportunity,2025-10-01,2025-09-15,16,Naukri,1415489,6
+Candidate 28,Software Engineer,Online Assessment,Rejected,"Great cultural fit, asked thoughtful questions.",Panelist 20,Insufficient experience,2025-09-18,2025-09-11,7,Naukri,2310006,9
+Candidate 29,Software Engineer,Offer,Accepted,Struggled with edge cases in coding round.,Panelist 17,,2025-10-07,2025-09-20,17,Referral,2029713,7
+Candidate 30,Software Engineer,Technical Interview,Rejected,Struggled with edge cases in coding round.,Panelist 6,Code test failed,2025-09-20,2025-09-06,14,LinkedIn,2330411,6
+Candidate 31,Software Engineer,Applied,Rejected,,,Cultural misfit,2025-11-05,2025-11-05,0,Referral,1686210,10
+Candidate 32,Software Engineer,Offer,Accepted,Struggled with edge cases in coding round.,Panelist 8,,2025-10-16,2025-09-25,21,Internal,1427348,9
+Candidate 33,Software Engineer,Offer,Rejected,Struggled with edge cases in coding round.,Panelist 1,Offer declined - better opportunity,2025-11-25,2025-11-01,24,Referral,3334363,9
+Candidate 34,Software Engineer,Offer,Accepted,"Strong problem-solving, explained API design well.",Panelist 4,,2025-10-18,2025-09-30,18,Naukri,2806296,8
+Candidate 35,Software Engineer,Offer,Accepted,"Great cultural fit, asked thoughtful questions.",Panelist 21,,2025-12-01,2025-11-08,23,Internal,1536866,10
+Candidate 36,Software Engineer,Offer,Accepted,Struggled with edge cases in coding round.,Panelist 3,,2025-10-06,2025-09-22,14,Other,1955213,6
+Candidate 37,Software Engineer,Online Assessment,Rejected,Struggled with edge cases in coding round.,Panelist 25,Code test failed,2025-10-18,2025-10-08,10,Other,2705583,2
+Candidate 38,Software Engineer,Online Assessment,Rejected,Excellent domain knowledge in ML pipelines.,Panelist 21,Code test failed,2025-10-10,2025-10-03,7,Naukri,1997471,6
+Candidate 39,Software Engineer,Offer,Accepted,"Strong problem-solving, explained API design well.",Panelist 22,,2025-12-01,2025-11-09,22,Referral,2942746,10
+Candidate 40,Software Engineer,Offer,Accepted,Struggled with edge cases in coding round.,Panelist 16,,2025-10-26,2025-09-30,26,Referral,1654436,4
+Candidate 41,Software Engineer,Offer,Accepted,"Strong problem-solving, explained API design well.",Panelist 15,,2025-10-29,2025-10-06,23,Internal,1615326,10
+Candidate 42,Software Engineer,Technical Interview,Rejected,Struggled with edge cases in coding round.,Panelist 19,Cultural misfit,2025-10-09,2025-09-30,9,Naukri,2105765,7
+Candidate 43,Software Engineer,Applied,Rejected,,,Role withdrawn,2025-09-29,2025-09-29,0,Referral,3352676,8
+Candidate 44,Software Engineer,Applied,Rejected,,,Cultural misfit,2025-10-29,2025-10-29,0,Other,2465129,5
+Candidate 45,Software Engineer,Offer,Accepted,Needs improvement in time complexity.,Panelist 23,,2025-11-16,2025-10-27,20,Internal,2987921,9
+Candidate 46,Software Engineer,Offer,Accepted,"Strong problem-solving, explained system design well.",Panelist 4,,2025-10-23,2025-10-03,20,Internal,2510818,10
+Candidate 47,Software Engineer,Offer,Accepted,Struggled with edge cases in coding round.,Panelist 11,,2025-10-26,2025-10-06,20,LinkedIn,2668484,8
+Candidate 48,Software Engineer,Managerial Interview,Rejected,"Strong problem-solving, explained system design well.",Panelist 9,Cultural misfit,2025-11-03,2025-10-18,16,Referral,1860222,10
+Candidate 49,Software Engineer,Screening,Rejected,,,Role withdrawn,2025-10-01,2025-09-28,3,Other,1429772,8
+Candidate 50,Software Engineer,Offer,Accepted,"Strong problem-solving, explained DP well.",Panelist 13,,2025-10-05,2025-09-17,18,Internal,1936917,10
+Candidate 51,Software Engineer,Offer,Accepted,Needs improvement in time complexity.,Panelist 8,,2025-09-30,2025-09-11,19,LinkedIn,2220543,5
+Candidate 52,Software Engineer,Applied,Rejected,,,Cultural misfit,2025-10-11,2025-10-11,0,Other,2555633,7
+Candidate 53,Software Engineer,Offer,Accepted,Needs improvement in time complexity.,Panelist 19,,2025-10-06,2025-09-10,26,Referral,2352064,8
+Candidate 54,Software Engineer,Technical Interview,Rejected,"Great cultural fit, asked thoughtful questions.",Panelist 10,Code test failed,2025-11-08,2025-10-27,12,LinkedIn,2239112,5
+Candidate 55,Software Engineer,Offer,Rejected,Needs improvement in communication.,Panelist 7,Compensation mismatch,2025-10-03,2025-09-11,22,Referral,2843990,10
+Candidate 56,Software Engineer,Offer,Accepted,"Great cultural fit, asked thoughtful questions.",Panelist 15,,2025-11-12,2025-10-19,24,Referral,1749659,10
+Candidate 57,Software Engineer,Screening,Rejected,,,Poor skill match,2025-10-06,2025-10-03,3,Naukri,2037592,7
+Candidate 58,Software Engineer,Screening,Rejected,,,Insufficient experience,2025-09-23,2025-09-21,2,Referral,1551797,8
+Candidate 59,Software Engineer,Screening,Rejected,,,Poor skill match,2025-10-22,2025-10-21,1,Internal,2666266,10
+Candidate 60,Software Engineer,Managerial Interview,Rejected,"Great cultural fit, asked thoughtful questions.",Panelist 20,Cultural misfit,2025-10-11,2025-09-18,23,Referral,1812575,9
+Candidate 61,Software Engineer,Offer,Accepted,"Great cultural fit, asked thoughtful questions.",Panelist 1,,2025-10-18,2025-10-01,17,Other,3448372,9
+Candidate 62,Software Engineer,Offer,Accepted,"Great cultural fit, asked thoughtful questions.",Panelist 7,,2025-10-10,2025-09-18,22,Other,2594684,8
+Candidate 63,Software Engineer,Offer,Rejected,"Great cultural fit, asked thoughtful questions.",Panelist 18,Delays in process,2025-11-10,2025-10-26,15,LinkedIn,2592193,6
+Candidate 64,Software Engineer,Online Assessment,Rejected,Excellent domain knowledge in ML pipelines.,Panelist 17,Poor skill match,2025-10-10,2025-10-06,4,Other,3024272,7
+Candidate 65,Software Engineer,Online Assessment,Rejected,Needs improvement in code clarity.,Panelist 5,Cultural misfit,2025-09-13,2025-09-05,8,Naukri,2736492,3
+Candidate 66,Software Engineer,Offer,Accepted,"Great cultural fit, asked thoughtful questions.",Panelist 22,,2025-10-21,2025-10-04,17,Other,1693925,6
+Candidate 67,Software Engineer,Screening,Rejected,,,Poor skill match,2025-10-24,2025-10-17,7,Naukri,1782491,7
+Candidate 68,Software Engineer,Online Assessment,Rejected,Struggled with edge cases in coding round.,Panelist 3,Role withdrawn,2025-10-31,2025-10-21,10,LinkedIn,2497259,9
+Candidate 69,Software Engineer,Technical Interview,Rejected,Needs improvement in time complexity.,Panelist 21,Role withdrawn,2025-09-19,2025-09-08,11,Naukri,1741203,2
+Candidate 70,Software Engineer,Applied,Rejected,,,Poor skill match,2025-09-06,2025-09-06,0,Other,2616079,9
+Candidate 71,Software Engineer,Applied,Rejected,,,Role withdrawn,2025-10-24,2025-10-24,0,Other,2310047,5
+Candidate 72,Software Engineer,Offer,Accepted,"Great cultural fit, asked thoughtful questions.",Panelist 24,,2025-10-30,2025-10-09,21,Other,2414970,4
+Candidate 73,Software Engineer,Offer,Accepted,Struggled with edge cases in coding round.,Panelist 19,,2025-10-10,2025-09-21,19,Referral,2811241,10
+Candidate 74,Software Engineer,Screening,Rejected,,,Cultural misfit,2025-10-25,2025-10-22,3,Referral,1389760,10
+Candidate 75,Software Engineer,Offer,Accepted,"Great cultural fit, asked thoughtful questions.",Panelist 16,,2025-10-07,2025-09-16,21,Other,2373233,8
+Candidate 76,Software Engineer,Offer,Accepted,Struggled with edge cases in coding round.,Panelist 25,,2025-11-30,2025-11-02,28,Other,3432795,6
+Candidate 77,Software Engineer,Offer,Accepted,Excellent domain knowledge in ML pipelines.,Panelist 11,,2025-11-16,2025-10-24,23,Other,1660935,7
+Candidate 78,Software Engineer,Technical Interview,Rejected,"Strong problem-solving, explained DP well.",Panelist 13,Cultural misfit,2025-10-22,2025-10-09,13,Naukri,2370237,6
+Candidate 79,Software Engineer,Offer,Accepted,Struggled with edge cases in coding round.,Panelist 4,,2025-10-20,2025-10-05,15,Referral,3209404,10
+Candidate 80,Software Engineer,Offer,Rejected,Struggled with edge cases in coding round.,Panelist 1,Delays in process,2025-10-13,2025-09-30,13,LinkedIn,1575225,6
+Candidate 81,Software Engineer,Online Assessment,Rejected,"Strong problem-solving, explained API design well.",Panelist 21,Insufficient experience,2025-09-12,2025-09-02,10,Naukri,3124826,5
+Candidate 82,Software Engineer,Offer,Accepted,"Strong problem-solving, explained API design well.",Panelist 13,,2025-10-20,2025-10-02,18,Internal,2557283,7
+Candidate 83,Software Engineer,Online Assessment,Rejected,"Great cultural fit, asked thoughtful questions.",Panelist 20,Role withdrawn,2025-11-14,2025-10-31,14,Other,2767096,4
+Candidate 84,Software Engineer,Offer,Rejected,"Great cultural fit, asked thoughtful questions.",Panelist 15,Compensation mismatch,2025-10-10,2025-09-20,20,Naukri,3450915,6
+Candidate 85,Software Engineer,Offer,Accepted,"Strong problem-solving, explained DP well.",Panelist 18,,2025-10-06,2025-09-18,18,Internal,1333105,9
+Candidate 86,Software Engineer,Offer,Accepted,Struggled with edge cases in coding round.,Panelist 23,,2025-10-17,2025-09-25,22,Naukri,2356158,7
+Candidate 87,Software Engineer,Technical Interview,Rejected,Struggled with edge cases in coding round.,Panelist 22,No show/interview abandoned,2025-10-27,2025-10-12,15,Other,2537579,3
+Candidate 88,Software Engineer,Screening,Rejected,,,Cultural misfit,2025-10-06,2025-09-29,7,Internal,2210693,10
+Candidate 89,Software Engineer,Screening,Rejected,,,Role withdrawn,2025-10-01,2025-09-27,4,Internal,3422946,10
+Candidate 90,Software Engineer,Online Assessment,Rejected,"Great cultural fit, asked thoughtful questions.",Panelist 19,Insufficient experience,2025-10-13,2025-10-05,8,Naukri,1416160,8
+Candidate 91,Software Engineer,Technical Interview,Rejected,Excellent domain knowledge in ML pipelines.,Panelist 11,No show/interview abandoned,2025-10-12,2025-09-27,15,LinkedIn,3208739,9
+Candidate 92,Software Engineer,Offer,Accepted,"Strong problem-solving, explained API design well.",Panelist 5,,2025-10-30,2025-10-08,22,Other,2951449,6
+Candidate 93,Software Engineer,Applied,Rejected,,,Role withdrawn,2025-11-04,2025-11-04,0,Naukri,1485078,6
+Candidate 94,Software Engineer,Online Assessment,Rejected,Struggled with edge cases in coding round.,Panelist 18,Insufficient experience,2025-11-09,2025-11-02,7,Other,3226705,6
+Candidate 95,Software Engineer,Offer,Accepted,Struggled with edge cases in coding round.,Panelist 2,,2025-11-02,2025-10-16,17,Naukri,2005021,5
+Candidate 96,Software Engineer,Applied,Rejected,,,Code test failed,2025-10-05,2025-10-05,0,Other,3194392,4
+Candidate 97,Software Engineer,Technical Interview,Rejected,"Strong problem-solving, explained system design well.",Panelist 23,No show/interview abandoned,2025-09-18,2025-09-03,15,Other,1338000,8
+Candidate 98,Software Engineer,Technical Interview,Rejected,Struggled with edge cases in coding round.,Panelist 9,Code test failed,2025-10-21,2025-10-12,9,Other,2863893,4
+Candidate 99,Software Engineer,Offer,Accepted,Needs improvement in time complexity.,Panelist 18,,2025-09-29,2025-09-12,17,Internal,2709603,10
+Candidate 100,Software Engineer,Offer,Rejected,Needs improvement in time complexity.,Panelist 11,Delays in process,2025-11-18,2025-11-01,17,Internal,2457252,6
+Candidate 101,Software Engineer,Offer,Accepted,"Great cultural fit, asked thoughtful questions.",Panelist 14,,2025-11-07,2025-10-21,17,Internal,2216801,9
+Candidate 102,Software Engineer,Online Assessment,Rejected,"Great cultural fit, asked thoughtful questions.",Panelist 21,Role withdrawn,2025-11-01,2025-10-24,8,Other,3324887,6
+Candidate 103,Software Engineer,Online Assessment,Rejected,Excellent domain knowledge in ML pipelines.,Panelist 8,Poor skill match,2025-09-13,2025-09-02,11,Internal,2590817,10
+Candidate 104,Software Engineer,Online Assessment,Rejected,Struggled with edge cases in coding round.,Panelist 7,Role withdrawn,2025-09-20,2025-09-11,9,Referral,2944727,10
+Candidate 105,Software Engineer,Offer,Accepted,Struggled with edge cases in coding round.,Panelist 24,,2025-10-15,2025-09-22,23,LinkedIn,1294728,8
+Candidate 106,Software Engineer,Technical Interview,Rejected,"Strong problem-solving, explained API design well.",Panelist 22,Code test failed,2025-11-02,2025-10-17,16,Other,1984166,6
+Candidate 107,Software Engineer,Online Assessment,Rejected,Needs improvement in time complexity.,Panelist 23,Cultural misfit,2025-10-29,2025-10-20,9,LinkedIn,1967744,6
+Candidate 108,Software Engineer,Offer,Accepted,"Great cultural fit, asked thoughtful questions.",Panelist 25,,2025-11-07,2025-10-16,22,Other,1424861,4
+Candidate 109,Software Engineer,Screening,Rejected,,,Role withdrawn,2025-09-08,2025-09-06,2,Referral,3477952,10
+Candidate 110,Software Engineer,Offer,Accepted,"Great cultural fit, asked thoughtful questions.",Panelist 5,,2025-09-26,2025-09-05,21,Naukri,2448681,5
+Candidate 111,Software Engineer,Offer,Accepted,Excellent domain knowledge in ML pipelines.,Panelist 14,,2025-11-15,2025-10-23,23,Other,1599403,9
+Candidate 112,Software Engineer,Technical Interview,Rejected,"Strong problem-solving, explained API design well.",Panelist 22,Cultural misfit,2025-10-25,2025-10-16,9,LinkedIn,3122875,7
+Candidate 113,Software Engineer,Managerial Interview,Rejected,Needs improvement in communication.,Panelist 8,Role withdrawn,2025-10-12,2025-09-17,25,LinkedIn,2994320,7
+Candidate 114,Software Engineer,Online Assessment,Rejected,Needs improvement in code clarity.,Panelist 4,Role withdrawn,2025-10-28,2025-10-25,3,Referral,1705806,10
+Candidate 115,Software Engineer,Screening,Rejected,,,Poor skill match,2025-09-24,2025-09-20,4,LinkedIn,1888354,4
+Candidate 116,Software Engineer,Online Assessment,Rejected,"Strong problem-solving, explained API design well.",Panelist 8,Role withdrawn,2025-10-28,2025-10-20,8,Naukri,1716558,8
+Candidate 117,Software Engineer,Screening,Rejected,,,Poor skill match,2025-10-05,2025-10-01,4,Naukri,2843122,6
+Candidate 118,Software Engineer,Online Assessment,Rejected,"Strong problem-solving, explained DP well.",Panelist 16,Poor skill match,2025-09-28,2025-09-17,11,Referral,2527382,10
+Candidate 119,Software Engineer,Offer,Accepted,Needs improvement in code clarity.,Panelist 21,,2025-11-13,2025-10-24,20,Internal,3324878,9
+Candidate 120,Software Engineer,Technical Interview,Rejected,Struggled with edge cases in coding round.,Panelist 3,No show/interview abandoned,2025-09-14,2025-09-02,12,Naukri,1700980,6
+Candidate 121,Software Engineer,Screening,Rejected,,,Poor skill match,2025-09-16,2025-09-15,1,Naukri,2742194,8
+Candidate 122,Software Engineer,Offer,Accepted,"Strong problem-solving, explained DP well.",Panelist 17,,2025-11-07,2025-10-20,18,Internal,2726628,10
+Candidate 123,Software Engineer,Technical Interview,Rejected,Struggled with edge cases in coding round.,Panelist 23,No show/interview abandoned,2025-10-25,2025-10-09,16,LinkedIn,2747359,7
+Candidate 124,Software Engineer,Screening,Rejected,,,Insufficient experience,2025-11-04,2025-11-02,2,Naukri,2960835,3
+Candidate 125,Software Engineer,Screening,Rejected,,,Poor skill match,2025-09-17,2025-09-11,6,Other,2932485,6
+Candidate 126,Software Engineer,Technical Interview,Rejected,"Great cultural fit, asked thoughtful questions.",Panelist 11,Insufficient experience,2025-10-15,2025-10-01,14,Internal,1748230,8
+Candidate 127,Software Engineer,Screening,Rejected,,,Code test failed,2025-09-22,2025-09-19,3,Referral,1369155,10
+Candidate 128,Software Engineer,Offer,Rejected,"Strong problem-solving, explained API design well.",Panelist 21,Delays in process,2025-10-02,2025-09-04,28,Referral,1929254,10
+Candidate 129,Software Engineer,Offer,Accepted,"Great cultural fit, asked thoughtful questions.",Panelist 16,,2025-11-16,2025-10-26,21,LinkedIn,1379081,7
+Candidate 130,Software Engineer,Managerial Interview,Rejected,Needs improvement in communication.,Panelist 25,Insufficient experience,2025-11-02,2025-10-16,17,LinkedIn,2804313,8
+Candidate 131,Software Engineer,Technical Interview,Rejected,"Strong problem-solving, explained DP well.",Panelist 16,Cultural misfit,2025-10-12,2025-09-23,19,Other,2829162,4
+Candidate 132,Software Engineer,Offer,Accepted,Needs improvement in communication.,Panelist 13,,2025-10-16,2025-09-26,20,LinkedIn,2591393,6
+Candidate 133,Software Engineer,Offer,Rejected,"Great cultural fit, asked thoughtful questions.",Panelist 8,Delays in process,2025-10-11,2025-09-23,18,Other,2696634,7
+Candidate 134,Software Engineer,Offer,Accepted,Needs improvement in communication.,Panelist 16,,2025-10-19,2025-10-04,15,Internal,1247796,9
+Candidate 135,Software Engineer,Offer,Accepted,"Great cultural fit, asked thoughtful questions.",Panelist 24,,2025-10-05,2025-09-12,23,Naukri,2774784,7
+Candidate 136,Software Engineer,Applied,Rejected,,,Insufficient experience,2025-11-01,2025-11-01,0,LinkedIn,2435429,5
+Candidate 137,Software Engineer,Offer,Accepted,"Strong problem-solving, explained API design well.",Panelist 19,,2025-11-12,2025-10-21,22,Referral,1543664,9
+Candidate 138,Software Engineer,Technical Interview,Rejected,Needs improvement in communication.,Panelist 25,Role withdrawn,2025-11-15,2025-11-08,7,Other,2955870,8
+Candidate 139,Software Engineer,Offer,Accepted,Excellent domain knowledge in ML pipelines.,Panelist 5,,2025-10-28,2025-10-04,24,Internal,2046910,10
+Candidate 140,Software Engineer,Online Assessment,Rejected,Struggled with edge cases in coding round.,Panelist 13,Code test failed,2025-09-11,2025-09-05,6,Other,3184101,9
+Candidate 141,Software Engineer,Offer,Accepted,Needs improvement in time complexity.,Panelist 16,,2025-10-06,2025-09-13,23,Referral,2375859,10
+Candidate 142,Software Engineer,Technical Interview,Rejected,"Strong problem-solving, explained DP well.",Panelist 16,No show/interview abandoned,2025-09-20,2025-09-08,12,Naukri,2041909,2
+Candidate 143,Software Engineer,Offer,Accepted,Struggled with edge cases in coding round.,Panelist 23,,2025-10-25,2025-10-05,20,Naukri,2128413,5
+Candidate 144,Software Engineer,Offer,Accepted,"Strong problem-solving, explained DP well.",Panelist 20,,2025-10-29,2025-10-09,20,Referral,2385632,8
+Candidate 145,Software Engineer,Offer,Accepted,Needs improvement in communication.,Panelist 6,,2025-11-30,2025-11-08,22,Other,1996561,5
+Candidate 146,Software Engineer,Screening,Rejected,,,Insufficient experience,2025-11-05,2025-10-31,5,Internal,1694011,8
+Candidate 147,Software Engineer,Offer,Accepted,Needs improvement in communication.,Panelist 11,,2025-10-28,2025-10-09,19,Other,1702544,8
+Candidate 148,Software Engineer,Applied,Rejected,,,Insufficient experience,2025-11-01,2025-11-01,0,Internal,2999463,9
+Candidate 149,Software Engineer,Offer,Accepted,Needs improvement in code clarity.,Panelist 15,,2025-12-03,2025-11-07,26,Referral,1259043,10
+Candidate 150,Software Engineer,Applied,Rejected,,,Insufficient experience,2025-09-17,2025-09-17,0,Naukri,2140871,4
+Candidate 151,Software Engineer,Online Assessment,Rejected,"Strong problem-solving, explained DP well.",Panelist 22,Code test failed,2025-10-25,2025-10-19,6,LinkedIn,2737595,6
+Candidate 152,Software Engineer,Offer,Rejected,Needs improvement in time complexity.,Panelist 4,Delays in process,2025-10-19,2025-09-27,22,Internal,1842261,10
+Candidate 153,Software Engineer,Online Assessment,Rejected,Struggled with edge cases in coding round.,Panelist 24,Insufficient experience,2025-09-18,2025-09-15,3,Naukri,1211484,7
+Candidate 154,Software Engineer,Offer,Accepted,Struggled with edge cases in coding round.,Panelist 3,,2025-11-13,2025-10-17,27,LinkedIn,2418727,2
+Candidate 155,Software Engineer,Online Assessment,Rejected,Needs improvement in time complexity.,Panelist 13,Cultural misfit,2025-09-26,2025-09-14,12,Naukri,1445980,10
+Candidate 156,Software Engineer,Offer,Accepted,Struggled with edge cases in coding round.,Panelist 22,,2025-10-02,2025-09-09,23,Internal,1392821,7
+Candidate 157,Software Engineer,Offer,Accepted,Struggled with edge cases in coding round.,Panelist 4,,2025-11-26,2025-11-02,24,Internal,3279682,10
+Candidate 158,Software Engineer,Online Assessment,Rejected,"Great cultural fit, asked thoughtful questions.",Panelist 18,Role withdrawn,2025-11-02,2025-10-29,4,Other,2067597,6
+Candidate 159,Software Engineer,Offer,Accepted,Struggled with edge cases in coding round.,Panelist 15,,2025-10-22,2025-10-08,14,Naukri,1209214,4
+Candidate 160,Software Engineer,Online Assessment,Rejected,Needs improvement in time complexity.,Panelist 17,Role withdrawn,2025-11-12,2025-11-03,9,Other,1764704,5
+Candidate 161,Software Engineer,Screening,Rejected,,,Cultural misfit,2025-10-05,2025-10-02,3,Other,2549910,5
+Candidate 162,Software Engineer,Offer,Accepted,"Great cultural fit, asked thoughtful questions.",Panelist 17,,2025-11-02,2025-10-09,24,Other,3348719,6
+Candidate 163,Software Engineer,Offer,Rejected,Excellent domain knowledge in ML pipelines.,Panelist 20,Cultural misfit,2025-10-04,2025-09-19,15,Internal,1253563,9
+Candidate 164,Software Engineer,Offer,Accepted,"Strong problem-solving, explained DP well.",Panelist 24,,2025-12-02,2025-11-10,22,Internal,2511365,7
+Candidate 165,Software Engineer,Offer,Accepted,Excellent domain knowledge in ML pipelines.,Panelist 17,,2025-10-07,2025-09-20,17,Naukri,2269615,9
+Candidate 166,Software Engineer,Offer,Accepted,Excellent domain knowledge in ML pipelines.,Panelist 4,,2025-11-23,2025-10-31,23,Other,3425073,7
+Candidate 167,Software Engineer,Online Assessment,Rejected,Struggled with edge cases in coding round.,Panelist 22,Role withdrawn,2025-11-17,2025-11-08,9,LinkedIn,1602470,9
+Candidate 168,Software Engineer,Applied,Rejected,,,Poor skill match,2025-10-29,2025-10-29,0,Naukri,1299627,7
+Candidate 169,Software Engineer,Offer,Accepted,"Great cultural fit, asked thoughtful questions.",Panelist 3,,2025-10-16,2025-09-30,16,LinkedIn,1946553,7
+Candidate 170,Software Engineer,Offer,Rejected,"Strong problem-solving, explained API design well.",Panelist 2,Offer declined - better opportunity,2025-10-10,2025-09-18,22,Other,2122183,8
+Candidate 171,Software Engineer,Offer,Accepted,Excellent domain knowledge in ML pipelines.,Panelist 12,,2025-10-18,2025-09-25,23,Naukri,1971721,7
+Candidate 172,Software Engineer,Technical Interview,Rejected,"Great cultural fit, asked thoughtful questions.",Panelist 16,Role withdrawn,2025-10-23,2025-10-11,12,Other,2728796,9
+Candidate 173,Software Engineer,Technical Interview,Rejected,"Strong problem-solving, explained API design well.",Panelist 24,Insufficient experience,2025-09-21,2025-09-04,17,LinkedIn,1516250,10
+Candidate 174,Software Engineer,Technical Interview,Rejected,Struggled with edge cases in coding round.,Panelist 22,Role withdrawn,2025-11-13,2025-11-05,8,Other,1895598,6
+Candidate 175,Software Engineer,Offer,Accepted,"Strong problem-solving, explained system design well.",Panelist 12,,2025-10-23,2025-10-06,17,Referral,1632957,9
+Candidate 176,Software Engineer,Offer,Rejected,Needs improvement in communication.,Panelist 21,Delays in process,2025-09-30,2025-09-16,14,Naukri,2719273,5
+Candidate 177,Software Engineer,Online Assessment,Rejected,"Great cultural fit, asked thoughtful questions.",Panelist 6,Cultural misfit,2025-11-13,2025-11-01,12,LinkedIn,2108458,2
+Candidate 178,Software Engineer,Online Assessment,Rejected,Excellent domain knowledge in ML pipelines.,Panelist 4,Role withdrawn,2025-09-24,2025-09-14,10,Internal,1754542,8
+Candidate 179,Software Engineer,Offer,Accepted,Struggled with edge cases in coding round.,Panelist 8,,2025-11-22,2025-10-26,27,Naukri,3461929,8
+Candidate 180,Software Engineer,Technical Interview,Rejected,"Great cultural fit, asked thoughtful questions.",Panelist 12,Role withdrawn,2025-11-05,2025-10-23,13,Naukri,2524987,6
+Candidate 181,Software Engineer,Managerial Interview,Rejected,Struggled with edge cases in coding round.,Panelist 3,Insufficient experience,2025-10-11,2025-09-21,20,LinkedIn,2163730,4
+Candidate 182,Software Engineer,Online Assessment,Rejected,"Strong problem-solving, explained API design well.",Panelist 20,Insufficient experience,2025-09-16,2025-09-02,14,Internal,3041182,10
+Candidate 183,Software Engineer,Screening,Rejected,,,Poor skill match,2025-10-22,2025-10-21,1,LinkedIn,2357363,7
+Candidate 184,Software Engineer,Offer,Accepted,Struggled with edge cases in coding round.,Panelist 17,,2025-11-04,2025-10-15,20,Other,2393253,5
+Candidate 185,Software Engineer,Offer,Accepted,Needs improvement in code clarity.,Panelist 3,,2025-11-13,2025-10-19,25,Other,1314717,5
+Candidate 186,Software Engineer,Offer,Accepted,Struggled with edge cases in coding round.,Panelist 16,,2025-10-11,2025-09-27,14,Naukri,2313190,6
+Candidate 187,Software Engineer,Offer,Rejected,Excellent domain knowledge in ML pipelines.,Panelist 9,Delays in process,2025-11-03,2025-10-15,19,Internal,3206219,10
+Candidate 188,Software Engineer,Offer,Accepted,"Great cultural fit, asked thoughtful questions.",Panelist 5,,2025-10-07,2025-09-17,20,Internal,1954510,10
+Candidate 189,Software Engineer,Offer,Rejected,Struggled with edge cases in coding round.,Panelist 10,Delays in process,2025-11-07,2025-10-13,25,Referral,3198751,10
+Candidate 190,Software Engineer,Technical Interview,Rejected,"Strong problem-solving, explained system design well.",Panelist 1,Poor skill match,2025-09-18,2025-09-10,8,Internal,2897739,10
+Candidate 191,Software Engineer,Online Assessment,Rejected,Needs improvement in communication.,Panelist 8,Role withdrawn,2025-09-15,2025-09-11,4,Internal,1425760,10
+Candidate 192,Software Engineer,Offer,Accepted,"Great cultural fit, asked thoughtful questions.",Panelist 12,,2025-11-20,2025-10-31,20,Referral,2563993,10
+Candidate 193,Software Engineer,Offer,Accepted,Struggled with edge cases in coding round.,Panelist 21,,2025-11-22,2025-11-02,20,Referral,3167958,7
+Candidate 194,Software Engineer,Applied,Rejected,,,Insufficient experience,2025-10-23,2025-10-23,0,Other,2327521,8
+Candidate 195,Software Engineer,Screening,Rejected,,,Poor skill match,2025-10-08,2025-10-05,3,Referral,1662868,8
+Candidate 196,Software Engineer,Screening,Rejected,,,Poor skill match,2025-10-13,2025-10-07,6,Naukri,1628966,4
+Candidate 197,Software Engineer,Offer,Accepted,Struggled with edge cases in coding round.,Panelist 13,,2025-12-01,2025-11-03,28,Internal,2110952,9
+Candidate 198,Software Engineer,Offer,Accepted,"Great cultural fit, asked thoughtful questions.",Panelist 4,,2025-11-07,2025-10-20,18,Naukri,3183174,6
+Candidate 199,Software Engineer,Managerial Interview,Rejected,Needs improvement in time complexity.,Panelist 21,Role withdrawn,2025-10-07,2025-09-21,16,Other,1850083,6
+Candidate 200,Software Engineer,Technical Interview,Rejected,Struggled with edge cases in coding round.,Panelist 18,Code test failed,2025-11-18,2025-11-09,9,Internal,2436122,6
+Candidate 201,Software Engineer,Offer,Accepted,"Strong problem-solving, explained system design well.",Panelist 6,,2025-12-02,2025-11-08,24,Other,2201543,6
+Candidate 202,Software Engineer,Online Assessment,Rejected,Struggled with edge cases in coding round.,Panelist 15,Code test failed,2025-09-17,2025-09-10,7,Referral,2125778,9
+Candidate 203,Software Engineer,Technical Interview,Rejected,Struggled with edge cases in coding round.,Panelist 25,Cultural misfit,2025-09-16,2025-09-10,6,Other,1370511,6
+Candidate 204,Software Engineer,Online Assessment,Rejected,Excellent domain knowledge in ML pipelines.,Panelist 12,Code test failed,2025-09-27,2025-09-21,6,Other,2615631,5
+Candidate 205,Software Engineer,Managerial Interview,Rejected,"Great cultural fit, asked thoughtful questions.",Panelist 5,Cultural misfit,2025-09-19,2025-09-05,14,Referral,3097517,8
+Candidate 206,Software Engineer,Offer,Accepted,"Strong problem-solving, explained system design well.",Panelist 2,,2025-09-27,2025-09-10,17,Other,2111998,8
+Candidate 207,Software Engineer,Offer,Accepted,Struggled with edge cases in coding round.,Panelist 19,,2025-11-29,2025-11-04,25,LinkedIn,2539310,5
+Candidate 208,Software Engineer,Applied,Rejected,,,Cultural misfit,2025-11-07,2025-11-07,0,Other,2022500,4
+Candidate 209,Software Engineer,Offer,Accepted,"Strong problem-solving, explained DP well.",Panelist 22,,2025-11-05,2025-10-17,19,Referral,1575787,10
+Candidate 210,Software Engineer,Offer,Rejected,"Great cultural fit, asked thoughtful questions.",Panelist 9,Delays in process,2025-11-17,2025-10-28,20,LinkedIn,2479757,9
+Candidate 211,Software Engineer,Offer,Rejected,"Great cultural fit, asked thoughtful questions.",Panelist 10,Delays in process,2025-11-12,2025-10-20,23,LinkedIn,1280020,5
+Candidate 212,Software Engineer,Offer,Rejected,Needs improvement in time complexity.,Panelist 20,Cultural misfit,2025-10-29,2025-10-06,23,Internal,1323588,10
+Candidate 213,Software Engineer,Online Assessment,Rejected,"Great cultural fit, asked thoughtful questions.",Panelist 14,Insufficient experience,2025-09-22,2025-09-16,6,Naukri,1862901,5
+Candidate 214,Software Engineer,Offer,Rejected,Struggled with edge cases in coding round.,Panelist 6,Cultural misfit,2025-10-18,2025-09-30,18,LinkedIn,2319302,10
+Candidate 215,Software Engineer,Offer,Accepted,Excellent domain knowledge in ML pipelines.,Panelist 8,,2025-09-23,2025-09-06,17,Referral,3119082,10
+Candidate 216,Software Engineer,Offer,Accepted,Struggled with edge cases in coding round.,Panelist 15,,2025-10-07,2025-09-22,15,Referral,3135030,9
+Candidate 217,Software Engineer,Offer,Rejected,Needs improvement in communication.,Panelist 25,Cultural misfit,2025-11-25,2025-11-05,20,Internal,2722294,10
+Candidate 218,Software Engineer,Offer,Accepted,"Strong problem-solving, explained system design well.",Panelist 2,,2025-11-20,2025-10-31,20,Naukri,2109634,6
+Candidate 219,Software Engineer,Applied,Rejected,,,Code test failed,2025-10-17,2025-10-17,0,Other,1944150,10
+Candidate 220,Software Engineer,Offer,Accepted,Excellent domain knowledge in ML pipelines.,Panelist 19,,2025-11-06,2025-10-19,18,Referral,2745892,9
+Candidate 221,Software Engineer,Offer,Accepted,Needs improvement in time complexity.,Panelist 12,,2025-11-19,2025-11-03,16,Naukri,3282039,4
+Candidate 222,Software Engineer,Managerial Interview,Rejected,"Strong problem-solving, explained system design well.",Panelist 18,No show/interview abandoned,2025-11-08,2025-10-21,18,Referral,2631774,8
+Candidate 223,Software Engineer,Offer,Accepted,Excellent domain knowledge in ML pipelines.,Panelist 8,,2025-09-22,2025-09-04,18,Referral,2683087,10
+Candidate 224,Software Engineer,Offer,Accepted,Excellent domain knowledge in ML pipelines.,Panelist 17,,2025-10-09,2025-09-20,19,Internal,3297379,10
+Candidate 225,Software Engineer,Offer,Accepted,"Great cultural fit, asked thoughtful questions.",Panelist 23,,2025-10-24,2025-10-06,18,Referral,2080156,9
+Candidate 226,Software Engineer,Offer,Accepted,"Strong problem-solving, explained API design well.",Panelist 19,,2025-10-06,2025-09-12,24,Internal,1425653,7
+Candidate 227,Software Engineer,Screening,Rejected,,,Poor skill match,2025-10-17,2025-10-13,4,Other,2282351,8
+Candidate 228,Software Engineer,Offer,Accepted,"Strong problem-solving, explained system design well.",Panelist 8,,2025-11-18,2025-10-30,19,Referral,3207612,8
+Candidate 229,Software Engineer,Offer,Accepted,"Strong problem-solving, explained API design well.",Panelist 3,,2025-11-13,2025-11-02,11,Naukri,1925973,6
+Candidate 230,Software Engineer,Offer,Accepted,"Great cultural fit, asked thoughtful questions.",Panelist 1,,2025-10-25,2025-10-09,16,Referral,2457181,10
+Candidate 231,Software Engineer,Screening,Rejected,,,Role withdrawn,2025-09-28,2025-09-25,3,Other,2085904,5
+Candidate 232,Software Engineer,Applied,Rejected,,,Role withdrawn,2025-09-02,2025-09-02,0,Naukri,1763200,5
+Candidate 233,Software Engineer,Offer,Accepted,"Great cultural fit, asked thoughtful questions.",Panelist 19,,2025-10-04,2025-09-18,16,Internal,3031799,10
+Candidate 234,Software Engineer,Technical Interview,Rejected,"Strong problem-solving, explained system design well.",Panelist 22,Cultural misfit,2025-09-23,2025-09-11,12,Other,3219695,7
+Candidate 235,Software Engineer,Online Assessment,Rejected,Struggled with edge cases in coding round.,Panelist 24,Code test failed,2025-10-24,2025-10-16,8,Other,3168103,5
+Candidate 236,Software Engineer,Managerial Interview,Rejected,Needs improvement in time complexity.,Panelist 22,Insufficient experience,2025-10-13,2025-10-07,6,Other,1314496,10
+Candidate 237,Software Engineer,Screening,Rejected,,,Code test failed,2025-10-27,2025-10-23,4,Other,1846553,8
+Candidate 238,Software Engineer,Offer,Accepted,"Strong problem-solving, explained API design well.",Panelist 15,,2025-10-13,2025-09-15,28,LinkedIn,2308955,4
+Candidate 239,Software Engineer,Managerial Interview,Rejected,Needs improvement in code clarity.,Panelist 14,No show/interview abandoned,2025-10-27,2025-10-21,6,Referral,2320247,10
+Candidate 240,Software Engineer,Technical Interview,Rejected,Needs improvement in code clarity.,Panelist 25,Cultural misfit,2025-09-28,2025-09-16,12,Naukri,1710824,7
+Candidate 241,Software Engineer,Online Assessment,Rejected,"Strong problem-solving, explained DP well.",Panelist 4,Poor skill match,2025-09-29,2025-09-23,6,Referral,1451904,9
+Candidate 242,Software Engineer,Offer,Accepted,Needs improvement in time complexity.,Panelist 14,,2025-11-23,2025-10-28,26,LinkedIn,2251077,9
+Candidate 243,Software Engineer,Technical Interview,Rejected,Needs improvement in code clarity.,Panelist 23,No show/interview abandoned,2025-09-28,2025-09-12,16,Referral,2880300,10
+Candidate 244,Software Engineer,Online Assessment,Rejected,"Great cultural fit, asked thoughtful questions.",Panelist 15,Role withdrawn,2025-10-30,2025-10-20,10,Naukri,3251990,7
+Candidate 245,Software Engineer,Screening,Rejected,,,Role withdrawn,2025-11-09,2025-11-08,1,Other,3122544,10
+Candidate 246,Software Engineer,Screening,Rejected,,,Code test failed,2025-09-07,2025-09-06,1,LinkedIn,3176438,5
+Candidate 247,Software Engineer,Technical Interview,Rejected,Excellent domain knowledge in ML pipelines.,Panelist 5,Insufficient experience,2025-09-19,2025-09-09,10,LinkedIn,3113376,4
+Candidate 248,Software Engineer,Offer,Accepted,Needs improvement in code clarity.,Panelist 21,,2025-11-14,2025-10-18,27,Internal,1904856,10
+Candidate 249,Software Engineer,Offer,Accepted,Struggled with edge cases in coding round.,Panelist 7,,2025-09-26,2025-09-12,14,Other,1954976,6
+Candidate 250,Software Engineer,Offer,Rejected,Needs improvement in communication.,Panelist 11,Offer declined - better opportunity,2025-09-24,2025-09-06,18,Referral,3100638,10
+Candidate 251,Data Scientist,Online Assessment,Rejected,Struggled with edge cases in coding round.,Panelist 19,Code test failed,2025-11-07,2025-10-29,9,Naukri,3108370,7
+Candidate 252,Data Scientist,Online Assessment,Rejected,Struggled with edge cases in coding round.,Panelist 7,Cultural misfit,2025-09-28,2025-09-22,6,Other,1857617,7
+Candidate 253,Data Scientist,Screening,Rejected,,,Cultural misfit,2025-09-24,2025-09-20,4,Other,2132840,9
+Candidate 254,Data Scientist,Screening,Rejected,,,Cultural misfit,2025-11-01,2025-10-25,7,Other,1341014,5
+Candidate 255,Data Scientist,Offer,Accepted,Struggled with edge cases in coding round.,Panelist 23,,2025-11-04,2025-10-23,12,Naukri,1548511,6
+Candidate 256,Data Scientist,Offer,Accepted,Needs improvement in time complexity.,Panelist 12,,2025-12-02,2025-11-09,23,Internal,2331578,10
+Candidate 257,Data Scientist,Managerial Interview,Rejected,Struggled with edge cases in coding round.,Panelist 23,Insufficient experience,2025-11-19,2025-11-04,15,Naukri,2145552,5
+Candidate 258,Data Scientist,Screening,Rejected,,,Cultural misfit,2025-09-24,2025-09-19,5,Referral,1669865,5
+Candidate 259,Data Scientist,Applied,Rejected,,,Insufficient experience,2025-09-03,2025-09-03,0,Other,1753762,4
+Candidate 260,Data Scientist,Technical Interview,Rejected,"Great cultural fit, asked thoughtful questions.",Panelist 12,Insufficient experience,2025-11-09,2025-10-23,17,Other,2608771,7
+Candidate 261,Data Scientist,Technical Interview,Rejected,Needs improvement in code clarity.,Panelist 18,Role withdrawn,2025-09-28,2025-09-20,8,Other,2396410,7
+Candidate 262,Data Scientist,Online Assessment,Rejected,"Strong problem-solving, explained system design well.",Panelist 22,Role withdrawn,2025-10-21,2025-10-13,8,Other,3328227,10
+Candidate 263,Data Scientist,Applied,Rejected,,,Poor skill match,2025-09-29,2025-09-29,0,Other,1690213,6
+Candidate 264,Data Scientist,Screening,Rejected,,,Cultural misfit,2025-11-10,2025-11-07,3,Other,2018517,8
+Candidate 265,Data Scientist,Online Assessment,Rejected,"Great cultural fit, asked thoughtful questions.",Panelist 12,Role withdrawn,2025-11-12,2025-11-05,7,LinkedIn,3346592,5
+Candidate 266,Data Scientist,Offer,Accepted,Needs improvement in code clarity.,Panelist 13,,2025-11-19,2025-10-27,23,Internal,2943193,10
+Candidate 267,Data Scientist,Offer,Rejected,"Great cultural fit, asked thoughtful questions.",Panelist 4,Delays in process,2025-11-18,2025-10-30,19,LinkedIn,2466650,7
+Candidate 268,Data Scientist,Applied,Rejected,,,Code test failed,2025-10-04,2025-10-04,0,Other,1273589,4
+Candidate 269,Data Scientist,Offer,Accepted,"Great cultural fit, asked thoughtful questions.",Panelist 22,,2025-11-07,2025-10-17,21,Internal,1768317,9
+Candidate 270,Data Scientist,Online Assessment,Rejected,Excellent domain knowledge in ML pipelines.,Panelist 20,Cultural misfit,2025-09-28,2025-09-21,7,Internal,2627376,8
+Candidate 271,Data Scientist,Online Assessment,Rejected,"Strong problem-solving, explained API design well.",Panelist 17,Role withdrawn,2025-11-08,2025-11-01,7,LinkedIn,1688911,8
+Candidate 272,Data Scientist,Technical Interview,Rejected,"Great cultural fit, asked thoughtful questions.",Panelist 2,Poor skill match,2025-10-17,2025-10-10,7,Naukri,2150322,5
+Candidate 273,Data Scientist,Online Assessment,Rejected,Needs improvement in time complexity.,Panelist 12,Poor skill match,2025-10-24,2025-10-15,9,Other,2061515,5
+Candidate 274,Data Scientist,Offer,Accepted,Struggled with edge cases in coding round.,Panelist 12,,2025-10-16,2025-09-25,21,Other,2110155,8
+Candidate 275,Data Scientist,Offer,Accepted,"Strong problem-solving, explained system design well.",Panelist 22,,2025-11-02,2025-10-20,13,Referral,1370324,10
+Candidate 276,Data Scientist,Offer,Accepted,"Strong problem-solving, explained system design well.",Panelist 16,,2025-10-14,2025-09-26,18,Naukri,2620324,7
+Candidate 277,Data Scientist,Managerial Interview,Rejected,"Strong problem-solving, explained DP well.",Panelist 18,No show/interview abandoned,2025-10-15,2025-09-20,25,LinkedIn,1951181,4
+Candidate 278,Data Scientist,Technical Interview,Rejected,"Great cultural fit, asked thoughtful questions.",Panelist 9,Poor skill match,2025-11-16,2025-11-02,14,Referral,1888470,8
+Candidate 279,Data Scientist,Offer,Accepted,"Strong problem-solving, explained API design well.",Panelist 10,,2025-09-29,2025-09-04,25,Naukri,2736835,5
+Candidate 280,Data Scientist,Screening,Rejected,,,Role withdrawn,2025-10-20,2025-10-19,1,LinkedIn,2527557,7
+Candidate 281,Data Scientist,Offer,Accepted,Excellent domain knowledge in ML pipelines.,Panelist 20,,2025-11-08,2025-10-14,25,Naukri,2609149,3
+Candidate 282,Data Scientist,Offer,Accepted,Excellent domain knowledge in ML pipelines.,Panelist 24,,2025-10-26,2025-10-09,17,Referral,3316611,9
+Candidate 283,Data Scientist,Technical Interview,Rejected,Needs improvement in communication.,Panelist 16,Code test failed,2025-09-19,2025-09-09,10,Referral,3026152,6
+Candidate 284,Data Scientist,Offer,Accepted,Excellent domain knowledge in ML pipelines.,Panelist 8,,2025-09-17,2025-09-06,11,Other,1938135,6
+Candidate 285,Data Scientist,Offer,Accepted,Excellent domain knowledge in ML pipelines.,Panelist 5,,2025-11-05,2025-10-25,11,Other,2835571,8
+Candidate 286,Data Scientist,Offer,Accepted,"Strong problem-solving, explained API design well.",Panelist 15,,2025-11-08,2025-10-17,22,Internal,2497166,10
+Candidate 287,Data Scientist,Offer,Accepted,Excellent domain knowledge in ML pipelines.,Panelist 10,,2025-12-01,2025-11-04,27,Internal,1621089,10
+Candidate 288,Data Scientist,Offer,Accepted,Needs improvement in code clarity.,Panelist 21,,2025-11-21,2025-11-01,20,Referral,3093685,10
+Candidate 289,Data Scientist,Offer,Rejected,Struggled with edge cases in coding round.,Panelist 7,Delays in process,2025-11-25,2025-11-07,18,Referral,1913547,10
+Candidate 290,Data Scientist,Online Assessment,Rejected,"Strong problem-solving, explained API design well.",Panelist 23,Insufficient experience,2025-09-16,2025-09-11,5,Other,3121679,6
+Candidate 291,Data Scientist,Offer,Accepted,"Great cultural fit, asked thoughtful questions.",Panelist 5,,2025-09-27,2025-09-06,21,Internal,2686048,10
+Candidate 292,Data Scientist,Online Assessment,Rejected,Struggled with edge cases in coding round.,Panelist 11,Insufficient experience,2025-10-09,2025-10-04,5,Internal,2386675,10
+Candidate 293,Data Scientist,Offer,Accepted,Excellent domain knowledge in ML pipelines.,Panelist 6,,2025-11-13,2025-10-26,18,LinkedIn,3172361,6
+Candidate 294,Data Scientist,Offer,Rejected,"Great cultural fit, asked thoughtful questions.",Panelist 1,Delays in process,2025-11-03,2025-10-13,21,Internal,1595544,6
+Candidate 295,Data Scientist,Offer,Accepted,"Strong problem-solving, explained system design well.",Panelist 10,,2025-11-05,2025-10-19,17,Referral,1432930,9
+Candidate 296,Data Scientist,Managerial Interview,Rejected,Needs improvement in code clarity.,Panelist 16,Poor skill match,2025-10-13,2025-09-24,19,Internal,2744493,8
+Candidate 297,Data Scientist,Screening,Rejected,,,Role withdrawn,2025-10-10,2025-10-03,7,Other,2982216,5
+Candidate 298,Data Scientist,Applied,Rejected,,,Cultural misfit,2025-09-24,2025-09-24,0,Internal,1953096,10
+Candidate 299,Data Scientist,Offer,Accepted,Excellent domain knowledge in ML pipelines.,Panelist 6,,2025-11-17,2025-10-28,20,Referral,2516786,8
+Candidate 300,Data Scientist,Offer,Accepted,"Strong problem-solving, explained system design well.",Panelist 10,,2025-10-13,2025-09-17,26,Referral,1567568,8
+Candidate 301,Data Scientist,Applied,Rejected,,,Role withdrawn,2025-10-21,2025-10-21,0,Naukri,2044474,5
+Candidate 302,Data Scientist,Screening,Rejected,,,Cultural misfit,2025-11-08,2025-11-03,5,Internal,2943513,10
+Candidate 303,Data Scientist,Offer,Accepted,"Great cultural fit, asked thoughtful questions.",Panelist 14,,2025-11-23,2025-11-02,21,Internal,3353169,7
+Candidate 304,Data Scientist,Online Assessment,Rejected,Needs improvement in time complexity.,Panelist 12,Cultural misfit,2025-10-18,2025-10-08,10,Internal,1750118,10
+Candidate 305,Data Scientist,Online Assessment,Rejected,Needs improvement in communication.,Panelist 1,Cultural misfit,2025-09-18,2025-09-13,5,Naukri,1926835,7
+Candidate 306,Data Scientist,Online Assessment,Rejected,Excellent domain knowledge in ML pipelines.,Panelist 18,Cultural misfit,2025-09-26,2025-09-16,10,LinkedIn,2150807,8
+Candidate 307,Data Scientist,Applied,Rejected,,,Poor skill match,2025-09-14,2025-09-14,0,Internal,1665277,10
+Candidate 308,Data Scientist,Offer,Accepted,"Great cultural fit, asked thoughtful questions.",Panelist 25,,2025-10-20,2025-09-27,23,Naukri,1695176,6
+Candidate 309,Data Scientist,Offer,Accepted,Needs improvement in time complexity.,Panelist 6,,2025-11-20,2025-10-25,26,Other,2968831,7
+Candidate 310,Data Scientist,Applied,Rejected,,,Code test failed,2025-10-11,2025-10-11,0,Other,2476423,7
+Candidate 311,Data Scientist,Managerial Interview,Rejected,Excellent domain knowledge in ML pipelines.,Panelist 5,No show/interview abandoned,2025-10-21,2025-09-27,24,Other,1815983,6
+Candidate 312,Data Scientist,Screening,Rejected,,,Poor skill match,2025-10-05,2025-10-01,4,Other,2285025,6
+Candidate 313,Data Scientist,Offer,Accepted,Needs improvement in time complexity.,Panelist 23,,2025-09-30,2025-09-07,23,Referral,2289497,8
+Candidate 314,Data Scientist,Offer,Accepted,Excellent domain knowledge in ML pipelines.,Panelist 16,,2025-10-10,2025-09-12,28,Internal,1543711,9
+Candidate 315,Data Scientist,Online Assessment,Rejected,"Great cultural fit, asked thoughtful questions.",Panelist 10,Insufficient experience,2025-10-30,2025-10-18,12,Internal,1336765,9
+Candidate 316,Data Scientist,Offer,Accepted,Needs improvement in communication.,Panelist 13,,2025-09-26,2025-09-07,19,Naukri,2968976,7
+Candidate 317,Data Scientist,Technical Interview,Rejected,Needs improvement in time complexity.,Panelist 20,Role withdrawn,2025-10-27,2025-10-14,13,Other,2918105,3
+Candidate 318,Data Scientist,Online Assessment,Rejected,"Strong problem-solving, explained system design well.",Panelist 3,Cultural misfit,2025-09-14,2025-09-03,11,Other,1953898,6
+Candidate 319,Data Scientist,Offer,Accepted,Struggled with edge cases in coding round.,Panelist 23,,2025-10-29,2025-10-19,10,Naukri,2940369,9
+Candidate 320,Data Scientist,Offer,Accepted,"Strong problem-solving, explained system design well.",Panelist 21,,2025-11-20,2025-11-04,16,Internal,3333312,10
+Candidate 321,Data Scientist,Offer,Accepted,"Strong problem-solving, explained DP well.",Panelist 24,,2025-10-27,2025-10-08,19,Internal,3094743,10
+Candidate 322,Data Scientist,Online Assessment,Rejected,Excellent domain knowledge in ML pipelines.,Panelist 11,Insufficient experience,2025-11-05,2025-10-28,8,Referral,2296225,9
+Candidate 323,Data Scientist,Offer,Rejected,"Great cultural fit, asked thoughtful questions.",Panelist 1,Compensation mismatch,2025-10-01,2025-09-10,21,Internal,3250916,10
+Candidate 324,Data Scientist,Offer,Accepted,Needs improvement in time complexity.,Panelist 19,,2025-10-22,2025-09-27,25,Referral,3267111,10
+Candidate 325,Data Scientist,Technical Interview,Rejected,"Strong problem-solving, explained system design well.",Panelist 2,No show/interview abandoned,2025-09-13,2025-09-01,12,Other,2260827,5
+Candidate 326,Data Scientist,Technical Interview,Rejected,Excellent domain knowledge in ML pipelines.,Panelist 2,Cultural misfit,2025-11-05,2025-10-25,11,LinkedIn,2146352,9
+Candidate 327,Data Scientist,Screening,Rejected,,,Cultural misfit,2025-09-11,2025-09-05,6,Other,1723559,7
+Candidate 328,Data Scientist,Offer,Rejected,Struggled with edge cases in coding round.,Panelist 20,Offer declined - better opportunity,2025-11-14,2025-10-26,19,LinkedIn,2464461,7
+Candidate 329,Data Scientist,Technical Interview,Rejected,Excellent domain knowledge in ML pipelines.,Panelist 16,Insufficient experience,2025-10-29,2025-10-24,5,Other,1728405,5
+Candidate 330,Data Scientist,Offer,Rejected,Needs improvement in code clarity.,Panelist 14,Delays in process,2025-11-16,2025-10-25,22,Other,1429039,8
+Candidate 331,Data Scientist,Offer,Accepted,Needs improvement in communication.,Panelist 24,,2025-09-14,2025-09-01,13,Internal,2061159,6
+Candidate 332,Data Scientist,Online Assessment,Rejected,Needs improvement in communication.,Panelist 20,Cultural misfit,2025-10-09,2025-09-27,12,LinkedIn,2619282,10
+Candidate 333,Data Scientist,Offer,Accepted,Struggled with edge cases in coding round.,Panelist 16,,2025-10-23,2025-10-02,21,Referral,2533585,5
+Candidate 334,Data Scientist,Screening,Rejected,,,Insufficient experience,2025-11-07,2025-10-31,7,Internal,3275308,7
+Candidate 335,Data Scientist,Technical Interview,Rejected,Struggled with edge cases in coding round.,Panelist 11,Cultural misfit,2025-10-22,2025-10-10,12,Naukri,3096161,8
+Candidate 336,Data Scientist,Online Assessment,Rejected,"Strong problem-solving, explained DP well.",Panelist 9,Code test failed,2025-09-18,2025-09-10,8,Naukri,2314111,8
+Candidate 337,Data Scientist,Offer,Accepted,Needs improvement in code clarity.,Panelist 21,,2025-10-30,2025-10-06,24,Referral,2469681,9
+Candidate 338,Data Scientist,Online Assessment,Rejected,Needs improvement in time complexity.,Panelist 15,Role withdrawn,2025-09-22,2025-09-11,11,Internal,2628829,10
+Candidate 339,Data Scientist,Screening,Rejected,,,Poor skill match,2025-10-25,2025-10-22,3,Referral,2625317,10
+Candidate 340,Data Scientist,Technical Interview,Rejected,"Strong problem-solving, explained API design well.",Panelist 10,Insufficient experience,2025-10-28,2025-10-13,15,Naukri,1844627,9
+Candidate 341,Data Scientist,Offer,Accepted,Struggled with edge cases in coding round.,Panelist 7,,2025-12-02,2025-11-07,25,LinkedIn,2818557,6
+Candidate 342,Data Scientist,Offer,Accepted,Needs improvement in code clarity.,Panelist 23,,2025-11-25,2025-10-28,28,LinkedIn,1798493,7
+Candidate 343,Data Scientist,Offer,Accepted,"Strong problem-solving, explained DP well.",Panelist 11,,2025-11-06,2025-10-06,31,Internal,1383142,10
+Candidate 344,Data Scientist,Technical Interview,Rejected,"Strong problem-solving, explained DP well.",Panelist 6,Role withdrawn,2025-09-13,2025-09-05,8,Naukri,2863772,7
+Candidate 345,Data Scientist,Technical Interview,Rejected,"Great cultural fit, asked thoughtful questions.",Panelist 1,Poor skill match,2025-10-15,2025-09-28,17,LinkedIn,2346103,8
+Candidate 346,Data Scientist,Applied,Rejected,,,Poor skill match,2025-09-25,2025-09-25,0,LinkedIn,2613969,7
+Candidate 347,Data Scientist,Online Assessment,Rejected,"Strong problem-solving, explained system design well.",Panelist 4,Insufficient experience,2025-10-21,2025-10-12,9,Naukri,1900646,9
+Candidate 348,Data Scientist,Screening,Rejected,,,Insufficient experience,2025-09-14,2025-09-09,5,Internal,2123150,10
+Candidate 349,Data Scientist,Offer,Accepted,"Strong problem-solving, explained DP well.",Panelist 11,,2025-10-08,2025-09-14,24,Internal,2464726,10
+Candidate 350,Data Scientist,Offer,Rejected,Needs improvement in code clarity.,Panelist 24,Compensation mismatch,2025-09-17,2025-09-03,14,LinkedIn,2175619,6
+Candidate 351,Data Scientist,Online Assessment,Rejected,"Strong problem-solving, explained DP well.",Panelist 20,Insufficient experience,2025-09-11,2025-09-07,4,Naukri,2589448,6
+Candidate 352,Data Scientist,Offer,Accepted,Struggled with edge cases in coding round.,Panelist 10,,2025-10-16,2025-09-27,19,LinkedIn,1793628,5
+Candidate 353,Data Scientist,Offer,Rejected,Needs improvement in communication.,Panelist 16,Delays in process,2025-09-24,2025-09-03,21,Internal,1853801,10
+Candidate 354,Data Scientist,Offer,Accepted,Needs improvement in time complexity.,Panelist 23,,2025-10-27,2025-10-10,17,Internal,3253326,10
+Candidate 355,Data Scientist,Screening,Rejected,,,Poor skill match,2025-09-25,2025-09-19,6,Naukri,2296100,3
+Candidate 356,Data Scientist,Offer,Accepted,"Great cultural fit, asked thoughtful questions.",Panelist 3,,2025-10-10,2025-09-11,29,Internal,2867935,7
+Candidate 357,Data Scientist,Online Assessment,Rejected,Excellent domain knowledge in ML pipelines.,Panelist 7,Insufficient experience,2025-10-28,2025-10-24,4,LinkedIn,1492936,7
+Candidate 358,Data Scientist,Offer,Accepted,Excellent domain knowledge in ML pipelines.,Panelist 1,,2025-11-05,2025-10-23,13,Naukri,2287800,7
+Candidate 359,Data Scientist,Offer,Accepted,Needs improvement in code clarity.,Panelist 5,,2025-11-07,2025-10-14,24,Internal,3184877,10
+Candidate 360,Data Scientist,Offer,Rejected,Excellent domain knowledge in ML pipelines.,Panelist 24,Cultural misfit,2025-11-02,2025-10-17,16,Referral,1269752,10
+Candidate 361,Data Scientist,Offer,Accepted,Struggled with edge cases in coding round.,Panelist 4,,2025-11-30,2025-11-09,21,Naukri,3071862,9
+Candidate 362,Data Scientist,Online Assessment,Rejected,Excellent domain knowledge in ML pipelines.,Panelist 4,Code test failed,2025-10-29,2025-10-19,10,Referral,2781295,6
+Candidate 363,Data Scientist,Offer,Rejected,Struggled with edge cases in coding round.,Panelist 15,Delays in process,2025-09-20,2025-09-01,19,Naukri,2514378,9
+Candidate 364,Data Scientist,Managerial Interview,Rejected,Struggled with edge cases in coding round.,Panelist 2,Cultural misfit,2025-10-08,2025-09-16,22,Referral,3307126,10
+Candidate 365,Data Scientist,Offer,Accepted,Needs improvement in communication.,Panelist 23,,2025-11-17,2025-10-21,27,Referral,2971831,7
+Candidate 366,Data Scientist,Offer,Accepted,Struggled with edge cases in coding round.,Panelist 10,,2025-09-26,2025-09-08,18,Internal,1905578,10
+Candidate 367,Data Scientist,Technical Interview,Rejected,Needs improvement in time complexity.,Panelist 19,No show/interview abandoned,2025-09-29,2025-09-16,13,Internal,2740664,10
+Candidate 368,Data Scientist,Offer,Accepted,Needs improvement in time complexity.,Panelist 11,,2025-11-19,2025-11-02,17,Other,3423348,8
+Candidate 369,Data Scientist,Applied,Rejected,,,Code test failed,2025-09-01,2025-09-01,0,Other,1919755,2
+Candidate 370,Data Scientist,Offer,Rejected,"Great cultural fit, asked thoughtful questions.",Panelist 7,Cultural misfit,2025-10-12,2025-09-18,24,Other,3066130,9
+Candidate 371,Data Scientist,Offer,Rejected,"Great cultural fit, asked thoughtful questions.",Panelist 14,Delays in process,2025-10-15,2025-09-19,26,Internal,1549192,10
+Candidate 372,Data Scientist,Screening,Rejected,,,Poor skill match,2025-10-08,2025-10-06,2,Naukri,2146929,10
+Candidate 373,Data Scientist,Offer,Accepted,"Great cultural fit, asked thoughtful questions.",Panelist 20,,2025-11-29,2025-11-02,27,Naukri,3408199,6
+Candidate 374,Data Scientist,Managerial Interview,Rejected,Excellent domain knowledge in ML pipelines.,Panelist 21,Cultural misfit,2025-11-04,2025-10-24,11,Referral,2244849,8
+Candidate 375,Data Scientist,Offer,Rejected,"Strong problem-solving, explained DP well.",Panelist 22,Delays in process,2025-11-20,2025-11-08,12,Other,1772222,4
+Candidate 376,Data Scientist,Offer,Accepted,"Strong problem-solving, explained system design well.",Panelist 12,,2025-10-03,2025-09-16,17,Naukri,3461231,5
+Candidate 377,Data Scientist,Online Assessment,Rejected,Struggled with edge cases in coding round.,Panelist 12,Code test failed,2025-11-08,2025-11-02,6,Other,3357208,8
+Candidate 378,Data Scientist,Screening,Rejected,,,Cultural misfit,2025-10-17,2025-10-16,1,Internal,1224369,10
+Candidate 379,Data Scientist,Online Assessment,Rejected,Struggled with edge cases in coding round.,Panelist 22,Poor skill match,2025-10-03,2025-09-26,7,Internal,2589210,10
+Candidate 380,Data Scientist,Managerial Interview,Rejected,Needs improvement in code clarity.,Panelist 24,Role withdrawn,2025-10-29,2025-10-15,14,Naukri,1852390,5
+Candidate 381,Data Scientist,Offer,Accepted,"Strong problem-solving, explained API design well.",Panelist 8,,2025-09-29,2025-09-20,9,Other,1959958,8
+Candidate 382,Data Scientist,Technical Interview,Rejected,"Great cultural fit, asked thoughtful questions.",Panelist 24,Poor skill match,2025-10-24,2025-10-12,12,LinkedIn,1418651,8
+Candidate 383,Data Scientist,Technical Interview,Rejected,"Great cultural fit, asked thoughtful questions.",Panelist 9,Cultural misfit,2025-10-05,2025-09-25,10,Naukri,1704802,10
+Candidate 384,Data Scientist,Offer,Accepted,Excellent domain knowledge in ML pipelines.,Panelist 17,,2025-11-18,2025-10-24,25,LinkedIn,3225096,4
+Candidate 385,Data Scientist,Screening,Rejected,,,Insufficient experience,2025-10-10,2025-10-04,6,Other,3110257,3
+Candidate 386,Data Scientist,Managerial Interview,Rejected,Needs improvement in code clarity.,Panelist 11,Code test failed,2025-10-15,2025-10-01,14,LinkedIn,3437937,6
+Candidate 387,Data Scientist,Managerial Interview,Rejected,Struggled with edge cases in coding round.,Panelist 9,Insufficient experience,2025-11-26,2025-11-08,18,Naukri,2373104,9
+Candidate 388,Data Scientist,Offer,Rejected,"Strong problem-solving, explained API design well.",Panelist 21,Offer declined - better opportunity,2025-10-13,2025-09-23,20,Internal,1976063,10
+Candidate 389,Data Scientist,Applied,Rejected,,,Poor skill match,2025-09-02,2025-09-02,0,Naukri,1550625,6
+Candidate 390,Data Scientist,Online Assessment,Rejected,"Great cultural fit, asked thoughtful questions.",Panelist 11,Poor skill match,2025-09-19,2025-09-11,8,Other,2619310,10
+Candidate 391,Data Scientist,Online Assessment,Rejected,"Strong problem-solving, explained API design well.",Panelist 21,Poor skill match,2025-10-28,2025-10-24,4,LinkedIn,3484394,6
+Candidate 392,Data Scientist,Offer,Accepted,"Great cultural fit, asked thoughtful questions.",Panelist 12,,2025-09-19,2025-09-10,9,Referral,2698657,10
+Candidate 393,Data Scientist,Offer,Accepted,Struggled with edge cases in coding round.,Panelist 20,,2025-11-18,2025-11-01,17,Naukri,2543251,8
+Candidate 394,Data Scientist,Technical Interview,Rejected,Needs improvement in code clarity.,Panelist 5,Insufficient experience,2025-10-10,2025-09-29,11,Internal,3410171,8
+Candidate 395,Data Scientist,Managerial Interview,Rejected,"Great cultural fit, asked thoughtful questions.",Panelist 25,Poor skill match,2025-11-14,2025-10-25,20,LinkedIn,1800106,6
+Candidate 396,Data Scientist,Offer,Rejected,Needs improvement in time complexity.,Panelist 3,Cultural misfit,2025-09-23,2025-09-05,18,Naukri,1451661,10
+Candidate 397,Data Scientist,Online Assessment,Rejected,Needs improvement in communication.,Panelist 3,Insufficient experience,2025-10-26,2025-10-19,7,Internal,2513612,8
+Candidate 398,Data Scientist,Screening,Rejected,,,Role withdrawn,2025-10-11,2025-10-10,1,Other,1246040,9
+Candidate 399,Data Scientist,Technical Interview,Rejected,Struggled with edge cases in coding round.,Panelist 17,Insufficient experience,2025-10-17,2025-10-10,7,LinkedIn,3229233,8
+Candidate 400,Data Scientist,Applied,Rejected,,,Role withdrawn,2025-09-11,2025-09-11,0,Naukri,3142408,5
+Candidate 401,Data Scientist,Offer,Accepted,Needs improvement in communication.,Panelist 13,,2025-10-20,2025-09-21,29,Naukri,2104489,8
+Candidate 402,Data Scientist,Offer,Rejected,Struggled with edge cases in coding round.,Panelist 4,Delays in process,2025-09-28,2025-09-13,15,LinkedIn,3292589,10
+Candidate 403,Data Scientist,Online Assessment,Rejected,Excellent domain knowledge in ML pipelines.,Panelist 1,Cultural misfit,2025-09-17,2025-09-06,11,LinkedIn,2933062,5
+Candidate 404,Data Scientist,Screening,Rejected,,,Role withdrawn,2025-11-06,2025-10-30,7,LinkedIn,2663551,7
+Candidate 405,Data Scientist,Offer,Accepted,Struggled with edge cases in coding round.,Panelist 25,,2025-11-09,2025-10-13,27,LinkedIn,2864907,7
+Candidate 406,Data Scientist,Managerial Interview,Rejected,Needs improvement in time complexity.,Panelist 12,No show/interview abandoned,2025-10-21,2025-10-06,15,Naukri,1490493,10
+Candidate 407,Data Scientist,Technical Interview,Rejected,Struggled with edge cases in coding round.,Panelist 17,Insufficient experience,2025-10-01,2025-09-19,12,Naukri,1526353,6
+Candidate 408,Data Scientist,Offer,Accepted,"Great cultural fit, asked thoughtful questions.",Panelist 16,,2025-11-30,2025-11-09,21,Naukri,2962346,2
+Candidate 409,Data Scientist,Screening,Rejected,,,Poor skill match,2025-11-02,2025-10-26,7,Other,1882233,5
+Candidate 410,Data Scientist,Screening,Rejected,,,Cultural misfit,2025-10-28,2025-10-23,5,LinkedIn,1268897,6
+Candidate 411,Data Scientist,Offer,Rejected,Needs improvement in code clarity.,Panelist 10,Delays in process,2025-10-16,2025-09-28,18,Other,1336883,5
+Candidate 412,Data Scientist,Offer,Accepted,Excellent domain knowledge in ML pipelines.,Panelist 8,,2025-11-08,2025-10-26,13,Referral,1914754,10
+Candidate 413,Data Scientist,Screening,Rejected,,,Role withdrawn,2025-09-21,2025-09-20,1,LinkedIn,1307542,4
+Candidate 414,Data Scientist,Online Assessment,Rejected,"Strong problem-solving, explained system design well.",Panelist 24,Poor skill match,2025-10-20,2025-10-16,4,Naukri,3102981,8
+Candidate 415,Data Scientist,Online Assessment,Rejected,"Strong problem-solving, explained DP well.",Panelist 7,Role withdrawn,2025-09-21,2025-09-16,5,Other,1633771,10
+Candidate 416,Data Scientist,Screening,Rejected,,,Insufficient experience,2025-10-13,2025-10-11,2,Internal,2773930,10
+Candidate 417,Data Scientist,Technical Interview,Rejected,Needs improvement in time complexity.,Panelist 1,Poor skill match,2025-10-25,2025-10-15,10,Other,1331912,8
+Candidate 418,Data Scientist,Offer,Accepted,Struggled with edge cases in coding round.,Panelist 6,,2025-11-17,2025-10-30,18,Referral,2434471,10
+Candidate 419,Data Scientist,Applied,Rejected,,,Code test failed,2025-10-28,2025-10-28,0,Referral,2768503,10
+Candidate 420,Data Scientist,Screening,Rejected,,,Insufficient experience,2025-10-13,2025-10-08,5,Other,2918860,4
+Candidate 421,Data Scientist,Offer,Accepted,Excellent domain knowledge in ML pipelines.,Panelist 7,,2025-10-01,2025-09-10,21,Referral,3000978,10
+Candidate 422,Data Scientist,Offer,Rejected,Excellent domain knowledge in ML pipelines.,Panelist 15,Delays in process,2025-11-18,2025-11-03,15,Naukri,1408288,6
+Candidate 423,Data Scientist,Applied,Rejected,,,Code test failed,2025-10-11,2025-10-11,0,Referral,2650492,7
+Candidate 424,Data Scientist,Screening,Rejected,,,Poor skill match,2025-09-17,2025-09-16,1,Internal,3269203,10
+Candidate 425,Data Scientist,Online Assessment,Rejected,"Strong problem-solving, explained system design well.",Panelist 1,Code test failed,2025-11-06,2025-10-26,11,Naukri,1640971,10
+Candidate 426,Data Scientist,Screening,Rejected,,,Insufficient experience,2025-10-10,2025-10-05,5,Other,2791975,5
+Candidate 427,Data Scientist,Offer,Accepted,Struggled with edge cases in coding round.,Panelist 21,,2025-11-30,2025-11-06,24,Other,2933480,5
+Candidate 428,Data Scientist,Technical Interview,Rejected,"Strong problem-solving, explained system design well.",Panelist 3,Poor skill match,2025-11-17,2025-11-05,12,Other,3413102,5
+Candidate 429,Data Scientist,Offer,Accepted,"Great cultural fit, asked thoughtful questions.",Panelist 2,,2025-09-15,2025-09-04,11,Naukri,1269574,8
+Candidate 430,Data Scientist,Screening,Rejected,,,Poor skill match,2025-10-04,2025-09-29,5,Naukri,1665915,4
+Candidate 431,Data Scientist,Online Assessment,Rejected,Excellent domain knowledge in ML pipelines.,Panelist 7,Role withdrawn,2025-11-01,2025-10-22,10,Referral,2149863,10
+Candidate 432,Data Scientist,Offer,Accepted,Needs improvement in code clarity.,Panelist 20,,2025-10-13,2025-10-01,12,Internal,2480622,10
+Candidate 433,Data Scientist,Offer,Accepted,"Strong problem-solving, explained API design well.",Panelist 16,,2025-11-02,2025-10-13,20,Naukri,1814813,7
+Candidate 434,Data Scientist,Offer,Accepted,Excellent domain knowledge in ML pipelines.,Panelist 14,,2025-10-20,2025-09-27,23,Internal,2707516,10
+Candidate 435,Data Scientist,Offer,Accepted,"Strong problem-solving, explained API design well.",Panelist 16,,2025-10-10,2025-09-19,21,Referral,1662172,10
+Candidate 436,Data Scientist,Offer,Accepted,"Great cultural fit, asked thoughtful questions.",Panelist 10,,2025-10-04,2025-09-19,15,LinkedIn,2335267,8
+Candidate 437,Data Scientist,Online Assessment,Rejected,Struggled with edge cases in coding round.,Panelist 12,Cultural misfit,2025-11-07,2025-10-26,12,Referral,3134221,8
+Candidate 438,Data Scientist,Offer,Rejected,"Great cultural fit, asked thoughtful questions.",Panelist 2,Compensation mismatch,2025-10-26,2025-10-09,17,LinkedIn,1789658,7
+Candidate 439,Data Scientist,Online Assessment,Rejected,Needs improvement in time complexity.,Panelist 24,Poor skill match,2025-11-12,2025-11-03,9,Naukri,3365368,9
+Candidate 440,Data Scientist,Offer,Accepted,Needs improvement in communication.,Panelist 4,,2025-10-23,2025-10-02,21,Other,1606275,6
+Candidate 441,Data Scientist,Applied,Rejected,,,Cultural misfit,2025-10-20,2025-10-20,0,Other,3267641,5
+Candidate 442,Data Scientist,Offer,Accepted,"Great cultural fit, asked thoughtful questions.",Panelist 6,,2025-09-23,2025-09-04,19,Internal,1821455,10
+Candidate 443,Data Scientist,Technical Interview,Rejected,"Strong problem-solving, explained DP well.",Panelist 12,Poor skill match,2025-10-25,2025-10-09,16,Internal,1787367,9
+Candidate 444,Data Scientist,Online Assessment,Rejected,"Strong problem-solving, explained system design well.",Panelist 6,Role withdrawn,2025-10-20,2025-10-12,8,Internal,3198220,8
+Candidate 445,Data Scientist,Online Assessment,Rejected,"Great cultural fit, asked thoughtful questions.",Panelist 19,Insufficient experience,2025-09-16,2025-09-04,12,LinkedIn,3051904,7
+Candidate 446,Data Scientist,Offer,Accepted,"Strong problem-solving, explained API design well.",Panelist 16,,2025-10-02,2025-09-13,19,LinkedIn,1301682,6
+Candidate 447,Data Scientist,Managerial Interview,Rejected,"Strong problem-solving, explained API design well.",Panelist 17,Cultural misfit,2025-10-30,2025-10-13,17,LinkedIn,3291750,7
+Candidate 448,Data Scientist,Applied,Rejected,,,Insufficient experience,2025-10-13,2025-10-13,0,Referral,2041005,10
+Candidate 449,Data Scientist,Applied,Rejected,,,Role withdrawn,2025-09-08,2025-09-08,0,Other,2582481,9
+Candidate 450,Data Scientist,Offer,Accepted,Excellent domain knowledge in ML pipelines.,Panelist 8,,2025-10-01,2025-09-10,21,LinkedIn,2650581,5
+Candidate 451,Data Scientist,Offer,Accepted,Struggled with edge cases in coding round.,Panelist 24,,2025-10-05,2025-09-16,19,Internal,2990269,9
+Candidate 452,Data Scientist,Offer,Accepted,Excellent domain knowledge in ML pipelines.,Panelist 8,,2025-10-11,2025-09-16,25,Internal,3207819,10
+Candidate 453,Data Scientist,Technical Interview,Rejected,"Strong problem-solving, explained system design well.",Panelist 3,Insufficient experience,2025-10-13,2025-09-27,16,Naukri,3385211,7
+Candidate 454,Data Scientist,Offer,Accepted,Excellent domain knowledge in ML pipelines.,Panelist 14,,2025-11-08,2025-10-26,13,Internal,1973542,10
+Candidate 455,Data Scientist,Offer,Accepted,"Strong problem-solving, explained API design well.",Panelist 9,,2025-11-14,2025-10-30,15,Other,3376478,6
+Candidate 456,Data Scientist,Technical Interview,Rejected,"Strong problem-solving, explained DP well.",Panelist 16,Role withdrawn,2025-10-26,2025-10-16,10,Internal,1355205,7
+Candidate 457,Data Scientist,Screening,Rejected,,,Code test failed,2025-10-03,2025-09-30,3,Other,3046789,6
+Candidate 458,Data Scientist,Applied,Rejected,,,Cultural misfit,2025-10-01,2025-10-01,0,Other,1387624,6
+Candidate 459,Data Scientist,Offer,Accepted,"Strong problem-solving, explained DP well.",Panelist 6,,2025-11-03,2025-10-18,16,LinkedIn,3343438,8
+Candidate 460,Data Scientist,Applied,Rejected,,,Role withdrawn,2025-10-19,2025-10-19,0,Referral,2101224,10
+Candidate 461,Data Scientist,Offer,Accepted,Needs improvement in code clarity.,Panelist 9,,2025-09-28,2025-09-10,18,Naukri,2798405,7
+Candidate 462,Data Scientist,Online Assessment,Rejected,Struggled with edge cases in coding round.,Panelist 19,Code test failed,2025-09-17,2025-09-10,7,Referral,3320822,10
+Candidate 463,Data Scientist,Offer,Accepted,Excellent domain knowledge in ML pipelines.,Panelist 14,,2025-11-11,2025-10-24,18,Referral,2632655,9
+Candidate 464,Data Scientist,Offer,Accepted,Needs improvement in communication.,Panelist 25,,2025-11-06,2025-10-14,23,LinkedIn,2612676,7
+Candidate 465,Data Scientist,Applied,Rejected,,,Role withdrawn,2025-10-09,2025-10-09,0,Other,2371467,7
+Candidate 466,Data Scientist,Screening,Rejected,,,Role withdrawn,2025-11-01,2025-10-25,7,Other,3331662,6
+Candidate 467,Data Scientist,Online Assessment,Rejected,Needs improvement in communication.,Panelist 6,Role withdrawn,2025-10-14,2025-10-11,3,Naukri,3005805,4
+Candidate 468,Data Scientist,Technical Interview,Rejected,Struggled with edge cases in coding round.,Panelist 23,Code test failed,2025-09-21,2025-09-06,15,Naukri,1314714,10
+Candidate 469,Data Scientist,Offer,Accepted,"Strong problem-solving, explained API design well.",Panelist 11,,2025-10-19,2025-09-29,20,LinkedIn,2683614,8
+Candidate 470,Data Scientist,Technical Interview,Rejected,Struggled with edge cases in coding round.,Panelist 20,Code test failed,2025-10-17,2025-10-07,10,Naukri,3283421,9
+Candidate 471,Data Scientist,Offer,Rejected,Struggled with edge cases in coding round.,Panelist 4,Compensation mismatch,2025-11-16,2025-10-21,26,Naukri,2425222,5
+Candidate 472,Data Scientist,Technical Interview,Rejected,"Great cultural fit, asked thoughtful questions.",Panelist 18,Role withdrawn,2025-10-14,2025-10-04,10,Other,2555565,8
+Candidate 473,Data Scientist,Offer,Accepted,"Strong problem-solving, explained DP well.",Panelist 14,,2025-11-04,2025-10-16,19,LinkedIn,2790430,9
+Candidate 474,Data Scientist,Offer,Accepted,Excellent domain knowledge in ML pipelines.,Panelist 5,,2025-10-28,2025-10-05,23,Naukri,1341675,10
+Candidate 475,Data Scientist,Managerial Interview,Rejected,Excellent domain knowledge in ML pipelines.,Panelist 1,No show/interview abandoned,2025-10-20,2025-09-29,21,Other,3177196,5
+Candidate 476,Data Scientist,Offer,Rejected,Needs improvement in code clarity.,Panelist 11,Compensation mismatch,2025-11-20,2025-11-02,18,Naukri,2071080,7
+Candidate 477,Data Scientist,Offer,Accepted,"Great cultural fit, asked thoughtful questions.",Panelist 1,,2025-09-19,2025-09-02,17,LinkedIn,2985523,6
+Candidate 478,Data Scientist,Offer,Rejected,Struggled with edge cases in coding round.,Panelist 10,Delays in process,2025-11-25,2025-11-06,19,Other,2757149,9
+Candidate 479,Data Scientist,Online Assessment,Rejected,"Strong problem-solving, explained API design well.",Panelist 18,Poor skill match,2025-11-04,2025-10-25,10,LinkedIn,2007993,6
+Candidate 480,Data Scientist,Offer,Accepted,"Strong problem-solving, explained system design well.",Panelist 5,,2025-11-15,2025-10-20,26,Naukri,3390759,5
+Candidate 481,Data Scientist,Offer,Accepted,"Great cultural fit, asked thoughtful questions.",Panelist 9,,2025-11-25,2025-10-31,25,Other,2849396,5
+Candidate 482,Data Scientist,Online Assessment,Rejected,Excellent domain knowledge in ML pipelines.,Panelist 1,Code test failed,2025-10-22,2025-10-19,3,Other,2001045,4
+Candidate 483,Data Scientist,Online Assessment,Rejected,Excellent domain knowledge in ML pipelines.,Panelist 20,Role withdrawn,2025-10-12,2025-10-03,9,Internal,2870566,10
+Candidate 484,Data Scientist,Offer,Accepted,"Great cultural fit, asked thoughtful questions.",Panelist 11,,2025-10-01,2025-09-17,14,Naukri,1942004,5
+Candidate 485,Data Scientist,Online Assessment,Rejected,Struggled with edge cases in coding round.,Panelist 1,Cultural misfit,2025-11-08,2025-10-27,12,Other,1818718,6
+Candidate 486,Data Scientist,Offer,Accepted,Needs improvement in time complexity.,Panelist 21,,2025-10-04,2025-09-12,22,LinkedIn,1687636,9
+Candidate 487,Data Scientist,Offer,Accepted,"Great cultural fit, asked thoughtful questions.",Panelist 18,,2025-10-20,2025-10-08,12,Naukri,2344203,7
+Candidate 488,Data Scientist,Applied,Rejected,,,Poor skill match,2025-09-28,2025-09-28,0,Naukri,2283027,4
+Candidate 489,Data Scientist,Offer,Accepted,Struggled with edge cases in coding round.,Panelist 12,,2025-10-26,2025-10-12,14,Other,1981925,4
+Candidate 490,Data Scientist,Offer,Accepted,Needs improvement in time complexity.,Panelist 20,,2025-11-19,2025-11-01,18,Referral,2617164,10
+Candidate 491,Data Scientist,Offer,Accepted,Struggled with edge cases in coding round.,Panelist 18,,2025-10-01,2025-09-19,12,Referral,3123983,8
+Candidate 492,Data Scientist,Online Assessment,Rejected,"Great cultural fit, asked thoughtful questions.",Panelist 1,Cultural misfit,2025-11-02,2025-10-25,8,Referral,2387804,7
+Candidate 493,Data Scientist,Offer,Accepted,"Strong problem-solving, explained API design well.",Panelist 4,,2025-10-18,2025-09-28,20,LinkedIn,2164998,7
+Candidate 494,Data Scientist,Offer,Accepted,"Strong problem-solving, explained API design well.",Panelist 4,,2025-11-25,2025-11-02,23,Internal,1248606,10
+Candidate 495,Data Scientist,Offer,Accepted,"Strong problem-solving, explained DP well.",Panelist 11,,2025-09-27,2025-09-16,11,Internal,3024052,10
+Candidate 496,Data Scientist,Offer,Rejected,"Great cultural fit, asked thoughtful questions.",Panelist 4,Cultural misfit,2025-11-06,2025-10-15,22,Internal,2352159,10
+Candidate 497,Data Scientist,Online Assessment,Rejected,Needs improvement in time complexity.,Panelist 7,Cultural misfit,2025-11-15,2025-11-05,10,LinkedIn,2003811,2
+Candidate 498,Data Scientist,Managerial Interview,Rejected,Struggled with edge cases in coding round.,Panelist 20,Code test failed,2025-10-20,2025-10-05,15,Naukri,2395009,4
+Candidate 499,Data Scientist,Offer,Accepted,Needs improvement in communication.,Panelist 10,,2025-11-24,2025-11-03,21,Referral,2652765,10
+Candidate 500,Data Scientist,Offer,Accepted,"Great cultural fit, asked thoughtful questions.",Panelist 18,,2025-10-23,2025-10-01,22,Referral,3258383,7

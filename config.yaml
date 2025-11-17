@@ -1,0 +1,45 @@
+# n8n Webhook Configuration
+# Configure webhook URLs for each agent
+
+n8n:
+  base_url: "http://localhost:5678"
+  
+  agents:
+    sourcing_quality_agent:
+      webhook_path: "/webhook/35f7df3a-1934-4e5f-82ac-cdedd7cb99e7"
+      description: "Analyzes sourcing channel quality and flags poor sources"
+      enabled: true
+      filename_keywords:
+        - summary
+    
+    rejection_pattern_agent:
+      webhook_path: "/webhook/67c2fb2d-7ee8-4a53-a620-0e14c0ababde"
+      description: "Analyzes why the organization rejected candidates"
+      enabled: true
+      filename_keywords:
+        - funnel
+    
+    panel_load_balancer:
+      webhook_path: "/webhook/443c9ed6-9be9-40b3-8a86-2ed3092ce2aa"
+      description: "Panel Workload"
+      enabled: true
+      filename_keywords:
+        - feedback
+    
+    offer_rejection_agent:
+      webhook_path: "/webhook/56486b31-90d6-43b8-bbce-df347c05def2"
+      description: "Analyzes why candidates rejected offers"
+      enabled: true
+      filename_keywords:
+        - summary
+    
+    pipeline_health_agent:
+      webhook_path: "/webhook/56dfc544-b471-4e47-bfdc-6717951b34e5"
+      description: "Monitors pipeline health"
+      enabled: true
+      filename_keywords:
+        - funnel
+
+# Default agent to use
+default_agent: "none"
+

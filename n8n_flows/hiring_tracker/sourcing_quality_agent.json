@@ -1,0 +1,112 @@
+{
+  "name": "SourcingQualityAgent",
+  "nodes": [
+    {
+      "parameters": {
+        "binaryPropertyName": "file",
+        "options": {
+          "delimiter": ",",
+          "enableBOM": false,
+          "relaxQuotes": false
+        }
+      },
+      "type": "n8n-nodes-base.extractFromFile",
+      "typeVersion": 1.1,
+      "position": [
+        416,
+        0
+      ],
+      "id": "4b6edba1-723d-4853-bd1d-2e462ac8ba51",
+      "name": "Extract from File"
+    },
+    {
+      "parameters": {
+        "jsCode": "const sources = {};\nconst rejectionThreshold = 60;  // %\nconst resumeScoreThreshold = 5; // avg score\n\nitems.forEach(item => {\n  const src = item.json.Source || item.json.source || 'Unknown';\n  const status = item.json.Status || item.json.status || '';\n  const resumeScore = parseFloat(item.json.ResumeScore || item.json.resumescore || 0);\n\n  if (!sources[src]) sources[src] = {count:0, rejections:0, totalScore:0};\n  sources[src].count += 1;\n  sources[src].totalScore += resumeScore;\n  if (status.toLowerCase() === 'rejected') sources[src].rejections += 1;\n});\n\nconst result = [];\nObject.keys(sources).forEach(src => {\n  const count = sources[src].count;\n  const rejections = sources[src].rejections;\n  const rejectionRate = count ? (rejections / count) * 100 : 0;\n  const avgResumeScore = count ? (sources[src].totalScore / count) : 0;\n  const isPoor = (rejectionRate > rejectionThreshold) || (avgResumeScore < resumeScoreThreshold);\n  result.push({\n    Source: src,\n    Candidates: count,\n    Rejections: rejections,\n    RejectionRate: rejectionRate.toFixed(1) + \"%\",\n    AvgResumeScore: avgResumeScore.toFixed(2),\n    Flagged: isPoor ? \"⚠️ Poor Source\" : \"\"\n  });\n});\n\n// The key change: wrap all per-source objects in one array under a single output item\nreturn [{json: {sources: result}}];\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        624,
+        0
+      ],
+      "id": "f4955b2e-cf83-4f2a-a367-6e1b706d1758",
+      "name": "Code in JavaScript"
+    },
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "35f7df3a-1934-4e5f-82ac-cdedd7cb99e7",
+        "responseMode": "responseNode",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2.1,
+      "position": [
+        176,
+        0
+      ],
+      "id": "91bc8e9d-94ef-4eeb-a1c3-728fdaeb286b",
+      "name": "Webhook",
+      "webhookId": "35f7df3a-1934-4e5f-82ac-cdedd7cb99e7"
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.4,
+      "position": [
+        832,
+        0
+      ],
+      "id": "edbf0168-eef5-42ca-a407-89a4f04a4ce6",
+      "name": "Respond to Webhook"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Extract from File": {
+      "main": [
+        [
+          {
+            "node": "Code in JavaScript",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code in JavaScript": {
+      "main": [
+        [
+          {
+            "node": "Respond to Webhook",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Webhook": {
+      "main": [
+        [
+          {
+            "node": "Extract from File",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "4404952a-1eea-400e-8407-0333c5d4f21d",
+  "meta": {
+    "instanceId": "e54ddd1e86b9d6d2fcbcb2786c44182e42ac2d4cf3e41ff38922ffa55944868b"
+  },
+  "id": "cZc4sjsI2sy9vGIO",
+  "tags": []
+}

@@ -1,0 +1,28 @@
+# Python artifacts
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# Environment files
+.env
+.env.*
+
+# macOS / editor cruft
+.DS_Store
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Data sources (CSV trackers, samples)
+*.csv
+sample_inputs/
+data/
+
+# n8n runtime data
+n8n_data/
+
+

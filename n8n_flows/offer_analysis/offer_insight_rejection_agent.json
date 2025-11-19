@@ -1,0 +1,187 @@
+{
+    "nodes": [
+      {
+        "parameters": {
+          "httpMethod": "POST",
+          "path": "56486b31-90d6-43b8-bbce-df347c05def2",
+          "responseMode": "responseNode",
+          "options": {}
+        },
+        "type": "n8n-nodes-base.webhook",
+        "typeVersion": 2.1,
+        "position": [
+          0,
+          0
+        ],
+        "id": "f26522d0-f246-4cce-9ee4-c64ab03f0b37",
+        "name": "Webhook",
+        "webhookId": "56486b31-90d6-43b8-bbce-df347c05def2"
+      },
+      {
+        "parameters": {
+          "binaryPropertyName": "file",
+          "options": {}
+        },
+        "type": "n8n-nodes-base.extractFromFile",
+        "typeVersion": 1.1,
+        "position": [
+          208,
+          0
+        ],
+        "id": "1ced89af-a468-4ff6-b9ff-0cc1aa47a469",
+        "name": "Extract from File"
+      },
+      {
+        "parameters": {
+          "jsCode": "// Standardized Agent Response Format for Offer Rejection Insight Agent\n// Use this inside the \"Code in JavaScript\" node of the n8n workflow.\n\n// Filter for offer stage records\nconst offerRecords = items.filter(item => {\n  const stage = (item.json.InterviewStage || \"\").trim();\n  return stage.toLowerCase() === \"offer\";\n});\n\n// Candidate-declined reasons (only these count toward offer declines)\nconst candidateDeclinedReasons = [\n  \"offer declined - better opportunity\",\n  \"compensation mismatch\",\n  \"delays in process\",\n  \"offer declined\",\n  \"better opportunity\",\n  \"salary mismatch\",\n  \"compensation\",\n  \"timing\",\n  \"process delays\",\n];\n\n// Partition records\nconst rejectedOffers = offerRecords.filter(item => {\n  const status = (item.json.Status || item.json.status || \"\").trim();\n  if (status.toLowerCase() !== \"rejected\") return false;\n  const reason = (item.json.RejectionReason || \"\").trim().toLowerCase();\n  return candidateDeclinedReasons.some(token => reason.includes(token));\n});\n\nconst orgRejectedOffers = offerRecords.filter(item => {\n  const status = (item.json.Status || item.json.status || \"\").trim();\n  if (status.toLowerCase() !== \"rejected\") return false;\n  const reason = (item.json.RejectionReason || \"\").trim().toLowerCase();\n  return !candidateDeclinedReasons.some(token => reason.includes(token));\n});\n\nconst acceptedOffers = offerRecords.filter(item => {\n  const status = (item.json.Status || \"\").trim();\n  return status.toLowerCase() === \"accepted\";\n});\n\n// Metrics\nconst totalOffers = offerRecords.length;\nconst totalCandidateDeclined = rejectedOffers.length;\nconst totalOrgRejected = orgRejectedOffers.length;\nconst totalAccepted = acceptedOffers.length;\nconst declineRate = totalOffers\n  ? ((totalCandidateDeclined / totalOffers) * 100).toFixed(1) + \"%\"\n  : \"0%\";\n\n// Decline reasons table\nconst reasonCounts = {};\nconst reasonDetails = {};\nrejectedOffers.forEach(item => {\n  const reason = (item.json.RejectionReason || \"Unknown\").trim();\n  const daysInPipeline = parseFloat(item.json.DaysInPipeline || 0);\n  const salaryExpectation = parseFloat(item.json.SalaryExpectation || 0);\n  const source = (item.json.Source || \"Unknown\").trim();\n  const interviewDate = item.json.InterviewDate || \"\";\n\n  if (!reasonCounts[reason]) {\n    reasonCounts[reason] = 0;\n    reasonDetails[reason] = {\n      totalDays: 0,\n      count: 0,\n      totalSalary: 0,\n      sources: {},\n    };\n  }\n\n  reasonCounts[reason]++;\n  reasonDetails[reason].count++;\n  reasonDetails[reason].totalDays += daysInPipeline;\n  if (salaryExpectation > 0) {\n    reasonDetails[reason].totalSalary += salaryExpectation;\n  }\n  reasonDetails[reason].sources[source] =\n    (reasonDetails[reason].sources[source] || 0) + 1;\n});\n\nconst declineReasonsTable = Object.entries(reasonCounts)\n  .sort((a, b) => b[1] - a[1])\n  .map(([reason, count]) => {\n    const details = reasonDetails[reason];\n    const avgDays = details.count\n      ? (details.totalDays / details.count).toFixed(1)\n      : \"0\";\n    const avgSalary =\n      details.count && details.totalSalary\n        ? Math.round(details.totalSalary / details.count).toLocaleString()\n        : \"N/A\";\n    const topSource = Object.entries(details.sources)\n      .sort((a, b) => b[1] - a[1])[0]?.[0] || \"N/A\";\n\n    return {\n      \"Reason\": reason,\n      \"Count\": count,\n      \"% of Declines\": totalCandidateDeclined\n        ? ((count / totalCandidateDeclined) * 100).toFixed(1) + \"%\"\n        : \"0%\",\n      \"Avg Days in Pipeline\": avgDays,\n      \"Avg Salary Expectation\": avgSalary,\n      \"Top Source\": topSource,\n    };\n  });\n\n// Delay analysis\nconst declinedDays = rejectedOffers\n  .map(item => parseFloat(item.json.DaysInPipeline || 0))\n  .filter(d => d > 0);\nconst acceptedDays = acceptedOffers\n  .map(item => parseFloat(item.json.DaysInPipeline || 0))\n  .filter(d => d > 0);\n\nconst avgDaysDeclined = declinedDays.length\n  ? (declinedDays.reduce((a, b) => a + b, 0) / declinedDays.length).toFixed(1)\n  : \"0\";\nconst avgDaysAccepted = acceptedDays.length\n  ? (acceptedDays.reduce((a, b) => a + b, 0) / acceptedDays.length).toFixed(1)\n  : \"0\";\nconst delayDifference = (\n  parseFloat(avgDaysDeclined) - parseFloat(avgDaysAccepted)\n).toFixed(1);\n\n// Recent declines table\nconst recentDeclines = rejectedOffers\n  .map(item => ({\n    \"Candidate\": item.json.CandidateName || \"Unknown\",\n    \"Date\": item.json.InterviewDate || \"\",\n    \"Reason\": (item.json.RejectionReason || \"Unknown\").trim(),\n    \"Days in Pipeline\": parseFloat(item.json.DaysInPipeline || 0),\n    \"Source\": (item.json.Source || \"Unknown\").trim(),\n  }))\n  .sort((a, b) => b.Date.localeCompare(a.Date))\n  .slice(0, 10);\n\n// Insights & recommendations (LLM-free heuristics)\nconst insights = [];\nif (declineReasonsTable.length) {\n  const topReason = declineReasonsTable[0];\n  insights.push(\n    `${topReason.Reason} drives ${topReason[\"% of Declines\"]} of offer declines.`,\n  );\n}\nif (parseFloat(delayDifference) > 0) {\n  insights.push(\n    `Declined offers spend ${delayDifference} more days in pipeline than accepted ones.`,\n  );\n}\n\nconst recommendations = [];\nif (declineReasonsTable.some(r => r.Reason.toLowerCase().includes(\"compensation\"))) {\n  recommendations.push(\n    \"Review compensation benchmarks or negotiate earlier to reduce comp-related declines.\",\n  );\n}\nif (declineReasonsTable.some(r => r.Reason.toLowerCase().includes(\"delay\"))) {\n  recommendations.push(\n    \"Shorten offer approval and communication cycles to avoid delay-driven declines.\",\n  );\n}\nif (!recommendations.length) {\n  recommendations.push(\"Offer decline rate looks stable; continue monitoring weekly.\");\n}\n\nconst summaryMetrics = {\n  \"Total Offers\": totalOffers,\n  \"Candidate Declined\": totalCandidateDeclined,\n  \"Accepted\": totalAccepted,\n  \"Org Rejected\": totalOrgRejected,\n  \"Decline Rate\": declineRate,\n  \"Avg Days (Declined)\": avgDaysDeclined,\n  \"Avg Days (Accepted)\": avgDaysAccepted,\n};\n\nreturn [\n  {\n    json: {\n      agent_name: \"offer_rejection_agent\",\n      display_title: \"Candidate Offer Declines\",\n      sections: [\n        { type: \"metrics\", title: \"Summary\", data: summaryMetrics },\n        {\n          type: \"table\",\n          title: \"Top Decline Reasons\",\n          columns: declineReasonsTable.length ? Object.keys(declineReasonsTable[0]) : [],\n          rows: declineReasonsTable,\n        },\n        {\n          type: \"table\",\n          title: \"Recent Candidate Declines\",\n          columns: recentDeclines.length ? Object.keys(recentDeclines[0]) : [],\n          rows: recentDeclines,\n        },\n      ],\n    },\n  },\n];\n\n"
+        },
+        "type": "n8n-nodes-base.code",
+        "typeVersion": 2,
+        "position": [
+          416,
+          0
+        ],
+        "id": "c5871afa-dbc9-4290-aa35-2581d986b384",
+        "name": "Code in JavaScript"
+      },
+      {
+        "parameters": {
+          "options": {}
+        },
+        "type": "n8n-nodes-base.respondToWebhook",
+        "typeVersion": 1.4,
+        "position": [
+          1216,
+          0
+        ],
+        "id": "3a18b658-6695-49ac-a1da-74f7db18a2d6",
+        "name": "Respond to Webhook"
+      },
+      {
+        "parameters": {
+          "method": "POST",
+          "url": "http://host.docker.internal:11434/api/chat",
+          "sendHeaders": true,
+          "headerParameters": {
+            "parameters": [
+              {
+                "name": "Content-Type",
+                "value": "application/json"
+              }
+            ]
+          },
+          "sendBody": true,
+          "specifyBody": "json",
+          "jsonBody": "={{ $json.requestBody }}",
+          "options": {}
+        },
+        "type": "n8n-nodes-base.httpRequest",
+        "typeVersion": 4.3,
+        "position": [
+          800,
+          0
+        ],
+        "id": "e52ed475-ef21-49d3-a8ad-199f85f942db",
+        "name": "Call LLM for Insights",
+        "alwaysOutputData": true
+      },
+      {
+        "parameters": {
+          "jsCode": "const base = $('Code in JavaScript').item.json;\nconst ollamaResp = items[0].json;\nconst rawContent = ollamaResp.message?.content || ollamaResp.content || \"\";\n\n// Parse JSON even if it’s wrapped in ``` fences\nconst tryParse = (text) => {\n  const cleaned = text\n    .replace(/```/g, '')\n    .trim();\n\n  try {\n    return JSON.parse(cleaned);\n  } catch {\n    const start = cleaned.indexOf('{');\n    const end = cleaned.lastIndexOf('}');\n    if (start !== -1 && end !== -1 && end > start) {\n      try {\n        return JSON.parse(cleaned.slice(start, end + 1));\n      } catch {\n        // ignore and fall through\n      }\n    }\n  }\n  return null;\n};\n\nconst parsed =\n  tryParse(rawContent) || {\n    actionable_insights: [rawContent],\n    recommendations: [],\n  };\n\nconst ensureArray = value =>\n  (Array.isArray(value) ? value : [value]).filter(Boolean);\n\nconst cleanEntry = entry =>\n  String(entry)\n    .replace(/```(json)?/gi, '')\n    .replace(/`/g, '')\n    .trim();\n\nconst sections = base.sections.map(section => {\n  if (section.type === \"insights\") {\n    return { ...section, data: ensureArray(parsed.actionable_insights).map(cleanEntry) };\n  }\n  if (section.type === \"recommendations\") {\n    return { ...section, data: ensureArray(parsed.recommendations).map(cleanEntry) };\n  }\n  return section;\n});\n\nreturn [{\n  json: {\n    agent_name: base.agent_name,\n    display_title: base.display_title,\n    sections,\n  },\n}];"
+        },
+        "type": "n8n-nodes-base.code",
+        "typeVersion": 2,
+        "position": [
+          1008,
+          0
+        ],
+        "id": "f6009dc0-3d63-4fcf-8235-210aa706792f",
+        "name": "Merge Responses"
+      },
+      {
+        "parameters": {
+          "jsCode": "const stats = items[0].json;\n\nconst requestBody = {\n  model: \"gemma2:2b\",\n  messages: [\n    {\n      role: \"system\",\n      content: \"You are a hiring funnel coach. Analyze the following analytics and provide clear, actionable insights and suggestions for process improvement. Return ONLY valid JSON with this exact structure: {\\\"actionable_insights\\\": [\\\"...\\\", \\\"...\\\"], \\\"recommendations\\\": [\\\"...\\\", \\\"...\\\"]}. No other text.\"\n    },\n    {\n      role: \"user\",\n      content: \"Analyze the following hiring funnel data:\\n\\n\" + JSON.stringify(stats, null, 2)\n    }\n  ],\n  stream: false\n};\n\nreturn [{\n  json: {\n    requestBody: requestBody,\n    originalStats: stats\n  }\n}];"
+        },
+        "type": "n8n-nodes-base.code",
+        "typeVersion": 2,
+        "position": [
+          592,
+          0
+        ],
+        "id": "968973f9-83cd-4f88-870a-89e58676e724",
+        "name": "Build LLM request"
+      }
+    ],
+    "connections": {
+      "Webhook": {
+        "main": [
+          [
+            {
+              "node": "Extract from File",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Extract from File": {
+        "main": [
+          [
+            {
+              "node": "Code in JavaScript",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Code in JavaScript": {
+        "main": [
+          [
+            {
+              "node": "Build LLM request",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Call LLM for Insights": {
+        "main": [
+          [
+            {
+              "node": "Merge Responses",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Merge Responses": {
+        "main": [
+          [
+            {
+              "node": "Respond to Webhook",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Build LLM request": {
+        "main": [
+          [
+            {
+              "node": "Call LLM for Insights",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    },
+    "pinData": {},
+    "meta": {
+      "instanceId": "e54ddd1e86b9d6d2fcbcb2786c44182e42ac2d4cf3e41ff38922ffa55944868b"
+    }
+  }

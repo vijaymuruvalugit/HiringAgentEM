@@ -25,4 +25,7 @@ data/
 # n8n runtime data
 n8n_data/
 
+# Backup files
+backup/
+
 

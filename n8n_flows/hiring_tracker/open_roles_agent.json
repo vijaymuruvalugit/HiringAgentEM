@@ -1,0 +1,187 @@
+{
+    "nodes": [
+      {
+        "parameters": {
+          "httpMethod": "POST",
+          "path": "cfc2c14b-745c-4fa8-929a-155d6c0580b8",
+          "responseMode": "responseNode",
+          "options": {}
+        },
+        "type": "n8n-nodes-base.webhook",
+        "typeVersion": 2.1,
+        "position": [
+          0,
+          0
+        ],
+        "id": "78893801-9818-4bf1-b4e7-fd2d2b132e57",
+        "name": "Webhook",
+        "webhookId": "cfc2c14b-745c-4fa8-929a-155d6c0580b8"
+      },
+      {
+        "parameters": {
+          "binaryPropertyName": "file",
+          "options": {}
+        },
+        "type": "n8n-nodes-base.extractFromFile",
+        "typeVersion": 1.1,
+        "position": [
+          208,
+          0
+        ],
+        "id": "329d854d-9c94-4e9e-9130-8e3b88984e3c",
+        "name": "Extract from File"
+      },
+      {
+        "parameters": {
+          "jsCode": "// Open Roles Agent - Standardized Response Format\n// Analyzes open roles data from OpenRoles.csv\n\nconst roles = {};\nconst departments = {};\nconst priorities = {};\n\nlet totalRoles = 0;\nlet totalTargetHeadcount = 0;\nlet totalFilledCount = 0;\nlet totalOpenPositions = 0;\nlet activeRoles = 0;\nlet highPriorityRoles = 0;\n\nitems.forEach(item => {\n  const roleName = item.json.RoleName || item.json.roleName || 'Unknown';\n  const department = item.json.Department || item.json.department || 'Unknown';\n  const level = item.json.Level || item.json.level || 'Unknown';\n  const targetHeadcount = parseInt(item.json.TargetHeadcount || item.json.targetHeadcount || 0);\n  const filledCount = parseInt(item.json.FilledCount || item.json.filledCount || 0);\n  const openPositions = parseInt(item.json.OpenPositions || item.json.openPositions || 0);\n  const fillRate = parseFloat((item.json.FillRate || item.json.fillRate || '0%').replace('%', ''));\n  const status = (item.json.Status || item.json.status || '').trim();\n  const priority = (item.json.Priority || item.json.priority || 'Medium').trim();\n  const daysOpen = parseInt(item.json.DaysOpen || item.json.daysOpen || 0);\n  const postingDate = item.json.PostingDate || item.json.postingDate || '';\n\n  totalRoles++;\n  totalTargetHeadcount += targetHeadcount;\n  totalFilledCount += filledCount;\n  totalOpenPositions += openPositions;\n  \n  if (status.toLowerCase() === 'active') {\n    activeRoles++;\n  }\n  \n  if (priority.toLowerCase() === 'high') {\n    highPriorityRoles++;\n  }\n\n  // Track by role\n  roles[roleName] = {\n    roleName,\n    department,\n    level,\n    targetHeadcount,\n    filledCount,\n    openPositions,\n    fillRate,\n    status,\n    priority,\n    daysOpen,\n    postingDate\n  };\n\n  // Track by department\n  if (!departments[department]) {\n    departments[department] = {\n      department,\n      totalRoles: 0,\n      totalTarget: 0,\n      totalFilled: 0,\n      totalOpen: 0\n    };\n  }\n  departments[department].totalRoles++;\n  departments[department].totalTarget += targetHeadcount;\n  departments[department].totalFilled += filledCount;\n  departments[department].totalOpen += openPositions;\n\n  // Track by priority\n  if (!priorities[priority]) {\n    priorities[priority] = {\n      priority,\n      count: 0,\n      totalOpen: 0\n    };\n  }\n  priorities[priority].count++;\n  priorities[priority].totalOpen += openPositions;\n});\n\n// Calculate overall metrics\nconst overallFillRate = totalTargetHeadcount > 0 \n  ? ((totalFilledCount / totalTargetHeadcount) * 100).toFixed(1) + '%'\n  : '0%';\n\nconst avgDaysOpen = totalRoles > 0\n  ? (Object.values(roles).reduce((sum, r) => sum + r.daysOpen, 0) / totalRoles).toFixed(1)\n  : '0';\n\n// Build summary metrics\nconst summaryMetrics = {\n  \"Total Open Roles\": totalRoles,\n  \"Active Roles\": activeRoles,\n  \"Total Open Positions\": totalOpenPositions,\n  \"Total Target Headcount\": totalTargetHeadcount,\n  \"Overall Fill Rate\": overallFillRate,\n  \"High Priority Roles\": highPriorityRoles,\n  \"Avg Days Open\": avgDaysOpen\n};\n\n// Build role overview table\nconst roleTable = Object.values(roles).map(role => ({\n  \"Role Name\": role.roleName,\n  \"Department\": role.department,\n  \"Level\": role.level,\n  \"Target\": role.targetHeadcount,\n  \"Filled\": role.filledCount,\n  \"Open\": role.openPositions,\n  \"Fill Rate\": role.fillRate + \"%\",\n  \"Priority\": role.priority,\n  \"Days Open\": role.daysOpen,\n  \"Status\": role.status\n})).sort((a, b) => {\n  // Sort by priority (High > Medium > Low), then by open positions\n  const priorityOrder = { \"High\": 1, \"Medium\": 2, \"Low\": 3 };\n  const priorityDiff = (priorityOrder[a.Priority] || 99) - (priorityOrder[b.Priority] || 99);\n  if (priorityDiff !== 0) return priorityDiff;\n  return b.Open - a.Open;\n});\n\n// Build department summary table\nconst departmentTable = Object.values(departments).map(dept => {\n  const deptFillRate = dept.totalTarget > 0\n    ? ((dept.totalFilled / dept.totalTarget) * 100).toFixed(1) + '%'\n    : '0%';\n  return {\n    \"Department\": dept.department,\n    \"Roles\": dept.totalRoles,\n    \"Target Headcount\": dept.totalTarget,\n    \"Filled\": dept.totalFilled,\n    \"Open Positions\": dept.totalOpen,\n    \"Fill Rate\": deptFillRate\n  };\n}).sort((a, b) => b[\"Open Positions\"] - a[\"Open Positions\"]);\n\n// Build priority breakdown table\nconst priorityTable = Object.values(priorities).map(pri => ({\n  \"Priority\": pri.priority,\n  \"Number of Roles\": pri.count,\n  \"Total Open Positions\": pri.totalOpen\n})).sort((a, b) => {\n  const priorityOrder = { \"High\": 1, \"Medium\": 2, \"Low\": 3 };\n  return (priorityOrder[a.Priority] || 99) - (priorityOrder[b.Priority] || 99);\n});\n\n// Build roles needing attention (high priority, many open positions, or long time open)\nconst attentionRoles = Object.values(roles)\n  .filter(role => \n    role.status.toLowerCase() === 'active' && (\n      role.priority.toLowerCase() === 'high' ||\n      role.openPositions >= role.targetHeadcount * 0.5 ||\n      role.daysOpen > 60\n    )\n  )\n  .map(role => ({\n    \"Role\": role.roleName,\n    \"Department\": role.department,\n    \"Open Positions\": role.openPositions,\n    \"Priority\": role.priority,\n    \"Days Open\": role.daysOpen,\n    \"Fill Rate\": role.fillRate + \"%\"\n  }))\n  .sort((a, b) => {\n    const priorityOrder = { \"High\": 1, \"Medium\": 2, \"Low\": 3 };\n    const priorityDiff = (priorityOrder[a.Priority] || 99) - (priorityOrder[b.Priority] || 99);\n    if (priorityDiff !== 0) return priorityDiff;\n    return b[\"Open Positions\"] - a[\"Open Positions\"];\n  });\n\nreturn [{\n  json: {\n    agent_name: \"open_roles_agent\",\n    display_title: \"Open Roles Analysis\",\n    sections: [\n      { type: \"metrics\", title: \"Summary\", data: summaryMetrics },\n      { type: \"table\", title: \"Role Overview\", columns: Object.keys(roleTable[0] || {}), rows: roleTable },\n      { type: \"table\", title: \"Department Summary\", columns: Object.keys(departmentTable[0] || {}), rows: departmentTable },\n      { type: \"table\", title: \"Priority Breakdown\", columns: Object.keys(priorityTable[0] || {}), rows: priorityTable },\n      { type: \"table\", title: \"Roles Needing Attention\", columns: Object.keys(attentionRoles[0] || {}), rows: attentionRoles },\n      { type: \"insights\", title: \"Actionable Insights\", data: [] }, // LLM will fill\n      { type: \"recommendations\", title: \"Recommendations\", data: [] }, // LLM will fill\n    ],\n  },\n}];\n\n"
+        },
+        "type": "n8n-nodes-base.code",
+        "typeVersion": 2,
+        "position": [
+          512,
+          176
+        ],
+        "id": "5b41f755-b602-498a-a39a-f5e7a3850518",
+        "name": "Code in JavaScript"
+      },
+      {
+        "parameters": {
+          "options": {}
+        },
+        "type": "n8n-nodes-base.respondToWebhook",
+        "typeVersion": 1.4,
+        "position": [
+          1280,
+          176
+        ],
+        "id": "347527df-6b7d-4eb9-a61e-4c68c15db796",
+        "name": "Respond to Webhook"
+      },
+      {
+        "parameters": {
+          "method": "POST",
+          "url": "http://host.docker.internal:11434/api/chat",
+          "sendHeaders": true,
+          "headerParameters": {
+            "parameters": [
+              {
+                "name": "Content-Type",
+                "value": "application/json"
+              }
+            ]
+          },
+          "sendBody": true,
+          "specifyBody": "json",
+          "jsonBody": "={{ $json.requestBody }}",
+          "options": {}
+        },
+        "type": "n8n-nodes-base.httpRequest",
+        "typeVersion": 4.3,
+        "position": [
+          848,
+          176
+        ],
+        "id": "f4e5b0f8-8e71-4640-9b75-7645127c752b",
+        "name": "Call LLM for Insights1",
+        "alwaysOutputData": true
+      },
+      {
+        "parameters": {
+          "jsCode": "/**\n * Merge Responses - Enhanced Version\n * Properly extracts insights and recommendations from LLM JSON response\n * \n * Copy this code into the \"Merge Responses\" node in your rejection_pattern_agent workflow\n */\n\nconst base = $('Code in JavaScript').item.json;\nconst ollamaResp = items[0].json;\nconst rawContent = ollamaResp.message?.content || ollamaResp.content || \"\";\n\n// Parse JSON even if it's wrapped in ``` fences\nconst tryParse = (text) => {\n  const cleaned = text\n    .replace(/```json\\s*/gi, '')\n    .replace(/```/g, '')\n    .trim();\n\n  try {\n    return JSON.parse(cleaned);\n  } catch {\n    const start = cleaned.indexOf('{');\n    const end = cleaned.lastIndexOf('}');\n    if (start !== -1 && end !== -1 && end > start) {\n      try {\n        return JSON.parse(cleaned.slice(start, end + 1));\n      } catch {\n        // ignore and fall through\n      }\n    }\n  }\n  return null;\n};\n\nconst parsed = tryParse(rawContent) || {\n  actionable_insights: [rawContent],\n  recommendations: [],\n};\n\n// Ensure arrays are properly extracted\nconst ensureArray = value => {\n  if (!value) return [];\n  if (Array.isArray(value)) return value.filter(Boolean);\n  return [String(value)].filter(Boolean);\n};\n\n// Clean individual entries (remove markdown, code fences, extra whitespace)\nconst cleanEntry = entry => {\n  if (!entry) return \"\";\n  let cleaned = String(entry)\n    .replace(/```(json)?/gi, '')\n    .replace(/`/g, '')\n    .trim();\n  \n  // Remove surrounding quotes if present\n  if ((cleaned.startsWith('\"') && cleaned.endsWith('\"')) || \n      (cleaned.startsWith(\"'\") && cleaned.endsWith(\"'\"))) {\n    cleaned = cleaned.slice(1, -1);\n  }\n  \n  // Remove extra whitespace\n  cleaned = cleaned.replace(/\\s+/g, ' ').trim();\n  \n  return cleaned;\n};\n\n// Extract insights and recommendations from parsed JSON\nconst insights = ensureArray(parsed.actionable_insights || parsed.insights || [])\n  .map(cleanEntry)\n  .filter(Boolean);\n\nconst recommendations = ensureArray(parsed.recommendations || [])\n  .map(cleanEntry)\n  .filter(Boolean);\n\n// Update sections with extracted arrays\nconst sections = base.sections.map(section => {\n  if (section.type === \"insights\") {\n    return { ...section, data: insights };\n  }\n  if (section.type === \"recommendations\") {\n    return { ...section, data: recommendations };\n  }\n  return section;\n});\n\nreturn [{\n  json: {\n    agent_name: base.agent_name,\n    display_title: base.display_title,\n    sections,\n  },\n}];\n\n"
+        },
+        "type": "n8n-nodes-base.code",
+        "typeVersion": 2,
+        "position": [
+          1056,
+          176
+        ],
+        "id": "6d84d756-2af8-47d3-acaa-8f14f924b94a",
+        "name": "Merge Responses1"
+      },
+      {
+        "parameters": {
+          "jsCode": "/**\n * Build LLM Request - Open Roles Agent\n * Creates a prompt for analyzing open roles data\n */\n\nconst stats = items[0].json;\n\nconst systemPrompt = `You are an expert hiring and talent acquisition advisor specializing in role planning and hiring strategy. Your role is to analyze open roles data and provide clear, actionable insights and recommendations that help engineering managers and recruiters prioritize hiring efforts and fill critical positions.\n\nGuidelines for your responses:\n1. **Tone**: Professional, strategic, and data-driven. Focus on prioritization and resource allocation.\n2. **Insights Format**: Each insight should identify patterns, quantify issues with specific metrics, and explain business impact.\n3. **Recommendations Format**: Each recommendation should be specific, actionable, and include expected outcomes when possible.\n4. **Structure**: Always return valid JSON with exactly two arrays: \"actionable_insights\" and \"recommendations\".\n5. **Length**: Provide 2-4 insights and 3-5 recommendations per analysis.\n6. **Specificity**: Reference specific roles, departments, priorities, fill rates, or days open from the data.\n7. **Focus Areas**: \n   - Roles with high priority and many open positions\n   - Departments with low fill rates\n   - Roles open for extended periods (60+ days)\n   - Resource allocation and prioritization strategies\n\nRemember: Return ONLY valid JSON. No markdown, no code fences, no additional text. The JSON structure must be:\n{\n  \"actionable_insights\": [\"insight 1\", \"insight 2\", ...],\n  \"recommendations\": [\"recommendation 1\", \"recommendation 2\", ...]\n}`;\n\nconst userPrompt = `Analyze the following open roles data and provide actionable insights and recommendations for prioritizing hiring efforts:\n\n${JSON.stringify(stats, null, 2)}`;\n\nconst requestBody = {\n  model: \"gemma2:2b\",\n  messages: [\n    {\n      role: \"system\",\n      content: systemPrompt\n    },\n    {\n      role: \"user\",\n      content: userPrompt\n    }\n  ],\n  stream: false\n};\n\nreturn [{\n  json: {\n    requestBody: requestBody,\n    originalStats: stats\n  }\n}];\n\n"
+        },
+        "type": "n8n-nodes-base.code",
+        "typeVersion": 2,
+        "position": [
+          688,
+          176
+        ],
+        "id": "15a3fb6c-4061-4b22-8bba-91de7265f7b4",
+        "name": "Build LLM request1"
+      }
+    ],
+    "connections": {
+      "Webhook": {
+        "main": [
+          [
+            {
+              "node": "Extract from File",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Extract from File": {
+        "main": [
+          [
+            {
+              "node": "Code in JavaScript",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Code in JavaScript": {
+        "main": [
+          [
+            {
+              "node": "Build LLM request1",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Call LLM for Insights1": {
+        "main": [
+          [
+            {
+              "node": "Merge Responses1",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Merge Responses1": {
+        "main": [
+          [
+            {
+              "node": "Respond to Webhook",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Build LLM request1": {
+        "main": [
+          [
+            {
+              "node": "Call LLM for Insights1",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    },
+    "pinData": {},
+    "meta": {
+      "instanceId": "e54ddd1e86b9d6d2fcbcb2786c44182e42ac2d4cf3e41ff38922ffa55944868b"
+    }
+  }

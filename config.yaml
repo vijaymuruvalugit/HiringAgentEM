@@ -39,6 +39,15 @@ n8n:
       enabled: true
       filename_keywords:
         - funnel
+    
+    open_roles_agent:
+      webhook_path: "/webhook/cfc2c14b-745c-4fa8-929a-155d6c0580b8"
+      description: "Analyzes open roles and hiring needs"
+      enabled: true
+      filename_keywords:
+        - openroles
+        - open_roles
+        - roles
 
 # Default agent to use
 default_agent: "none"

@@ -1,0 +1,187 @@
+{
+    "nodes": [
+      {
+        "parameters": {
+          "httpMethod": "POST",
+          "path": "56dfc544-b471-4e47-bfdc-6717951b34e5",
+          "responseMode": "responseNode",
+          "options": {}
+        },
+        "type": "n8n-nodes-base.webhook",
+        "typeVersion": 2.1,
+        "position": [
+          0,
+          0
+        ],
+        "id": "dc8a9556-32a5-4719-b3f8-0c303454baff",
+        "name": "Webhook",
+        "webhookId": "56dfc544-b471-4e47-bfdc-6717951b34e5"
+      },
+      {
+        "parameters": {
+          "binaryPropertyName": "file",
+          "options": {}
+        },
+        "type": "n8n-nodes-base.extractFromFile",
+        "typeVersion": 1.1,
+        "position": [
+          208,
+          0
+        ],
+        "id": "fdec723d-73ad-4249-9cad-20958811e2a7",
+        "name": "Extract from File"
+      },
+      {
+        "parameters": {
+          "jsCode": "// Pipeline Health Agent - standardized response\n// Use this JavaScript in the \"Code\" node after Extract from File\n\nconst passStatuses = new Set([\n  \"passed\",\n  \"pass\",\n  \"complete\",\n  \"completed\",\n  \"accepted\",\n  \"hired\",\n  \"offer accepted\",\n]);\n\nconst defaultStageOrder = [\n  \"Screening\",\n  \"Online Assessment\",\n  \"Technical Interview\",\n  \"Managerial Interview\",\n  \"Offer\",\n  \"Offer Acceptance\",\n];\n\nconst stageStats = {};\nconst candidateSummary = {};\nconst uniqueCandidates = new Set();\n\nconst getStageOrder = (stageName, rawOrder) => {\n  if (rawOrder !== undefined && rawOrder !== null && rawOrder !== \"\") {\n    const parsed = Number(rawOrder);\n    if (!Number.isNaN(parsed)) {\n      return parsed;\n    }\n  }\n  const idx = defaultStageOrder.findIndex(\n    (name) => name.toLowerCase() === String(stageName).toLowerCase(),\n  );\n  return idx !== -1 ? idx + 1 : defaultStageOrder.length + 1;\n};\n\nitems.forEach((item) => {\n  const candidate =\n    item.json.CandidateName || item.json.candidate || \"Unknown Candidate\";\n  const stage =\n    item.json.FunnelStage ||\n    item.json.Stage ||\n    item.json.InterviewStage ||\n    \"Unknown Stage\";\n  const order = getStageOrder(stage, item.json.StageOrder);\n  const status = (item.json.Status || \"\").toLowerCase();\n\n  uniqueCandidates.add(candidate);\n\n  if (!stageStats[stage]) {\n    stageStats[stage] = {\n      candidates: new Set(),\n      passed: 0,\n      dropped: 0,\n      order,\n    };\n  }\n  stageStats[stage].candidates.add(candidate);\n  stageStats[stage].order = Math.min(stageStats[stage].order, order);\n\n  if (passStatuses.has(status)) {\n    stageStats[stage].passed += 1;\n  } else {\n    stageStats[stage].dropped += 1;\n  }\n\n  if (!candidateSummary[candidate]) {\n    candidateSummary[candidate] = {\n      stageCount: 0,\n      final: { order: -Infinity, status: status, stage },\n    };\n  }\n\n  candidateSummary[candidate].stageCount += 1;\n  if (order >= candidateSummary[candidate].final.order) {\n    candidateSummary[candidate].final = { order, status, stage };\n  }\n});\n\nconst stageTable = Object.entries(stageStats)\n  .map(([stage, data]) => {\n    const entered = data.candidates.size;\n    const passed = data.passed;\n    const dropped = data.dropped;\n    const conversion = entered\n      ? ((passed / entered) * 100).toFixed(1) + \"%\"\n      : \"0%\";\n    const dropRate = entered\n      ? ((dropped / entered) * 100).toFixed(1) + \"%\"\n      : \"0%\";\n    return {\n      order: data.order,\n      Stage: stage,\n      \"Candidates Entered\": entered,\n      Passed: passed,\n      Dropped: dropped,\n      \"Conversion Rate\": conversion,\n      \"Drop Rate\": dropRate,\n    };\n  })\n  .sort((a, b) => a.order - b.order)\n  .map(({ order, ...row }) => row);\n\nconst stageDropRows = stageTable\n  .map((row) => ({\n    Stage: row.Stage,\n    \"Dropped Candidates\": row.Dropped,\n    \"Drop Rate\": row[\"Drop Rate\"],\n  }))\n  .sort(\n    (a, b) =>\n      parseFloat(b[\"Drop Rate\"]) - parseFloat(a[\"Drop Rate\"]),\n  );\n\nconst totalCandidates = uniqueCandidates.size || 1;\nconst acceptedCandidates = Object.values(candidateSummary).filter((c) =>\n  passStatuses.has(c.final.status),\n).length;\nconst overallConversion = ((acceptedCandidates / totalCandidates) * 100)\n  .toFixed(1) + \"%\";\nconst avgStagesCompleted = (\n  Object.values(candidateSummary).reduce(\n    (sum, c) => sum + c.stageCount,\n    0,\n  ) / totalCandidates\n).toFixed(1);\nconst topDropStage = stageDropRows[0]?.Stage || \"N/A\";\n\nconst insights = [];\nif (stageDropRows.length && parseFloat(stageDropRows[0][\"Drop Rate\"]) >= 20) {\n  insights.push(\n    `${stageDropRows[0].Stage} shows the steepest drop (${stageDropRows[0][\"Drop Rate\"]}). Review interviewer calibration or candidate prep for this stage.`,\n  );\n}\nif (parseFloat(overallConversion) < 30) {\n  insights.push(\n    `Overall conversion (${overallConversion}) is below target; consider tightening sourcing quality or interview alignment.`,\n  );\n}\nif (stageTable.length >= 2) {\n  const lastStage = stageTable[stageTable.length - 1];\n  if (parseFloat(lastStage[\"Drop Rate\"]) > 10) {\n    insights.push(\n      `Late-stage drop-offs at ${lastStage.Stage} waste effort. Validate feedback loops and hiring committee alignment.`,\n    );\n  }\n}\nif (!insights.length) {\n  insights.push(\"Pipeline health looks stable. Continue monitoring weekly to catch emerging bottlenecks early.\");\n}\n\nconst recommendations = [];\nif (stageDropRows.length) {\n  recommendations.push(\n    `Run a working session on ${topDropStage} to review rubrics, prep guides, and interviewer notes. Focus on reducing the ${stageDropRows[0][\"Drop Rate\"]} drop rate.`,\n  );\n}\nrecommendations.push(\n  \"Publish a weekly pipeline dashboard with stage-by-stage conversion so recruiting, hiring managers, and leadership stay aligned.\",\n);\nrecommendations.push(\n  \"Instrument exit surveys for rejected candidates to validate if drop-offs are due to prep gaps, slow SLAs, or role clarity.\",\n);\n\nconst summaryMetrics = {\n  \"Total Candidates\": uniqueCandidates.size,\n  \"Accepted / Hired\": acceptedCandidates,\n  \"Overall Conversion\": overallConversion,\n  \"Avg Stages Completed\": avgStagesCompleted,\n  \"Top Drop-Off Stage\": topDropStage,\n};\n\nconst bottleneckRows = stageDropRows.slice(0, 3);\n\nreturn [\n  {\n    json: {\n      agent_name: \"pipeline_health_agent\",\n      display_title: \"Pipeline Health Summary\",\n      sections: [\n        { type: \"metrics\", title: \"Summary\", data: summaryMetrics },\n        {\n          type: \"table\",\n          title: \"Stage Conversion Overview\",\n          columns: Object.keys(stageTable[0] || {}),\n          rows: stageTable,\n        },\n        {\n          type: \"table\",\n          title: \"Top Bottlenecks\",\n          columns: Object.keys(bottleneckRows[0] || {}),\n          rows: bottleneckRows,\n        },\n      ],\n    },\n  },\n];"
+        },
+        "type": "n8n-nodes-base.code",
+        "typeVersion": 2,
+        "position": [
+          416,
+          0
+        ],
+        "id": "c6b67366-5d99-4387-a51e-887a9843090c",
+        "name": "Code in JavaScript"
+      },
+      {
+        "parameters": {
+          "options": {}
+        },
+        "type": "n8n-nodes-base.respondToWebhook",
+        "typeVersion": 1.4,
+        "position": [
+          1184,
+          0
+        ],
+        "id": "91edf18f-8944-4f91-81bf-3e2cbd153eca",
+        "name": "Respond to Webhook"
+      },
+      {
+        "parameters": {
+          "method": "POST",
+          "url": "http://host.docker.internal:11434/api/chat",
+          "sendHeaders": true,
+          "headerParameters": {
+            "parameters": [
+              {
+                "name": "Content-Type",
+                "value": "application/json"
+              }
+            ]
+          },
+          "sendBody": true,
+          "specifyBody": "json",
+          "jsonBody": "={{ $json.requestBody }}",
+          "options": {}
+        },
+        "type": "n8n-nodes-base.httpRequest",
+        "typeVersion": 4.3,
+        "position": [
+          752,
+          0
+        ],
+        "id": "8557731d-29fa-4a16-93e3-117e2222aeb2",
+        "name": "Call LLM for Insights1",
+        "alwaysOutputData": true
+      },
+      {
+        "parameters": {
+          "jsCode": "/**\n * Merge Responses - Enhanced Version\n * Properly extracts insights and recommendations from LLM JSON response\n * \n * Copy this code into the \"Merge Responses\" node in your rejection_pattern_agent workflow\n */\n\nconst base = $('Code in JavaScript').item.json;\nconst ollamaResp = items[0].json;\nconst rawContent = ollamaResp.message?.content || ollamaResp.content || \"\";\n\n// Parse JSON even if it's wrapped in ``` fences\nconst tryParse = (text) => {\n  const cleaned = text\n    .replace(/```json\\s*/gi, '')\n    .replace(/```/g, '')\n    .trim();\n\n  try {\n    return JSON.parse(cleaned);\n  } catch {\n    const start = cleaned.indexOf('{');\n    const end = cleaned.lastIndexOf('}');\n    if (start !== -1 && end !== -1 && end > start) {\n      try {\n        return JSON.parse(cleaned.slice(start, end + 1));\n      } catch {\n        // ignore and fall through\n      }\n    }\n  }\n  return null;\n};\n\nconst parsed = tryParse(rawContent) || {\n  actionable_insights: [rawContent],\n  recommendations: [],\n};\n\n// Ensure arrays are properly extracted\nconst ensureArray = value => {\n  if (!value) return [];\n  if (Array.isArray(value)) return value.filter(Boolean);\n  return [String(value)].filter(Boolean);\n};\n\n// Clean individual entries (remove markdown, code fences, extra whitespace)\nconst cleanEntry = entry => {\n  if (!entry) return \"\";\n  let cleaned = String(entry)\n    .replace(/```(json)?/gi, '')\n    .replace(/`/g, '')\n    .trim();\n  \n  // Remove surrounding quotes if present\n  if ((cleaned.startsWith('\"') && cleaned.endsWith('\"')) || \n      (cleaned.startsWith(\"'\") && cleaned.endsWith(\"'\"))) {\n    cleaned = cleaned.slice(1, -1);\n  }\n  \n  // Remove extra whitespace\n  cleaned = cleaned.replace(/\\s+/g, ' ').trim();\n  \n  return cleaned;\n};\n\n// Extract insights and recommendations from parsed JSON\nconst insights = ensureArray(parsed.actionable_insights || parsed.insights || [])\n  .map(cleanEntry)\n  .filter(Boolean);\n\nconst recommendations = ensureArray(parsed.recommendations || [])\n  .map(cleanEntry)\n  .filter(Boolean);\n\n// Update sections with extracted arrays\nconst sections = base.sections.map(section => {\n  if (section.type === \"insights\") {\n    return { ...section, data: insights };\n  }\n  if (section.type === \"recommendations\") {\n    return { ...section, data: recommendations };\n  }\n  return section;\n});\n\nreturn [{\n  json: {\n    agent_name: base.agent_name,\n    display_title: base.display_title,\n    sections,\n  },\n}];\n\n"
+        },
+        "type": "n8n-nodes-base.code",
+        "typeVersion": 2,
+        "position": [
+          960,
+          0
+        ],
+        "id": "231a5c7a-3815-45cc-8c9b-63a2ee65d3a0",
+        "name": "Merge Responses1"
+      },
+      {
+        "parameters": {
+          "jsCode": "/**\n * Build LLM Request - Rejection Pattern Agent\n * Enhanced with Few-Shot Prompt Templates\n * \n * Copy this code into the \"Build LLM request\" node in your rejection_pattern_agent workflow\n */\n\nconst stats = items[0].json;\n\n// Few-shot examples for rejection pattern analysis\nconst fewShotExamples = `\nExample 1:\nInput Data:\n{\n  \"Total Rejections\": 150,\n  \"Stages Active\": 4,\n  \"Panelists with Rejections\": 12,\n  \"Top Reason\": \"Poor skill match\",\n  \"stageTable\": [\n    {\"Funnel Stage\": \"Technical Interview\", \"Total Rejections\": 65, \"% of Funnel Rejections\": \"43.3%\", \"Most Common Reasons\": \"Poor skill match (45%), Insufficient experience (30%)\"}\n  ],\n  \"panelistTable\": [\n    {\"Interviewer\": \"Panelist 05\", \"# Interviews\": 42, \"# Rejections\": 18, \"Rejection Rate\": \"42.9%\", \"Main Reasons\": \"Poor skill match (50%)\"}\n  ],\n  \"reasonCounts\": [\n    {\"Reason\": \"Poor skill match\", \"Count\": 68, \"% of All Rejections\": \"45.3%\", \"Frequent Stage/Interviewer\": \"Technical Interview, Panelist 05\"}\n  ]\n}\n\nExpected Output:\n{\n  \"actionable_insights\": [\n    \"Technical Interview stage accounts for 43.3% of all rejections (65 out of 150), with poor skill match being the leading cause at 45%. This indicates a significant gap between job requirements and candidate screening criteria.\",\n    \"Panelist 05 shows a rejection rate of 42.9% (18 rejections out of 42 interviews), with 50% attributed to poor skill match, suggesting potential calibration issues or misaligned evaluation standards.\",\n    \"Poor skill match is the top rejection reason across 45.3% of all rejections, frequently occurring at Technical Interview stage and with Panelist 05, indicating a systemic issue requiring process refinement.\"\n  ],\n  \"recommendations\": [\n    \"Review and refine job description requirements to ensure they accurately reflect the technical skills needed, reducing mismatches at the Technical Interview stage by 20-30%.\",\n    \"Implement a technical pre-screening assessment before the Technical Interview to better align candidate skills with role requirements.\",\n    \"Conduct calibration sessions with Panelist 05 and other technical interviewers to ensure consistent evaluation standards and reduce subjective rejections.\",\n    \"Analyze successful hires from similar roles to identify skill patterns and update screening criteria accordingly.\"\n  ]\n}\n\nExample 2:\nInput Data:\n{\n  \"Total Rejections\": 89,\n  \"Stages Active\": 3,\n  \"Panelists with Rejections\": 8,\n  \"Top Reason\": \"Cultural misfit\",\n  \"stageTable\": [\n    {\"Funnel Stage\": \"Managerial Interview\", \"Total Rejections\": 45, \"% of Funnel Rejections\": \"50.6%\", \"Most Common Reasons\": \"Cultural misfit (55%), Experience mismatch (25%)\"}\n  ],\n  \"panelistTable\": [\n    {\"Interviewer\": \"Panelist 07\", \"# Interviews\": 38, \"# Rejections\": 25, \"Rejection Rate\": \"65.8%\", \"Main Reasons\": \"Cultural misfit (44%), No show (20%)\"}\n  ],\n  \"reasonCounts\": [\n    {\"Reason\": \"Cultural misfit\", \"Count\": 42, \"% of All Rejections\": \"47.2%\", \"Frequent Stage/Interviewer\": \"Managerial Interview, Panelist 07\"}\n  ]\n}\n\nExpected Output:\n{\n  \"actionable_insights\": [\n    \"Managerial Interview stage has the highest rejection rate at 50.6% (45 out of 89 rejections), with cultural misfit being the primary reason (55%), indicating potential misalignment in cultural assessment criteria.\",\n    \"Panelist 07 shows an exceptionally high rejection rate of 65.8% (25 rejections out of 38 interviews), with cultural misfit (44%) and no-shows (20%) as main concerns, suggesting both calibration and process issues.\",\n    \"Cultural misfit accounts for 47.2% of all rejections, primarily occurring at Managerial Interview stage and with Panelist 07, indicating a need for clearer cultural fit definitions and assessment standards.\"\n  ],\n  \"recommendations\": [\n    \"Develop a standardized cultural fit assessment framework with clear behavioral indicators to ensure consistent evaluation across all interviewers, particularly for Managerial Interview stage.\",\n    \"Schedule calibration sessions with Panelist 07 to review cultural fit assessment criteria and ensure alignment with company values and hiring standards.\",\n    \"Implement automated reminder systems for interviews to reduce no-show rates, particularly for candidates scheduled with Panelist 07.\",\n    \"Consider pairing Panelist 07 with another interviewer during Managerial Interviews to provide balanced perspectives on cultural fit assessments.\"\n  ]\n}\n`;\n\nconst systemPrompt = `You are an expert hiring funnel coach specializing in data-driven process improvement. Your role is to analyze hiring rejection patterns and provide clear, actionable insights and recommendations that help engineering managers and recruiters improve their hiring processes.\n\nGuidelines for your responses:\n1. **Tone**: Professional, data-driven, and constructive. Focus on process improvements, not blame.\n2. **Insights Format**: Each insight should be a complete sentence that identifies a pattern, quantifies the issue with specific metrics, and explains its significance.\n3. **Recommendations Format**: Each recommendation should be specific, actionable, and include expected outcomes when possible (e.g., \"reducing rejection rates by 20-30%\").\n4. **Structure**: Always return valid JSON with exactly two arrays: \"actionable_insights\" and \"recommendations\".\n5. **Length**: Provide 2-4 insights and 3-5 recommendations per analysis.\n6. **Specificity**: Reference specific metrics, stages, panelists, or rejection reasons from the data when relevant.\n7. **Data-Driven**: Base insights on the actual numbers provided (percentages, counts, rates).\n\n${fewShotExamples}\n\nRemember: Return ONLY valid JSON. No markdown, no code fences, no additional text. The JSON structure must be:\n{\n  \"actionable_insights\": [\"insight 1\", \"insight 2\", ...],\n  \"recommendations\": [\"recommendation 1\", \"recommendation 2\", ...]\n}`;\n\nconst userPrompt = `Analyze the following hiring funnel rejection data and provide actionable insights and recommendations:\n\n${JSON.stringify(stats, null, 2)}`;\n\nconst requestBody = {\n  model: \"gemma2:2b\",\n  messages: [\n    {\n      role: \"system\",\n      content: systemPrompt\n    },\n    {\n      role: \"user\",\n      content: userPrompt\n    }\n  ],\n  stream: false\n};\n\nreturn [{\n  json: {\n    requestBody: requestBody,\n    originalStats: stats\n  }\n}];"
+        },
+        "type": "n8n-nodes-base.code",
+        "typeVersion": 2,
+        "position": [
+          592,
+          0
+        ],
+        "id": "9c0b6a6a-b8eb-4d1b-8777-a7b74ab2ea86",
+        "name": "Build LLM request1"
+      }
+    ],
+    "connections": {
+      "Webhook": {
+        "main": [
+          [
+            {
+              "node": "Extract from File",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Extract from File": {
+        "main": [
+          [
+            {
+              "node": "Code in JavaScript",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Code in JavaScript": {
+        "main": [
+          [
+            {
+              "node": "Build LLM request1",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Call LLM for Insights1": {
+        "main": [
+          [
+            {
+              "node": "Merge Responses1",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Merge Responses1": {
+        "main": [
+          [
+            {
+              "node": "Respond to Webhook",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Build LLM request1": {
+        "main": [
+          [
+            {
+              "node": "Call LLM for Insights1",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    },
+    "pinData": {},
+    "meta": {
+      "instanceId": "e54ddd1e86b9d6d2fcbcb2786c44182e42ac2d4cf3e41ff38922ffa55944868b"
+    }
+  }

@@ -1,0 +1,187 @@
+{
+    "nodes": [
+      {
+        "parameters": {
+          "httpMethod": "POST",
+          "path": "443c9ed6-9be9-40b3-8a86-2ed3092ce2aa",
+          "responseMode": "responseNode",
+          "options": {}
+        },
+        "type": "n8n-nodes-base.webhook",
+        "typeVersion": 2.1,
+        "position": [
+          -272,
+          0
+        ],
+        "id": "8d001b85-6d8f-4e65-b8cc-32574dedfff0",
+        "name": "Webhook",
+        "webhookId": "443c9ed6-9be9-40b3-8a86-2ed3092ce2aa"
+      },
+      {
+        "parameters": {
+          "binaryPropertyName": "file",
+          "options": {}
+        },
+        "type": "n8n-nodes-base.extractFromFile",
+        "typeVersion": 1.1,
+        "position": [
+          -96,
+          0
+        ],
+        "id": "d94620c2-5b65-47c0-b6be-4292cdaa9e1e",
+        "name": "Extract from File"
+      },
+      {
+        "parameters": {
+          "jsCode": "// Standardized Agent Response Format for Panel Load Balancer Agent\n// Use this code inside the “Code in JavaScript” node of the n8n workflow.\n\nconst panelistWorkload = {};\nconst stageDistribution = {};\n\nitems.forEach(item => {\n  const panelist =\n    item.json.Interviewer ||\n    item.json.Panelist ||\n    item.json.InterviewerName ||\n    \"Unknown\";\n\n  if (!panelist || panelist === \"Unknown\" || panelist.trim() === \"\") {\n    return;\n  }\n\n  const stage = item.json.InterviewStage || item.json.Stage || \"Unknown\";\n  const dateStr = item.json.InterviewDate || item.json.Date || \"\";\n  const date = dateStr ? new Date(dateStr) : null;\n\n  if (!panelistWorkload[panelist]) {\n    panelistWorkload[panelist] = {\n      totalInterviews: 0,\n      interviewsByWeek: {},\n      interviewsByStage: {},\n      dates: [],\n    };\n  }\n\n  panelistWorkload[panelist].totalInterviews += 1;\n  panelistWorkload[panelist].interviewsByStage[stage] =\n    (panelistWorkload[panelist].interviewsByStage[stage] || 0) + 1;\n\n  if (stage) {\n    stageDistribution[stage] = stageDistribution[stage] || {\n      interviews: 0,\n      panelists: new Set(),\n    };\n    stageDistribution[stage].interviews += 1;\n    stageDistribution[stage].panelists.add(panelist);\n  }\n\n  if (date && !isNaN(date.getTime())) {\n    panelistWorkload[panelist].dates.push(date);\n\n    const startOfYear = new Date(date.getFullYear(), 0, 1);\n    const weekNumber = Math.ceil(\n      (((date - startOfYear) / 86400000) + startOfYear.getDay() + 1) / 7,\n    );\n    const weekKey = `${date.getFullYear()}-W${weekNumber\n      .toString()\n      .padStart(2, \"0\")}`;\n    panelistWorkload[panelist].interviewsByWeek[weekKey] =\n      (panelistWorkload[panelist].interviewsByWeek[weekKey] || 0) + 1;\n  }\n});\n\nconst panelists = Object.keys(panelistWorkload);\nconst totalInterviews = panelists.reduce(\n  (sum, name) => sum + panelistWorkload[name].totalInterviews,\n  0,\n);\nconst avgInterviews = panelists.length ? totalInterviews / panelists.length : 0;\n\nconst workloadTable = panelists\n  .map(panelist => {\n    const data = panelistWorkload[panelist];\n    const weeks = Object.keys(data.interviewsByWeek);\n    const maxWeekInterviews = weeks.length\n      ? Math.max(...weeks.map(week => data.interviewsByWeek[week]))\n      : 0;\n    const avgWeekInterviews = weeks.length\n      ? weeks.reduce((sum, week) => sum + data.interviewsByWeek[week], 0) /\n        weeks.length\n      : 0;\n\n    const overloadRatio = avgInterviews > 0\n      ? data.totalInterviews / avgInterviews\n      : 0;\n    const status = overloadRatio > 1.5\n      ? \"Overloaded\"\n      : overloadRatio < 0.7\n      ? \"Underutilized\"\n      : \"Balanced\";\n\n    return {\n      \"Panelist\": panelist,\n      \"Total Interviews\": data.totalInterviews,\n      \"Avg / Week\": avgWeekInterviews.toFixed(1),\n      \"Max / Week\": maxWeekInterviews,\n      \"Workload vs Avg\": (overloadRatio * 100).toFixed(0) + \"%\",\n      \"Status\": status,\n      \"Stage Mix\": Object.entries(data.interviewsByStage)\n        .map(([stage, count]) => `${stage} (${count})`)\n        .join(\", \") || \"N/A\",\n    };\n  })\n  .sort((a, b) => b[\"Total Interviews\"] - a[\"Total Interviews\"]);\n\nconst overloaded = workloadTable.filter(row => row.Status === \"Overloaded\");\nconst underutilized = workloadTable.filter(row => row.Status === \"Underutilized\");\n\nconst stageTable = Object.entries(stageDistribution)\n  .map(([stage, data]) => ({\n    \"Stage\": stage,\n    \"Total Interviews\": data.interviews,\n    \"Unique Panelists\": data.panelists.size,\n    \"Avg Interviews / Panelist\": data.panelists.size\n      ? (data.interviews / data.panelists.size).toFixed(1)\n      : \"0\",\n  }))\n  .sort((a, b) => b[\"Total Interviews\"] - a[\"Total Interviews\"]);\n\nconst insights = [];\nif (overloaded.length) {\n  insights.push(\n    `${overloaded.length} panelist(s) handled 50%+ more interviews than average.`,\n  );\n  const topOver = overloaded[0];\n  insights.push(\n    `${topOver.Panelist} carried ${topOver[\"Workload vs Avg\"]} of the average workload.`,\n  );\n}\nif (underutilized.length) {\n  insights.push(\n    `${underutilized.length} panelist(s) are underutilized (<70% of the average load).`,\n  );\n}\nif (stageTable.length) {\n  insights.push(\n    `${stageTable[0].Stage} consumes the most panel time (${stageTable[0][\"Total Interviews\"]} interviews).`,\n  );\n}\n\nconst recommendations = [];\nif (overloaded.length && underutilized.length) {\n  recommendations.push(\n    `Shift upcoming interviews from ${overloaded[0].Panelist} to ${underutilized[0].Panelist} to balance load.`,\n  );\n}\nif (stageTable.length && stageTable[0][\"Unique Panelists\"] <= 2) {\n  recommendations.push(\n    `Stage ${stageTable[0].Stage} relies on very few panelists; widen coverage to avoid bottlenecks.`,\n  );\n}\nif (!recommendations.length) {\n  recommendations.push(\n    \"Panel workload looks balanced; keep monitoring weekly distribution.\",\n  );\n}\n\nconst summaryMetrics = {\n  \"Total Panelists\": panelists.length,\n  \"Total Interviews\": totalInterviews,\n  \"Avg Interviews / Panelist\": avgInterviews.toFixed(1),\n  \"Overloaded\": overloaded.length,\n  \"Underutilized\": underutilized.length,\n};\n\nreturn [{\n  json: {\n    agent_name: \"panel_load_balancer\",\n    display_title: \"Panel Load Balancer\",\n    sections: [\n      {\n        type: \"metrics\",\n        title: \"Summary\",\n        data: summaryMetrics,\n      },\n      {\n        type: \"table\",\n        title: \"Panelist Workload\",\n        columns: workloadTable.length ? Object.keys(workloadTable[0]) : [],\n        rows: workloadTable,\n      },\n      {\n        type: \"table\",\n        title: \"Stage Coverage\",\n        columns: stageTable.length ? Object.keys(stageTable[0]) : [],\n        rows: stageTable,\n      },\n    ],\n  },\n}];\n\n"
+        },
+        "type": "n8n-nodes-base.code",
+        "typeVersion": 2,
+        "position": [
+          80,
+          0
+        ],
+        "id": "8d7f2ceb-9d47-467b-9bd4-4a6aea511e92",
+        "name": "Code in JavaScript"
+      },
+      {
+        "parameters": {
+          "options": {}
+        },
+        "type": "n8n-nodes-base.respondToWebhook",
+        "typeVersion": 1.4,
+        "position": [
+          864,
+          0
+        ],
+        "id": "0bffe3c8-17dd-4c0c-aaa2-da12e26d7d07",
+        "name": "Respond to Webhook"
+      },
+      {
+        "parameters": {
+          "method": "POST",
+          "url": "http://host.docker.internal:11434/api/chat",
+          "sendHeaders": true,
+          "headerParameters": {
+            "parameters": [
+              {
+                "name": "Content-Type",
+                "value": "application/json"
+              }
+            ]
+          },
+          "sendBody": true,
+          "specifyBody": "json",
+          "jsonBody": "={{ $json.requestBody }}",
+          "options": {}
+        },
+        "type": "n8n-nodes-base.httpRequest",
+        "typeVersion": 4.3,
+        "position": [
+          480,
+          0
+        ],
+        "id": "2b370790-72fe-440c-9c7c-56884aea2922",
+        "name": "Call LLM for Insights",
+        "alwaysOutputData": true
+      },
+      {
+        "parameters": {
+          "jsCode": "const base = $('Code in JavaScript').item.json;\nconst ollamaResp = items[0].json;\nconst rawContent = ollamaResp.message?.content || ollamaResp.content || \"\";\n\n// Parse JSON even if it’s wrapped in ``` fences\nconst tryParse = (text) => {\n  const cleaned = text\n    .replace(/```/g, '')\n    .trim();\n\n  try {\n    return JSON.parse(cleaned);\n  } catch {\n    const start = cleaned.indexOf('{');\n    const end = cleaned.lastIndexOf('}');\n    if (start !== -1 && end !== -1 && end > start) {\n      try {\n        return JSON.parse(cleaned.slice(start, end + 1));\n      } catch {\n        // ignore and fall through\n      }\n    }\n  }\n  return null;\n};\n\nconst parsed =\n  tryParse(rawContent) || {\n    actionable_insights: [rawContent],\n    recommendations: [],\n  };\n\nconst ensureArray = value =>\n  (Array.isArray(value) ? value : [value]).filter(Boolean);\n\nconst cleanEntry = entry =>\n  String(entry)\n    .replace(/```(json)?/gi, '')\n    .replace(/`/g, '')\n    .trim();\n\nconst sections = base.sections.map(section => {\n  if (section.type === \"insights\") {\n    return { ...section, data: ensureArray(parsed.actionable_insights).map(cleanEntry) };\n  }\n  if (section.type === \"recommendations\") {\n    return { ...section, data: ensureArray(parsed.recommendations).map(cleanEntry) };\n  }\n  return section;\n});\n\nreturn [{\n  json: {\n    agent_name: base.agent_name,\n    display_title: base.display_title,\n    sections,\n  },\n}];"
+        },
+        "type": "n8n-nodes-base.code",
+        "typeVersion": 2,
+        "position": [
+          688,
+          0
+        ],
+        "id": "88b735af-0425-46a0-8f7a-4b3a37740602",
+        "name": "Merge Responses"
+      },
+      {
+        "parameters": {
+          "jsCode": "const stats = items[0].json;\n\nconst requestBody = {\n  model: \"gemma2:2b\",\n  messages: [\n    {\n      role: \"system\",\n      content: \"You are a hiring funnel coach. Analyze the following analytics and provide clear, actionable insights and suggestions for process improvement. Return ONLY valid JSON with this exact structure: {\\\"actionable_insights\\\": [\\\"...\\\", \\\"...\\\"], \\\"recommendations\\\": [\\\"...\\\", \\\"...\\\"]}. No other text.\"\n    },\n    {\n      role: \"user\",\n      content: \"Analyze the following hiring funnel data:\\n\\n\" + JSON.stringify(stats, null, 2)\n    }\n  ],\n  stream: false\n};\n\nreturn [{\n  json: {\n    requestBody: requestBody,\n    originalStats: stats\n  }\n}];"
+        },
+        "type": "n8n-nodes-base.code",
+        "typeVersion": 2,
+        "position": [
+          272,
+          0
+        ],
+        "id": "928dc1eb-f941-49e7-bc56-7b690b68910c",
+        "name": "Build LLM request"
+      }
+    ],
+    "connections": {
+      "Webhook": {
+        "main": [
+          [
+            {
+              "node": "Extract from File",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Extract from File": {
+        "main": [
+          [
+            {
+              "node": "Code in JavaScript",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Code in JavaScript": {
+        "main": [
+          [
+            {
+              "node": "Build LLM request",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Call LLM for Insights": {
+        "main": [
+          [
+            {
+              "node": "Merge Responses",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Merge Responses": {
+        "main": [
+          [
+            {
+              "node": "Respond to Webhook",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      },
+      "Build LLM request": {
+        "main": [
+          [
+            {
+              "node": "Call LLM for Insights",
+              "type": "main",
+              "index": 0
+            }
+          ]
+        ]
+      }
+    },
+    "pinData": {},
+    "meta": {
+      "instanceId": "e54ddd1e86b9d6d2fcbcb2786c44182e42ac2d4cf3e41ff38922ffa55944868b"
+    }
+  }
